@@ -1,0 +1,120 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ В
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Наблюдение за состоянием: граница с медициной абсолютна'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '17'
+- elementId: left
+  elementType: text
+  bounds:
+  - 60
+  - 132
+  - 430
+  - 200
+  content:
+    fontSize: 13.5
+    lineHeight: 1.55
+    color: $text
+    fontFamily: MiSans
+    text: <p><strong>Что делают датчики:</strong> сон, вес, активность, выход из комнаты ночью — для 5–10 жителей из списка врача.</p><p><strong>Чего не делают:</strong> не ставят диагнозов, не заменяют обходы, не «мониторят здоровье» как медицинское изделие.</p><p><strong>Кто подключается:</strong> только добровольцы — согласие письменное, отзыв исполняется в тот же день.</p>
+- elementId: div
+  elementType: shape
+  bounds:
+  - 510
+  - 132
+  - 1
+  - 220
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: right
+  elementType: text
+  bounds:
+  - 540
+  - 132
+  - 370
+  - 220
+  content:
+    fontSize: 13.5
+    lineHeight: 1.55
+    color: $text
+    fontFamily: MiSans
+    text: <p><strong>Врач в контуре — или направления нет.</strong></p><p>Список жителей — врача. Маршрут эскалации — с врачом. Разбор сигналов — еженедельно с врачом.</p><p>Оборудование, купленное «пока были средства» без врача, живёт на складе (кейс 4).</p>
+- elementId: rule
+  elementType: shape
+  bounds:
+  - 60
+  - 378
+  - 200
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: warn
+  elementType: text
+  bounds:
+  - 60
+  - 394
+  - 840
+  - 70
+  content:
+    fontSize: 14
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Формула провала: датчики + «врач потом посмотрит». Формула работы: список врача + маршрут эскалации + паспорт пилота + согласия.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 12 доклада; маршрут эскалации — приложение 9, согласия — приложение 6

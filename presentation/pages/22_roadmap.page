@@ -1,0 +1,272 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ДОРОЖНАЯ КАРТА
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Год: от регламента до видеопилота'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '22'
+- elementId: q0
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 196
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: Квартал 1
+- elementId: ln0
+  elementType: shape
+  bounds:
+  - 60
+  - 164
+  - 170
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 176
+  - 196
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Фундамент
+- elementId: b0
+  elementType: text
+  bounds:
+  - 60
+  - 202
+  - 196
+  - 180
+  content:
+    fontSize: 11.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: приказ с регламентом; ответственный; список сервисов; 5 промптов; журнал инцидентов. Стоимость — нулевая.
+- elementId: q1
+  elementType: text
+  bounds:
+  - 275
+  - 140
+  - 196
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: Квартал 2
+- elementId: ln1
+  elementType: shape
+  bounds:
+  - 275
+  - 164
+  - 170
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h1
+  elementType: text
+  bounds:
+  - 275
+  - 176
+  - 196
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Люди и данные
+- elementId: b1
+  elementType: text
+  bounds:
+  - 275
+  - 202
+  - 196
+  - 180
+  content:
+    fontSize: 11.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: тренажёр для новичков; три журнала — в таблицы; паспорта показателей; первая квартальная панель.
+- elementId: q2
+  elementType: text
+  bounds:
+  - 490
+  - 140
+  - 196
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: Квартал 3
+- elementId: ln2
+  elementType: shape
+  bounds:
+  - 490
+  - 164
+  - 170
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h2
+  elementType: text
+  bounds:
+  - 490
+  - 176
+  - 196
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Наблюдение
+- elementId: b2
+  elementType: text
+  bounds:
+  - 490
+  - 202
+  - 196
+  - 180
+  content:
+    fontSize: 11.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'по решению совета с врачом: датчики для 5–10 жителей; согласия; маршрут эскалации. Решение о видеопилоте — по итогам.'
+- elementId: q3
+  elementType: text
+  bounds:
+  - 705
+  - 140
+  - 196
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: Квартал 4
+- elementId: ln3
+  elementType: shape
+  bounds:
+  - 705
+  - 164
+  - 170
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h3
+  elementType: text
+  bounds:
+  - 705
+  - 176
+  - 196
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Видеопилот и отчёт
+- elementId: b3
+  elementType: text
+  bounds:
+  - 705
+  - 202
+  - 196
+  - 180
+  content:
+    fontSize: 11.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'пилот 90 дней на одном отделении; разбор: закрепить / перенастроить / закрыть; годовой отчёт учредителю с замерами.'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 404
+  - 840
+  - 56
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Логика — как в проекте вариативного питания: <strong>ступень → замер → закрепление → следующая ступень</strong>. Каждая ступень имеет точку честной остановки — и это результат, а не провал.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 16 доклада

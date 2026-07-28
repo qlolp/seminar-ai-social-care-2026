@@ -1,0 +1,312 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ПРАВО
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Правовая рамка держится на шести опорах
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '13'
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 100
+  - 140
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: 152-ФЗ
+- elementId: b0
+  elementType: text
+  bounds:
+  - 100
+  - 188
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'базовый закон: основания обработки, цели, сроки хранения'
+- elementId: n1
+  elementType: text
+  bounds:
+  - 347
+  - 140
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 387
+  - 140
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Спецкатегории и биометрия
+- elementId: b1
+  elementType: text
+  bounds:
+  - 387
+  - 188
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: здоровье — усиленный режим; лица — путь, который мы не выбираем
+- elementId: n2
+  elementType: text
+  bounds:
+  - 634
+  - 140
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 674
+  - 140
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Ст. 16 152-ФЗ
+- elementId: b2
+  elementType: text
+  bounds:
+  - 674
+  - 188
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: запрет решений о человеке исключительно алгоритмом
+- elementId: n3
+  elementType: text
+  bounds:
+  - 60
+  - 280
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 100
+  - 280
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Указ № 490
+- elementId: b3
+  elementType: text
+  bounds:
+  - 100
+  - 328
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: стратегия ИИ до 2030 — рамка ожиданий учредителей
+- elementId: n4
+  elementType: text
+  bounds:
+  - 347
+  - 280
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '5'
+- elementId: h4
+  elementType: text
+  bounds:
+  - 387
+  - 280
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Локальные акты
+- elementId: b4
+  elementType: text
+  bounds:
+  - 387
+  - 328
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: приказы и положения, превращающие закон в процедуры
+- elementId: n5
+  elementType: text
+  bounds:
+  - 634
+  - 280
+  - 34
+  - 30
+  content:
+    fontSize: 18
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '6'
+- elementId: h5
+  elementType: text
+  bounds:
+  - 674
+  - 280
+  - 220
+  - 44
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Договор с вендором
+- elementId: b5
+  elementType: text
+  bounds:
+  - 674
+  - 328
+  - 220
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: семь неснимаемых пунктов — иначе не защищает ничто
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 436
+  - 840
+  - 50
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Пять вопросов юристу — письменно и до старта (раздел 10.5). Письменное заключение — не формальность: при проверке оно показывает добросовестность.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 10 доклада; тексты законов — список источников к докладу

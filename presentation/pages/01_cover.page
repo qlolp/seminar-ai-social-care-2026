@@ -1,0 +1,72 @@
+pageType: content
+background:
+  type: solid
+  color: $dark
+elements:
+- elementId: kick
+  elementType: text
+  bounds:
+  - 70
+  - 60
+  - 820
+  - 40
+  content:
+    fontSize: 11
+    color: '#DCE6E0'
+    letterSpacing: 2
+    bold: true
+    fontFamily: MiSans
+    text: МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ «ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0»
+- elementId: rule
+  elementType: shape
+  bounds:
+  - 70
+  - 112
+  - 90
+  - 3
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#B57517'
+- elementId: title
+  elementType: text
+  bounds:
+  - 70
+  - 140
+  - 820
+  - 150
+  content:
+    fontSize: 40
+    bold: true
+    color: '#FFFFFF'
+    lineHeight: 1.15
+    fontFamily: MiSans
+    text: Искусственный интеллект в домах социального обслуживания
+- elementId: sub
+  elementType: text
+  bounds:
+  - 70
+  - 300
+  - 700
+  - 60
+  content:
+    fontSize: 17
+    color: '#DCE6E0'
+    lineHeight: 1.4
+    fontFamily: MiSans
+    text: Что внедрять, чего не делать и с чего начать в понедельник
+- elementId: meta
+  elementType: text
+  bounds:
+  - 70
+  - 430
+  - 760
+  - 60
+  content:
+    fontSize: 11.5
+    color: '#9DB4AB'
+    lineHeight: 1.5
+    fontFamily: MiSans
+    text: 'Санкт-Петербург · 25–27 августа 2026 года
+
+      Министерство труда и социальной защиты РФ · Комитет по социальной политике Санкт-Петербурга'

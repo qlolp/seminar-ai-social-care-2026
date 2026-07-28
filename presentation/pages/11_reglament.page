@@ -1,0 +1,232 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ А
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Регламент: четыре правила, закрывающие главную дыру'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '11'
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 40
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 108
+  - 140
+  - 368
+  - 46
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Только утверждённые сервисы
+- elementId: b0
+  elementType: text
+  bounds:
+  - 108
+  - 190
+  - 368
+  - 80
+  content:
+    fontSize: 12.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Список допущенных сервисов — в приказе. Сервис «как у всех на телефоне» для рабочих текстов не существует.
+- elementId: n1
+  elementType: text
+  bounds:
+  - 488
+  - 140
+  - 40
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 536
+  - 140
+  - 368
+  - 46
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Только обезличенные тексты
+- elementId: b1
+  elementType: text
+  bounds:
+  - 536
+  - 190
+  - 368
+  - 80
+  content:
+    fontSize: 12.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Фамилия + диагноз, номер комнаты + состояние — персональные данные даже без паспорта. Обезличивание — по умолчанию.
+- elementId: n2
+  elementType: text
+  bounds:
+  - 60
+  - 280
+  - 40
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 108
+  - 280
+  - 368
+  - 46
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Проверка человеком обязательна
+- elementId: b2
+  elementType: text
+  bounds:
+  - 108
+  - 330
+  - 368
+  - 80
+  content:
+    fontSize: 12.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Каждый факт, норма и реквизит из текста модели проверяются по источнику. Подписант отвечает за текст целиком.
+- elementId: n3
+  elementType: text
+  bounds:
+  - 488
+  - 280
+  - 40
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 536
+  - 280
+  - 368
+  - 46
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Инциденты фиксируются без наказания
+- elementId: b3
+  elementType: text
+  bounds:
+  - 536
+  - 330
+  - 368
+  - 80
+  content:
+    fontSize: 12.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Сообщивший о своей ошибке не наказывается — иначе практика уйдёт в тень, и об утечке вы узнаете последним.
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 436
+  - 840
+  - 50
+  content:
+    fontSize: 14
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: <p><strong>Одна страница приказа превращает стихийное использование чат-ботов в управляемый инструмент — и это первое действие в понедельник.</strong></p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 9 доклада; проект приказа — приложение 3 к докладу

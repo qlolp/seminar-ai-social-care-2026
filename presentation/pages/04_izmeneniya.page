@@ -1,0 +1,170 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ОБЪЕКТИВКА
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: За пять лет изменились три вещи — и все в нашу пользу
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '4'
+- elementId: b0
+  elementType: shape
+  bounds:
+  - 60
+  - 140
+  - 6
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: h0
+  elementType: text
+  bounds:
+  - 84
+  - 140
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Языковые модели стали доступны
+- elementId: t0
+  elementType: text
+  bounds:
+  - 84
+  - 168
+  - 776
+  - 70
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: Российские сервисы (GigaChat, YandexGPT и другие) работают по подписке из любого кабинета. Черновик документа — минуты вместо часа. Цена входа — почти ноль.
+- elementId: b1
+  elementType: shape
+  bounds:
+  - 60
+  - 252
+  - 6
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: h1
+  elementType: text
+  bounds:
+  - 84
+  - 252
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Видеоаналитика стала серийной
+- elementId: t1
+  elementType: text
+  bounds:
+  - 84
+  - 280
+  - 776
+  - 70
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: 'Распознавание падений и ухода из зоны — больше не научный проект: решения продаются «из коробки» и ставятся на существующие камеры.'
+- elementId: b2
+  elementType: shape
+  bounds:
+  - 60
+  - 364
+  - 6
+  - 88
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h2
+  elementType: text
+  bounds:
+  - 84
+  - 364
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Появилась государственная рамка
+- elementId: t2
+  elementType: text
+  bounds:
+  - 84
+  - 392
+  - 776
+  - 70
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: 'Национальная стратегия развития ИИ до 2030 года (указ № 490) означает: вопрос учредителя «а что у вас с ИИ?» — не «если», а «когда». Лучше встретить его с планом.'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 3 доклада; источники — список к докладу (указ Президента РФ от 10.10.2019 № 490 в ред. от 15.02.2024 № 124)

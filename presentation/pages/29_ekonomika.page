@@ -1,0 +1,294 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЭКОНОМИКА
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Полная стоимость: шесть строк вместо одной цены'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '29'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 136
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 1. Оборудование
+- elementId: ln0
+  elementType: shape
+  bounds:
+  - 60
+  - 162
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b0
+  elementType: text
+  bounds:
+  - 60
+  - 174
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: устройства, монтаж, сеть — единственная строка, которую называет продавец
+- elementId: h1
+  elementType: text
+  bounds:
+  - 347
+  - 136
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 2. Программы и подписки
+- elementId: ln1
+  elementType: shape
+  bounds:
+  - 347
+  - 162
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b1
+  elementType: text
+  bounds:
+  - 347
+  - 174
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: за три года обгоняют оборудование
+- elementId: h2
+  elementType: text
+  bounds:
+  - 634
+  - 136
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 3. Внедрение
+- elementId: ln2
+  elementType: shape
+  bounds:
+  - 634
+  - 162
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b2
+  elementType: text
+  bounds:
+  - 634
+  - 174
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: настройка, интеграция, обучение — у вендора и своё
+- elementId: h3
+  elementType: text
+  bounds:
+  - 60
+  - 266
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 4. Эксплуатация
+- elementId: ln3
+  elementType: shape
+  bounds:
+  - 60
+  - 292
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b3
+  elementType: text
+  bounds:
+  - 60
+  - 304
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: сопровождение, замена 10–15 % парка в год, канал
+- elementId: h4
+  elementType: text
+  bounds:
+  - 347
+  - 266
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 5. Люди
+- elementId: ln4
+  elementType: shape
+  bounds:
+  - 347
+  - 292
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b4
+  elementType: text
+  bounds:
+  - 347
+  - 304
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: часы ответственного, разборы тревог, обучение — переведите в ставки
+- elementId: h5
+  elementType: text
+  bounds:
+  - 634
+  - 266
+  - 258
+  - 22
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 6. Выход
+- elementId: ln5
+  elementType: shape
+  bounds:
+  - 634
+  - 292
+  - 50
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b5
+  elementType: text
+  bounds:
+  - 634
+  - 304
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'выгрузка данных, демонтаж: строка, которую считают последней, кусается первой'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 414
+  - 840
+  - 60
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: <p>Проект, у которого посчитаны только первые две строки, недооценён в полтора-два раза. Сравнивайте трёхлетнюю стоимость, а не цену входа; условия выхода — в договоре до подписания.</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 22 доклада; иллюстративный расчёт видеопилота — раздел 22.5

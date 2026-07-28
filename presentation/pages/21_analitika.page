@@ -1,0 +1,272 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Е
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Управленческая аналитика: четыре ступени без магии'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '21'
+- elementId: s0
+  elementType: shape
+  bounds:
+  - 60
+  - 360
+  - 196
+  - 74
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: n0
+  elementType: text
+  bounds:
+  - 70
+  - 368
+  - 30
+  - 20
+  content:
+    fontSize: 15
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 102
+  - 368
+  - 146
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Таблица
+- elementId: b0
+  elementType: text
+  bounds:
+  - 70
+  - 390
+  - 178
+  - 42
+  content:
+    fontSize: 10.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: три-пять журналов переводятся в электронные таблицы — та же запись, но в структуре
+- elementId: s1
+  elementType: shape
+  bounds:
+  - 275
+  - 298
+  - 196
+  - 74
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: n1
+  elementType: text
+  bounds:
+  - 285
+  - 306
+  - 30
+  - 20
+  content:
+    fontSize: 15
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 317
+  - 306
+  - 146
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Правила
+- elementId: b1
+  elementType: text
+  bounds:
+  - 285
+  - 328
+  - 178
+  - 42
+  content:
+    fontSize: 10.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: 'простые подсчёты и пороги: «падений больше N за месяц», «журнал пуст 3 дня»'
+- elementId: s2
+  elementType: shape
+  bounds:
+  - 490
+  - 236
+  - 196
+  - 74
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: n2
+  elementType: text
+  bounds:
+  - 500
+  - 244
+  - 30
+  - 20
+  content:
+    fontSize: 15
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 532
+  - 244
+  - 146
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Чтение моделью
+- elementId: b2
+  elementType: text
+  bounds:
+  - 500
+  - 266
+  - 178
+  - 42
+  content:
+    fontSize: 10.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: 'сводки журналов текстом: отклонения, повторы, что требует решения — с проверкой'
+- elementId: s3
+  elementType: shape
+  bounds:
+  - 705
+  - 174
+  - 196
+  - 74
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n3
+  elementType: text
+  bounds:
+  - 715
+  - 182
+  - 30
+  - 20
+  content:
+    fontSize: 15
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 747
+  - 182
+  - 146
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Модели
+- elementId: b3
+  elementType: text
+  bounds:
+  - 715
+  - 204
+  - 178
+  - 42
+  content:
+    fontSize: 10.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: 'предиктивная аналитика — через годы дисциплины данных; сейчас честный ответ: «нам рано»'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 452
+  - 840
+  - 36
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: <p>Показатель без паспорта (определение, источник, искажения, порог реакции) в отчёт не идёт — это защита от решений по «числам, которые все понимают по-разному».</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 15 доклада; паспорт показателя — приложение 11 к докладу

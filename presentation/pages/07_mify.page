@@ -1,0 +1,107 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ОСНОВЫ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Пять мифов — и пять рабочих фактов вместо них
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '7'
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 124
+  - 840
+  - 320
+  columnWidths:
+  - 0.38
+  - 0.62
+  rowHeights:
+  - 0.14
+  - 0.172
+  - 0.172
+  - 0.172
+  - 0.172
+  - 0.172
+  style:
+    cellStyle:
+      fontSize: 12.5
+      lineHeight: 1.3
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: $primary
+      fontSize: 13
+  rows:
+  - - text: Миф
+    - text: Рабочий факт
+  - - text: «ИИ заменит персонал»
+    - text: заменяет бумажную и сторожевую работу, не уход; штат — решение директора, вслух
+  - - text: «ИИ всё понимает»
+    - text: модель не различает «помню» и «сочиняю» — проверка фактов обязательна
+  - - text: «ИИ дорого»
+    - text: документы и обучение стоят время; дорого — камеры, и тем нужен пилот
+  - - text: «ИИ незаконно у нас»
+    - text: 'законно при трёх условиях: обезличивание, список сервисов, человек в контуре'
+  - - text: «Поставим — и забудем»
+    - text: система без разбора тревог и перенастройки умирает за месяц
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 5.2 доклада

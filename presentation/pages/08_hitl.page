@@ -1,0 +1,313 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ПРИНЦИП
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Человек в контуре: как устроено любое наше решение'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '8'
+- elementId: box0
+  elementType: shape
+  bounds:
+  - 60
+  - 170
+  - 140
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: st0
+  elementType: text
+  bounds:
+  - 68
+  - 178
+  - 124
+  - 48
+  content:
+    fontSize: 12.5
+    bold: false
+    lineHeight: 1.25
+    color: $primary
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: Событие или данные
+- elementId: ar0
+  elementType: text
+  bounds:
+  - 200
+  - 182
+  - 24
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $muted
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: →
+- elementId: box1
+  elementType: shape
+  bounds:
+  - 224
+  - 170
+  - 140
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: st1
+  elementType: text
+  bounds:
+  - 232
+  - 178
+  - 124
+  - 48
+  content:
+    fontSize: 12.5
+    bold: false
+    lineHeight: 1.25
+    color: $primary
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: Система сигнализирует
+- elementId: ar1
+  elementType: text
+  bounds:
+  - 364
+  - 182
+  - 24
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $muted
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: →
+- elementId: box2
+  elementType: shape
+  bounds:
+  - 388
+  - 170
+  - 140
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: st2
+  elementType: text
+  bounds:
+  - 396
+  - 178
+  - 124
+  - 48
+  content:
+    fontSize: 12.5
+    bold: true
+    lineHeight: 1.25
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: Человек проверяет
+- elementId: ar2
+  elementType: text
+  bounds:
+  - 528
+  - 182
+  - 24
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $muted
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: →
+- elementId: box3
+  elementType: shape
+  bounds:
+  - 552
+  - 170
+  - 140
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: st3
+  elementType: text
+  bounds:
+  - 560
+  - 178
+  - 124
+  - 48
+  content:
+    fontSize: 12.5
+    bold: true
+    lineHeight: 1.25
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: Человек решает
+- elementId: ar3
+  elementType: text
+  bounds:
+  - 692
+  - 182
+  - 24
+  - 40
+  content:
+    fontSize: 20
+    bold: true
+    color: $muted
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: →
+- elementId: box4
+  elementType: shape
+  bounds:
+  - 716
+  - 170
+  - 140
+  - 64
+  shapeName: rect
+  fill:
+    type: solid
+    color: $softgreen
+- elementId: st4
+  elementType: text
+  bounds:
+  - 724
+  - 178
+  - 124
+  - 48
+  content:
+    fontSize: 12.5
+    bold: false
+    lineHeight: 1.25
+    color: $primary
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: Решение фиксируется
+- elementId: l1
+  elementType: text
+  bounds:
+  - 60
+  - 270
+  - 400
+  - 90
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: <p><strong>Система:</strong> смотрит, слушает, считает, черновит, напоминает. Не устаёт, не отвлекается.</p>
+- elementId: l2
+  elementType: text
+  bounds:
+  - 500
+  - 270
+  - 400
+  - 90
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: <p><strong>Человек:</strong> проверяет, решает, отвечает перед жителем, семьёй и законом.</p>
+- elementId: div
+  elementType: shape
+  bounds:
+  - 480
+  - 270
+  - 1
+  - 90
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: law
+  elementType: text
+  bounds:
+  - 60
+  - 386
+  - 840
+  - 70
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Это не только этика: ст. 16 закона о персональных данных запрещает решения о человеке на основе <strong>исключительно</strong> автоматизированной обработки. Проверка вендора проста: попросите показать, где в схеме человек — и успевает ли он проверить.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Разделы 5 и 10 доклада; ст. 16 Федерального закона № 152-ФЗ

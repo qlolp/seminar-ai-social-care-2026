@@ -1,0 +1,242 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kick
+  elementType: text
+  bounds:
+  - 60
+  - 44
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЧТО ДЕЛАТЬ В ПОНЕДЕЛЬНИК
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 66
+  - 840
+  - 44
+  content:
+    fontSize: 26
+    bold: true
+    color: $text
+    fontFamily: MiSans
+    text: Четыре действия — и тема под контролем
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 120
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 40
+  - 40
+  content:
+    fontSize: 22
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 108
+  - 140
+  - 470
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Издайте приказ с регламентом
+- elementId: b0
+  elementType: text
+  bounds:
+  - 108
+  - 164
+  - 760
+  - 44
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: страница текста (приложение 3), которая закрывает главную дыру утечек и делает инструмент управляемым
+- elementId: n1
+  elementType: text
+  bounds:
+  - 60
+  - 214
+  - 40
+  - 40
+  content:
+    fontSize: 22
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 108
+  - 214
+  - 470
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Назначьте ответственного и заведите реестр
+- elementId: b1
+  elementType: text
+  bounds:
+  - 108
+  - 238
+  - 760
+  - 44
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'у темы появляется хозяин — и подменяющий: экспертиза не должна уходить с одним человеком'
+- elementId: n2
+  elementType: text
+  bounds:
+  - 60
+  - 288
+  - 40
+  - 40
+  content:
+    fontSize: 22
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 108
+  - 288
+  - 470
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Выберите одну измеримую боль и замерьте её
+- elementId: b2
+  elementType: text
+  bounds:
+  - 108
+  - 312
+  - 760
+  - 44
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: число «до» — до любых закупок; без него эффект любого пилота недоказуем
+- elementId: n3
+  elementType: text
+  bounds:
+  - 60
+  - 362
+  - 40
+  - 40
+  content:
+    fontSize: 22
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 108
+  - 362
+  - 470
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Поставьте дорожную карту на совет с врачом
+- elementId: b3
+  elementType: text
+  bounds:
+  - 108
+  - 386
+  - 760
+  - 44
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'с правом сказать «нам рано» по любой ступени: отказ по критериям — зрелость, а не провал'
+- elementId: rule
+  elementType: shape
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: final
+  elementType: text
+  bounds:
+  - 60
+  - 458
+  - 840
+  - 44
+  content:
+    fontSize: 14.5
+    lineHeight: 1.4
+    color: $primary
+    fontFamily: MiSans
+    text: '<p><strong>Технологии меняются, логика остаётся: ступень → замер → закрепление → следующая ступень.</strong></p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Заключение доклада; доклад 120 страниц, 14 кейсов, 17 приложений с формами — у участников семинара
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '30'

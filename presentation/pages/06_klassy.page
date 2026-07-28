@@ -1,0 +1,222 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ОСНОВЫ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Три класса ИИ, которые вам будут продавать
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '6'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 140
+  - 260
+  - 26
+  content:
+    fontSize: 16.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Распознающие
+- elementId: ln0
+  elementType: shape
+  bounds:
+  - 60
+  - 172
+  - 240
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: b0
+  elementType: text
+  bounds:
+  - 60
+  - 188
+  - 258
+  - 160
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Видят и слышат: падение в коридоре, речь в текст, документ в скане. Не устают и не спят на посту.'
+- elementId: u0
+  elementType: text
+  bounds:
+  - 60
+  - 352
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $muted
+    fontFamily: MiSans
+    text: 'Слабое место: ложные тревоги и слепые зоны.'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 347
+  - 140
+  - 260
+  - 26
+  content:
+    fontSize: 16.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Предсказывающие
+- elementId: ln1
+  elementType: shape
+  bounds:
+  - 347
+  - 172
+  - 240
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: b1
+  elementType: text
+  bounds:
+  - 347
+  - 188
+  - 258
+  - 160
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Оценивают риски по данным: «у этого жителя высокая вероятность падения».'
+- elementId: u1
+  elementType: text
+  bounds:
+  - 347
+  - 352
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $muted
+    fontFamily: MiSans
+    text: 'Слабое место: мусор на входе — мусор на выходе. Нам рано: данных за годы нет.'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 634
+  - 140
+  - 260
+  - 26
+  content:
+    fontSize: 16.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Генерирующие
+- elementId: ln2
+  elementType: shape
+  bounds:
+  - 634
+  - 172
+  - 240
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: b2
+  elementType: text
+  bounds:
+  - 634
+  - 188
+  - 258
+  - 160
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Пишут и говорят: черновики, сводки, тренажёры диалогов. Экономят часы в первую же неделю.'
+- elementId: u2
+  elementType: text
+  bounds:
+  - 634
+  - 352
+  - 258
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.4
+    color: $muted
+    fontFamily: MiSans
+    text: 'Слабое место: уверенно сочиняют факты. Проверка человеком — навсегда.'
+- elementId: bottom
+  elementType: text
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 40
+  content:
+    fontSize: 14
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: '<p><strong>Ни один класс не «думает»: все три находят закономерности в данных. Поэтому два правила неизменны — проверка человеком и обезличивание.</strong></p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 5 доклада

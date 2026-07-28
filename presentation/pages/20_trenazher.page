@@ -1,0 +1,267 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Д
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'ИИ-тренажёр: сорок минут, из которых тридцать — живые'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '20'
+- elementId: t0
+  elementType: text
+  bounds:
+  - 60
+  - 132
+  - 64
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 0–5
+- elementId: h0
+  elementType: text
+  bounds:
+  - 136
+  - 132
+  - 190
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Сценарий и правила
+- elementId: b0
+  elementType: text
+  bounds:
+  - 336
+  - 132
+  - 570
+  - 50
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'наставник: «жительница обвиняет вас в краже очков; цель — помочь и зафиксировать, а не оправдаться»'
+- elementId: t1
+  elementType: text
+  bounds:
+  - 60
+  - 192
+  - 64
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 5–15
+- elementId: h1
+  elementType: text
+  bounds:
+  - 136
+  - 192
+  - 190
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Диалог с моделью
+- elementId: b1
+  elementType: text
+  bounds:
+  - 336
+  - 192
+  - 570
+  - 50
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: сотрудник ведёт диалог; наставник наблюдает и не вмешивается
+- elementId: t2
+  elementType: text
+  bounds:
+  - 60
+  - 252
+  - 64
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 15–20
+- elementId: h2
+  elementType: text
+  bounds:
+  - 136
+  - 252
+  - 190
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Разбор модели
+- elementId: b2
+  elementType: text
+  bounds:
+  - 336
+  - 252
+  - 570
+  - 50
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: сотрудник сам читает разбор по критериям сценария
+- elementId: t3
+  elementType: text
+  bounds:
+  - 60
+  - 312
+  - 64
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 20–35
+- elementId: h3
+  elementType: text
+  bounds:
+  - 136
+  - 312
+  - 190
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Живой разбор
+- elementId: b3
+  elementType: text
+  bounds:
+  - 336
+  - 312
+  - 570
+  - 50
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: что модель оценила верно, где отстала от нашей реальности, как было вчера в смене
+- elementId: t4
+  elementType: text
+  bounds:
+  - 60
+  - 372
+  - 64
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 35–40
+- elementId: h4
+  elementType: text
+  bounds:
+  - 136
+  - 372
+  - 190
+  - 20
+  content:
+    fontSize: 13.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Одна фраза-вывод
+- elementId: b4
+  elementType: text
+  bounds:
+  - 336
+  - 372
+  - 570
+  - 50
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: в личную карту обучения; повтор сценария — через месяц
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 442
+  - 840
+  - 44
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: <p>Десять сценариев — приложение 10 к докладу; закупок не нужно. <strong>Тренажёр — повод для разговора о нашей работе, а не инструмент аттестации.</strong></p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 14 доклада

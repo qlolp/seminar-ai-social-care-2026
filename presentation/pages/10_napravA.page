@@ -1,0 +1,183 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ А
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Почему первым идёт направление А: документы'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '10'
+- elementId: b0
+  elementType: shape
+  bounds:
+  - 60
+  - 140
+  - 6
+  - 82
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h0
+  elementType: text
+  bounds:
+  - 84
+  - 140
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Проходит все четыре фильтра сразу
+- elementId: t0
+  elementType: text
+  bounds:
+  - 84
+  - 168
+  - 776
+  - 66
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: Боль известна каждому (часы на однотипные документы); эффект меряется в часах; откат — один день; правовой контур — один приказ.
+- elementId: b1
+  elementType: shape
+  bounds:
+  - 60
+  - 244
+  - 6
+  - 82
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h1
+  elementType: text
+  bounds:
+  - 84
+  - 252
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Эффект в первую неделю
+- elementId: t1
+  elementType: text
+  bounds:
+  - 84
+  - 280
+  - 776
+  - 66
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: 'Ответ на обращение: 40–60 минут вручную → 15–20 минут с черновиком модели и проверкой. Сводка месяца: полдня → час.'
+- elementId: b2
+  elementType: shape
+  bounds:
+  - 60
+  - 348
+  - 6
+  - 82
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h2
+  elementType: text
+  bounds:
+  - 84
+  - 364
+  - 780
+  - 24
+  content:
+    fontSize: 16
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Учит главному навыку
+- elementId: t2
+  elementType: text
+  bounds:
+  - 84
+  - 392
+  - 776
+  - 66
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: Проверка текста модели, обезличивание, журнал инцидентов — эти три привычки потом работают на всех остальных направлениях.
+- elementId: f
+  elementType: text
+  bounds:
+  - 60
+  - 462
+  - 840
+  - 30
+  content:
+    fontSize: 13
+    color: $muted
+    lineHeight: 1.4
+    fontFamily: MiSans
+    text: '<p>Начинать с видеоаналитики — значит провалиться по всем осям одновременно: дорого, сложно юридически, пугает персонал.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Разделы 7, 9, 16 доклада

@@ -1,0 +1,120 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЛЮДИ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Четыре страха персонала — четыре ответа
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '23'
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 130
+  - 840
+  - 290
+  columnWidths:
+  - 0.36
+  - 0.64
+  rowHeights:
+  - 0.14
+  - 0.215
+  - 0.215
+  - 0.215
+  - 0.215
+  style:
+    cellStyle:
+      fontSize: 12.5
+      lineHeight: 1.35
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12.5
+      fill:
+        type: solid
+        color: $primary
+  rows:
+  - - text: Страх (все четыре рациональны)
+    - text: Ответ (конструкцией, не уговорами)
+  - - text: «Нас заменят»
+    - text: ИИ убирает бумажную и сторожевую работу, не уход; решение о штате директор объявляет вслух до запуска
+  - - text: «За нами будут следить»
+    - text: аналитика — на события, не на сотрудников; записи вне ЧС не используются для взысканий — в положении, нарушение хоронит проект
+  - - text: «Не справлюсь»
+    - text: 'обучение на своих сценариях; правило «трёх кнопок»: больше трёх действий — ошибка внедрения, а не сотрудника'
+  - - text: «Лишняя работа»
+    - text: 'замер до/после: покажите смене минуты, которые система вернула; не вернула — вопрос к проекту'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 436
+  - 840
+  - 50
+  content:
+    fontSize: 13.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: MiSans
+    text: <p>Внедрение, не ответившее на все четыре страха явно и публично, встретит сопротивление — тихое, грамотное и непобедимое. Первые пользователи — не самые компьютерные, а самые авторитетные.</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 19 доклада

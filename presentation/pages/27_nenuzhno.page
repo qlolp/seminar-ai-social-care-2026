@@ -1,0 +1,249 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЧЕСТНЫЕ ОГРАНИЧЕНИЯ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Где искусственный интеллект не нужен
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '27'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 130
+  - 290
+  - 40
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Где задачи не существует
+- elementId: b0
+  elementType: text
+  bounds:
+  - 360
+  - 130
+  - 540
+  - 60
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Не назвали измеримую боль и число «до» — проекта нет, есть покупка.
+- elementId: ln0
+  elementType: shape
+  bounds:
+  - 60
+  - 192
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h1
+  elementType: text
+  bounds:
+  - 60
+  - 200
+  - 290
+  - 40
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Где проще без технологий
+- elementId: b1
+  elementType: text
+  bounds:
+  - 360
+  - 200
+  - 540
+  - 60
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Лист бумаги, таблица, регламент — сначала они. Технология — когда простое средство упёрлось в предел.
+- elementId: ln1
+  elementType: shape
+  bounds:
+  - 60
+  - 262
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h2
+  elementType: text
+  bounds:
+  - 60
+  - 270
+  - 290
+  - 40
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Где решает человек по долгу службы
+- elementId: b2
+  elementType: text
+  bounds:
+  - 360
+  - 270
+  - 540
+  - 60
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'Медицинские решения, переводы, ограничительные меры: ИИ готовит сводку, но не вердикт.'
+- elementId: ln2
+  elementType: shape
+  bounds:
+  - 60
+  - 332
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h3
+  elementType: text
+  bounds:
+  - 60
+  - 340
+  - 290
+  - 40
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Где нет данных и не будет
+- elementId: b3
+  elementType: text
+  bounds:
+  - 360
+  - 340
+  - 540
+  - 60
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: Предиктивные модели без лет качественных записей — кровать в доме без фундамента.
+- elementId: ln3
+  elementType: shape
+  bounds:
+  - 60
+  - 402
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: h4
+  elementType: text
+  bounds:
+  - 60
+  - 410
+  - 290
+  - 40
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    lineHeight: 1.2
+    fontFamily: MiSans
+    text: Где технология заменяет внимание
+- elementId: b4
+  elementType: text
+  bounds:
+  - 360
+  - 410
+  - 540
+  - 60
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: 'Колонка не заменяет сиделку, панель не заменяет обход: мы освобождаем время человека для человека — не от человека.'
+- elementId: ln4
+  elementType: shape
+  bounds:
+  - 60
+  - 472
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 23 доклада — самая полезная часть для бюджета

@@ -1,0 +1,70 @@
+version: v2
+title: Искусственный интеллект в домах социального обслуживания — презентация семинара
+size:
+- 960
+- 540
+theme:
+  colors:
+    primary: '#2F5D50'
+    accent: '#B57517'
+    text: '#20242A'
+    muted: '#6B7280'
+    bg: '#FAF8F4'
+    soft: '#E7E1D6'
+    softgreen: '#DCE6E0'
+    line: '#C9C2B4'
+    dark: '#1F3D33'
+  textStyles:
+    kicker:
+      fontSize: 11
+      color: $primary
+      fontFamily: MiSans
+      letterSpacing: 2
+      bold: true
+    h1:
+      fontSize: 27
+      bold: true
+      color: $text
+      fontFamily: MiSans
+      lineHeight: 1.15
+    body:
+      fontSize: 14.5
+      color: $text
+      fontFamily: MiSans
+      lineHeight: 1.45
+    small:
+      fontSize: 10.5
+      color: $muted
+      fontFamily: MiSans
+      lineHeight: 1.3
+pages:
+- pages/01_cover.page
+- pages/02_otvety.page
+- pages/03_deficita.page
+- pages/04_izmeneniya.page
+- pages/05_karta.page
+- pages/06_klassy.page
+- pages/07_mify.page
+- pages/08_hitl.page
+- pages/09_filtry.page
+- pages/10_napravA.page
+- pages/11_reglament.page
+- pages/12_primer.page
+- pages/13_pravo.page
+- pages/14_razvilka.page
+- pages/15_video.page
+- pages/16_pilot.page
+- pages/17_nablyudenie.page
+- pages/18_eskal.page
+- pages/19_golos.page
+- pages/20_trenazher.page
+- pages/21_analitika.page
+- pages/22_roadmap.page
+- pages/23_personal.page
+- pages/24_zhiteli.page
+- pages/25_bezop.page
+- pages/26_etika.page
+- pages/27_nenuzhno.page
+- pages/28_nikogda.page
+- pages/29_ekonomika.page
+- pages/30_ponedelnik.page

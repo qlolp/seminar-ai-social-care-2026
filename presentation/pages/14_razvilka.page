@@ -1,0 +1,146 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ПРАВО
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'События или лица: развилка решается в техзадании'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '14'
+- elementId: h1c
+  elementType: text
+  bounds:
+  - 60
+  - 128
+  - 400
+  - 22
+  content:
+    fontSize: 15.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 'Путь доклада: события'
+- elementId: b1c
+  elementType: text
+  bounds:
+  - 60
+  - 156
+  - 400
+  - 190
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Система распознаёт «человек упал», «кто-то пересёк линию» — <strong>без установления, кто именно</strong>.</p><p>Стандартный контур 152-ФЗ: положение, уведомления, журнал доступа, сроки хранения.</p><p><strong>Задачи видеонаправления закрываются полностью.</strong></p>'
+- elementId: rule1
+  elementType: shape
+  bounds:
+  - 60
+  - 352
+  - 240
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: h2c
+  elementType: text
+  bounds:
+  - 510
+  - 128
+  - 400
+  - 22
+  content:
+    fontSize: 15.5
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: 'Путь, который мы не выбираем: идентификация'
+- elementId: b2c
+  elementType: text
+  bounds:
+  - 510
+  - 156
+  - 400
+  - 190
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Распознавание лиц: система знает, <strong>кто</strong> перед камерой.</p><p>Биометрические данные: письменные согласия всех, требования 572-ФЗ, максимальные штрафы за утечку.</p><p><strong>Добавленной пользы для наших задач — ноль.</strong></p>'
+- elementId: rule2
+  elementType: shape
+  bounds:
+  - 510
+  - 352
+  - 240
+  - 2
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: tz
+  elementType: text
+  bounds:
+  - 60
+  - 382
+  - 840
+  - 80
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Формулировка в техзадание: «распознавание событий без идентификации личности». Проверка на пилоте: попросите вендора показать, что система не строит и не хранит цифровые слепки лиц — в интерфейсе, а не в письме.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 10.2 доклада; вендор, которому «нужны лица», решает чужую задачу

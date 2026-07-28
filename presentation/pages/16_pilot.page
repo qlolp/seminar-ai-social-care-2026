@@ -1,0 +1,126 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Б
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Пилот 90 дней: метрики пишутся до старта'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '16'
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 130
+  - 840
+  - 250
+  columnWidths:
+  - 0.36
+  - 0.32
+  - 0.32
+  rowHeights:
+  - 0.16
+  - 0.21
+  - 0.21
+  - 0.21
+  - 0.21
+  style:
+    cellStyle:
+      fontSize: 12.5
+      lineHeight: 1.3
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12.5
+      fill:
+        type: solid
+        color: $primary
+  rows:
+  - - text: Метрика
+    - text: «До» (базовая линия)
+    - text: Цель пилота
+  - - text: Время обнаружения падения, мин
+    - text: по журналам за 3 месяца
+    - text: ≤ 5 минут по панели
+  - - text: Ложные тревоги на камеру в неделю
+    - text: — (нет системы)
+    - text: ≤ 2 — иначе перенастройка
+  - - text: Время смены на систему, мин/сутки
+    - text: —
+    - text: ≤ 15 — иначе система проиграла
+  - - text: Отозванные согласия жителей
+    - text: '0'
+    - text: '0'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 404
+  - 840
+  - 60
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p>Три исхода записаны заранее: <strong>закрепить / перенастроить один раз / закрыть</strong>. Критерии, написанные после результатов, — не критерии, а оправдание. Паспорт пилота подписывают директор и врач.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Разделы 11, 25 доклада; паспорт пилота — приложение 7 к докладу

@@ -1,0 +1,267 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЭТИКА
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Пять практик вне границ — независимо от закона
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '26'
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 132
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 98
+  - 132
+  - 300
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Камеры в комнатах проживания
+- elementId: b0
+  elementType: text
+  bounds:
+  - 98
+  - 154
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'кроме палат интенсивного наблюдения по решению врача с согласия: коридор — да, спальня — нет'
+- elementId: n1
+  elementType: text
+  bounds:
+  - 60
+  - 196
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 98
+  - 196
+  - 300
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Распознавание лиц жителей
+- elementId: b1
+  elementType: text
+  bounds:
+  - 98
+  - 218
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: биометрический контур непропорционален задачам учреждения
+- elementId: n2
+  elementType: text
+  bounds:
+  - 60
+  - 260
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 98
+  - 260
+  - 300
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Скрытое наблюдение
+- elementId: b2
+  elementType: text
+  bounds:
+  - 98
+  - 282
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: без ведома жителей и персонала — под любым предлогом
+- elementId: n3
+  elementType: text
+  bounds:
+  - 60
+  - 324
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 98
+  - 324
+  - 300
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Оценка сотрудников алгоритмом
+- elementId: b3
+  elementType: text
+  bounds:
+  - 98
+  - 346
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: «скоринг дисциплины» — путь к фальсификации и потере доверия
+- elementId: n4
+  elementType: text
+  bounds:
+  - 60
+  - 388
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: MiSans
+    text: '5'
+- elementId: h4
+  elementType: text
+  bounds:
+  - 98
+  - 388
+  - 300
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Данные жителей вовне
+- elementId: b4
+  elementType: text
+  bounds:
+  - 98
+  - 410
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: исследования, обучение моделей, «обезличенные» выгрузки — только отдельным решением совета
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 462
+  - 840
+  - 30
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: <p>Фильтр из пяти вопросов (раздел 20.4) занимает десять минут совещания и отсекает плохие идеи раньше, чем они станут закупкой.</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 20 доклада

@@ -1,0 +1,151 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: О ДОКЛАДЕ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Три честных ответа о том, что вы держите в руках
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '2'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 136
+  - 150
+  - 24
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Для кого
+- elementId: b0
+  elementType: text
+  bounds:
+  - 230
+  - 136
+  - 670
+  - 100
+  content:
+    style: $body
+    text: Для директора без ИТ-отдела и без свободных денег — не для айтишника и не для чиновника. Все схемы проверены на вопросе «а у нас получится?».
+- elementId: r0
+  elementType: shape
+  bounds:
+  - 215
+  - 142
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h1
+  elementType: text
+  bounds:
+  - 60
+  - 254
+  - 150
+  - 24
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: О чём
+- elementId: b1
+  elementType: text
+  bounds:
+  - 230
+  - 254
+  - 670
+  - 100
+  content:
+    style: $body
+    text: Шесть прикладных направлений, дорожная карта на год, правовой контур пошагово и честный раздел «где ИИ не нужен».
+- elementId: r1
+  elementType: shape
+  bounds:
+  - 215
+  - 260
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h2
+  elementType: text
+  bounds:
+  - 60
+  - 372
+  - 150
+  - 24
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: С чем уйдёте
+- elementId: b2
+  elementType: text
+  bounds:
+  - 230
+  - 372
+  - 670
+  - 100
+  content:
+    style: $body
+    text: С приказом, который можно издать в понедельник (приложение 3), и с картой, по которой тема перестаёт быть «модной» и становится управляемой.
+- elementId: r2
+  elementType: shape
+  bounds:
+  - 215
+  - 378
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent

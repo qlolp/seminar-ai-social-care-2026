@@ -1,0 +1,142 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: КАРТА
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Шесть направлений: с чего начать и что потребуется'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '5'
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 124
+  - 840
+  - 330
+  columnWidths:
+  - 0.2
+  - 0.34
+  - 0.15
+  - 0.31
+  rowHeights:
+  - 0.13
+  - 0.145
+  - 0.145
+  - 0.145
+  - 0.145
+  - 0.145
+  - 0.145
+  style:
+    cellStyle:
+      fontSize: 12.5
+      lineHeight: 1.3
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12.5
+      fill:
+        type: solid
+        color: $primary
+  rows:
+  - - text: Направление
+    - text: Первая задача
+    - text: Вложения
+    - text: Главный риск
+  - - text: А. Документы
+    - text: регламент + 5 промптов
+    - text: нулевые
+    - text: утечка персональных данных
+  - - text: Д. Обучение
+    - text: тренажёр на своих кейсах
+    - text: время тренера
+    - text: формальное «прокликивание»
+  - - text: Е. Аналитика
+    - text: три журнала в таблицы
+    - text: время ответственного
+    - text: решения по мусорным данным
+  - - text: В. Наблюдение
+    - text: датчики для 5–10 жителей
+    - text: датчики, подписка
+    - text: медицина без врача
+  - - text: Г. Голосовые помощники
+    - text: 3–5 добровольцев
+    - text: устройства
+    - text: приватность, разочарование
+  - - text: Б. Видеоаналитика
+    - text: пилот 90 дней, отделение
+    - text: камеры, сервер
+    - text: ложные тревоги → усталость
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 468
+  - 840
+  - 30
+  content:
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: MiSans
+    text: 'Порядок строк — не случайность: дорожная карта идёт от дешёвого и обратимого к дорогому и ответственному.'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 4 доклада; подробная карта — приложение 2 к докладу

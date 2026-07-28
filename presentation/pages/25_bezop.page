@@ -1,0 +1,291 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: БЕЗОПАСНОСТЬ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Восемь мер и два срока, которые решают почти всё
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '25'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 132
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 1. Своя учётная запись
+- elementId: b0
+  elementType: text
+  bounds:
+  - 78
+  - 152
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: общих паролей «на смену» не существует
+- elementId: h1
+  elementType: text
+  bounds:
+  - 488
+  - 132
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 2. Права по роли
+- elementId: b1
+  elementType: text
+  bounds:
+  - 506
+  - 152
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: сиделке не нужны финансы, бухгалтеру — видеозаписи
+- elementId: h2
+  elementType: text
+  bounds:
+  - 60
+  - 194
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 3. Копии 3-2-1
+- elementId: b2
+  elementType: text
+  bounds:
+  - 78
+  - 214
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: три копии, два носителя, одна вне площадки; восстановление проверяется ежеквартально
+- elementId: h3
+  elementType: text
+  bounds:
+  - 488
+  - 194
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 4. Только рабочие носители
+- elementId: b3
+  elementType: text
+  bounds:
+  - 506
+  - 214
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: личные флешки и почта — вне контура
+- elementId: h4
+  elementType: text
+  bounds:
+  - 60
+  - 256
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 5. Увольнение = отключение
+- elementId: b4
+  elementType: text
+  bounds:
+  - 78
+  - 276
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: доступы закрываются в тот же день
+- elementId: h5
+  elementType: text
+  bounds:
+  - 488
+  - 256
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 6. Обновления и антивирус
+- elementId: b5
+  elementType: text
+  bounds:
+  - 506
+  - 276
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: включая «тот старый компьютер у медсестры»
+- elementId: h6
+  elementType: text
+  bounds:
+  - 60
+  - 318
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 7. Длинные разные пароли
+- elementId: b6
+  elementType: text
+  bounds:
+  - 78
+  - 338
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: менеджер паролей для руководителей
+- elementId: h7
+  elementType: text
+  bounds:
+  - 488
+  - 318
+  - 300
+  - 20
+  content:
+    fontSize: 13
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: 8. Часовой инструктаж в год
+- elementId: b7
+  elementType: text
+  bounds:
+  - 506
+  - 338
+  - 370
+  - 38
+  content:
+    fontSize: 11.5
+    lineHeight: 1.3
+    color: $text
+    fontFamily: MiSans
+    text: 'фишинг: три письма, которые придут к вам'
+- elementId: rule
+  elementType: shape
+  bounds:
+  - 60
+  - 396
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: sroki
+  elementType: text
+  bounds:
+  - 60
+  - 410
+  - 840
+  - 70
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: '<p><strong>Два срока при утечке:</strong> первичное уведомление Роскомнадзора — 24 часа, отчёт о расследовании — 72 часа. Учреждение — не дата-центр: восемь мер на первые годы достаточно; безопасность не «внедряют», её соблюдают.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 21 доклада; сроки — по 152-ФЗ в действующей редакции

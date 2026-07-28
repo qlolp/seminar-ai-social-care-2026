@@ -1,0 +1,337 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ В
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Тревожное событие: от сигнала до семьи за сутки'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '18'
+- elementId: c0
+  elementType: shape
+  bounds:
+  - 60
+  - 136
+  - 34
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: cn0
+  elementType: text
+  bounds:
+  - 60
+  - 136
+  - 34
+  - 34
+  content:
+    fontSize: 16
+    bold: true
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: '0'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 110
+  - 134
+  - 220
+  - 20
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Сигнал
+- elementId: b0
+  elementType: text
+  bounds:
+  - 110
+  - 155
+  - 740
+  - 36
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: датчик → панель поста, время — автоматически
+- elementId: c1
+  elementType: shape
+  bounds:
+  - 60
+  - 198
+  - 34
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: cn1
+  elementType: text
+  bounds:
+  - 60
+  - 198
+  - 34
+  - 34
+  content:
+    fontSize: 16
+    bold: true
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: '1'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 110
+  - 196
+  - 220
+  - 20
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Проверка
+- elementId: b1
+  elementType: text
+  bounds:
+  - 110
+  - 217
+  - 740
+  - 36
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: '0–5 мин: лично в комнату; без проверки сигнал не снимается'
+- elementId: c2
+  elementType: shape
+  bounds:
+  - 60
+  - 260
+  - 34
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: cn2
+  elementType: text
+  bounds:
+  - 60
+  - 260
+  - 34
+  - 34
+  content:
+    fontSize: 16
+    bold: true
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: '2'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 110
+  - 258
+  - 220
+  - 20
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Старшая смены
+- elementId: b2
+  elementType: text
+  bounds:
+  - 110
+  - 279
+  - 740
+  - 36
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: '5–15 мин: кто, комната, что показал датчик, что увидели глазами'
+- elementId: c3
+  elementType: shape
+  bounds:
+  - 60
+  - 322
+  - 34
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: cn3
+  elementType: text
+  bounds:
+  - 60
+  - 322
+  - 34
+  - 34
+  content:
+    fontSize: 16
+    bold: true
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: '3'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 110
+  - 320
+  - 220
+  - 20
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Врач
+- elementId: b3
+  elementType: text
+  bounds:
+  - 110
+  - 341
+  - 740
+  - 36
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'немедленно–30 мин: осмотр, решение, запись в листе события'
+- elementId: c4
+  elementType: shape
+  bounds:
+  - 60
+  - 384
+  - 34
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $primary
+- elementId: cn4
+  elementType: text
+  bounds:
+  - 60
+  - 384
+  - 34
+  - 34
+  content:
+    fontSize: 16
+    bold: true
+    color: '#FFFFFF'
+    align:
+    - center
+    - middle
+    fontFamily: MiSans
+    text: '4'
+- elementId: h4
+  elementType: text
+  bounds:
+  - 110
+  - 382
+  - 220
+  - 20
+  content:
+    fontSize: 14.5
+    bold: true
+    color: $primary
+    fontFamily: MiSans
+    text: Семья и документы
+- elementId: b4
+  elementType: text
+  bounds:
+  - 110
+  - 403
+  - 740
+  - 36
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: MiSans
+    text: 'до 24 ч: уведомление, журнал, статистика пилота'
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 458
+  - 840
+  - 30
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: MiSans
+    text: '<p><strong>Граница системы (крупно под схемой на посту): датчик не ставит диагнозов. Любое решение о жителе принимает человек.</strong></p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Приложение 9 к докладу — схема печатается на посту каждой смены пилота

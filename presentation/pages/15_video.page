@@ -1,0 +1,161 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Б
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Видеоаналитика: что мы знаем честно'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '15'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 60
+  - 136
+  - 140
+  - 24
+  content:
+    style: $kicker
+    text: ЗНАЕМ
+- elementId: b0
+  elementType: text
+  bounds:
+  - 230
+  - 136
+  - 670
+  - 100
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Технология серийная; в медицине РФ работает годами. Задача для нас реальна: ночные падения и уходы из зоны — «тихие» события, которые обходы ловят плохо.'
+- elementId: r0
+  elementType: shape
+  bounds:
+  - 215
+  - 142
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h1
+  elementType: text
+  bounds:
+  - 60
+  - 252
+  - 140
+  - 24
+  content:
+    style: $kicker
+    text: НЕ ЗНАЕМ
+- elementId: b1
+  elementType: text
+  bounds:
+  - 230
+  - 252
+  - 670
+  - 100
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Подтверждённых данных по домам социального обслуживания в открытом доступе нет. Цифры вендоров — с чужих площадок и без методики: «снижение падений на 40 %» путает падение с поздним обнаружением.'
+- elementId: r1
+  elementType: shape
+  bounds:
+  - 215
+  - 258
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: h2
+  elementType: text
+  bounds:
+  - 60
+  - 368
+  - 140
+  - 24
+  content:
+    style: $kicker
+    text: ДЕЛАЕМ
+- elementId: b2
+  elementType: text
+  bounds:
+  - 230
+  - 368
+  - 670
+  - 100
+  content:
+    fontSize: 13.5
+    lineHeight: 1.5
+    color: $text
+    fontFamily: MiSans
+    text: 'Свои данные: пилот 90 дней на одном отделении, четыре метрики, базовая линия из наших журналов, критерии исхода — до первого включения.'
+- elementId: r2
+  elementType: shape
+  bounds:
+  - 215
+  - 374
+  - 2
+  - 86
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 11 доклада; позиция «данных нет» — честная исходная точка, а не пробел
