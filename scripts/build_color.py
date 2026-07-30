@@ -23,7 +23,15 @@ frag = re.sub(r'<p>\[\[INF:([a-z0-9_]+)\]\]</p>', lambda m: INF.get(m.group(1), 
 heads = re.findall(r'<h1[^>]*>(.*?)</h1>', frag, re.S)
 toc_entries = [re.sub(r'<[^>]+>', '', h).strip() for h in heads]
 
+PART_FULL_RE = re.compile(r'^(Часть [IVX]+\..*|Приложения)')
 PART_RE = re.compile(r'^(Часть [IVX]+\..*|Приложения|Список источников)')
+PART_DESC = {
+ 'Часть I. Основания для решений': 'Объективка отрасли, три класса искусственного интеллекта, существующие практики, карта задач и рабочий словарь — всё, чтобы говорить о теме без мифов. Разделы 3–8.',
+ 'Часть II. Шесть прикладных направлений': 'Документы, правовая рамка, видеоаналитика, наблюдение за состоянием, голосовые помощники, обучение персонала и управленческая аналитика. Разделы 9–15.',
+ 'Часть III. Внедрение': 'Дорожная карта на двенадцать месяцев, правовой контур пошагово, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.',
+ 'Часть IV. Честные ограничения': 'Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа — части доклада, которые экономят бюджет и репутацию. Разделы 23–25.',
+ 'Часть V. Учебные кейсы': 'Четырнадцать кейсов с вопросами для разбора и опорными ответами — материал для семинара и внутреннего обучения персонала.',
+ 'Приложения': 'Семнадцать приложений с формами документов: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Все формы — проекты для адаптации: реквизиты учреждения и региональные требования подставляет ваш юрист.'}
 def add_anchor(m):
     t = re.sub(r'<[^>]+>', '', m.group(1)).strip()
     aid = re.sub(r'[^0-9A-Za-zА-Яа-я]+', '_', t)[:60]
@@ -31,6 +39,30 @@ def add_anchor(m):
     return f'<h1 id="{aid}"{cls}>{m.group(1)}</h1>'
 frag = re.sub(r'<h1[^>]*>(.*?)</h1>', add_anchor, frag)
 frag = re.sub(r'<h2[^>]*>(Кейс \d+\..*?)</h2>', lambda m: '<h2 class="case">' + m.group(1) + '</h2>', frag)
+
+def wrap_part(m):
+    title = re.sub(r'<[^>]+>', '', m.group(2)).strip()
+    desc = PART_DESC.get(title, '')
+    kick, _, rest = title.partition('. ')
+    return ('<div class="part-page"><div class="pp-kick">' + kick + '</div>'
+            + m.group(1) + rest + '</h1>'
+            + ('<div class="pp-rule"></div><p class="pp-desc">' + desc + '</p>' if desc else '')
+            + '</div>')
+frag = re.sub(r'(<h1 id="[^"]*" class="part">)(Часть [IVX]+\..*?|Приложения)</h1>', wrap_part, frag)
+
+# каждый кейс — в .casebox с page-break-inside:avoid:
+# короткие кейсы упаковываются по два на страницу, кейс никогда не рвётся
+def wrap_cases(html):
+    out, buf, inside = [], [], False
+    for tok in re.split(r'(?=<h2 class="case">|<h1 )', html):
+        starts_case = tok.startswith('<h2 class="case">')
+        if inside and (starts_case or tok.startswith('<h1 ')):
+            out.append('<div class="casebox">' + ''.join(buf) + '</div>'); buf = []; inside = False
+        if starts_case: inside = True
+        (buf if inside else out).append(tok)
+    if buf: out.append('<div class="casebox">' + ''.join(buf) + '</div>')
+    return ''.join(out)
+frag = wrap_cases(frag)
 
 COVER = """
 <div class="cover">
@@ -42,7 +74,7 @@ COVER = """
   <div class="cover-aud">Доклад для руководителей стационарных организаций социального обслуживания из 51 субъекта Российской Федерации</div>
 </div>
 """
-frag = COVER + frag
+# обложка вставляется в шаблон первой, перед оглавлением
 
 toc_pages = {}
 if os.path.exists(f'{OUT}/toc_pages_color.json'):
@@ -106,12 +138,23 @@ hr { border:none; border-top:1pt solid #C7BFAF; margin:12pt 0; }
 .toc-part td { background:#EEF4F1; font-weight:bold; color:#1F3D33; padding-top:6pt; }
 
 .page-inf h1, .page-inf h2 { page-break-before:avoid; }
-h2.case { page-break-before:always; margin-top:0; }
+h2.case { margin-top:0; }
+.casebox { page-break-inside:avoid; margin-bottom:18pt; }
+.casebox + .casebox { border-top:1.5pt solid #C9BFA8; padding-top:16pt; }
+h1 + .casebox h2.case { margin-top:6pt; }
+@page part { margin:0; @bottom-right{content:none} @bottom-left{content:none} }
+.part-page { page: part; page-break-before:always; page-break-after:always; height:297mm; box-sizing:border-box;
+  background:linear-gradient(160deg,#1F3D33 0%,#2F5D50 60%,#3A6E5D 100%); color:#fff; padding:55mm 28mm 28mm; }
+.part-page .pp-kick { font-size:13pt; letter-spacing:5pt; color:#B9C9C1; font-weight:bold; margin-bottom:18pt; }
+.part-page h1 { page-break-before:avoid; border-bottom:none; color:#fff; font-size:32pt; line-height:1.2; margin:0; padding-bottom:0; }
+.part-page .pp-rule { width:90pt; height:3.5pt; background:#B57517; margin:26pt 0 24pt; }
+.part-page .pp-desc { font-size:13pt; line-height:1.7; color:#DCE6E0; max-width:150mm; text-align:left; }
 </style>
 """
 
 html = f"""<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
 <title>Искусственный интеллект в домах социального обслуживания — журнальная версия</title>{CSS}{CSS_COLOR}</head><body>
+{COVER}
 {TOC_HTML}
 {frag}
 </body></html>"""
