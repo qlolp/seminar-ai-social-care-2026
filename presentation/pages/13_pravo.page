@@ -58,7 +58,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '1'
 - elementId: h0
   elementType: text
@@ -72,7 +72,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 152-ФЗ
 - elementId: b0
   elementType: text
@@ -85,7 +85,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'базовый закон: основания обработки, цели, сроки хранения'
 - elementId: n1
   elementType: text
@@ -98,7 +98,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '2'
 - elementId: h1
   elementType: text
@@ -112,7 +112,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Спецкатегории и биометрия
 - elementId: b1
   elementType: text
@@ -125,7 +125,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: здоровье — усиленный режим; лица — путь, который мы не выбираем
 - elementId: n2
   elementType: text
@@ -138,7 +138,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '3'
 - elementId: h2
   elementType: text
@@ -152,7 +152,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Ст. 16 152-ФЗ
 - elementId: b2
   elementType: text
@@ -165,7 +165,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: запрет решений о человеке исключительно алгоритмом
 - elementId: n3
   elementType: text
@@ -178,7 +178,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '4'
 - elementId: h3
   elementType: text
@@ -192,7 +192,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Указ № 490
 - elementId: b3
   elementType: text
@@ -205,7 +205,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: стратегия ИИ до 2030 — рамка ожиданий учредителей
 - elementId: n4
   elementType: text
@@ -218,7 +218,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '5'
 - elementId: h4
   elementType: text
@@ -232,7 +232,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Локальные акты
 - elementId: b4
   elementType: text
@@ -245,7 +245,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: приказы и положения, превращающие закон в процедуры
 - elementId: n5
   elementType: text
@@ -258,7 +258,7 @@ elements:
     fontSize: 18
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '6'
 - elementId: h5
   elementType: text
@@ -272,7 +272,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Договор с вендором
 - elementId: b5
   elementType: text
@@ -285,7 +285,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: семь неснимаемых пунктов — иначе не защищает ничто
 - elementId: note
   elementType: text
@@ -298,7 +298,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Пять вопросов юристу — письменно и до старта (раздел 10.5). Письменное заключение — не формальность: при проверке оно показывает добросовестность.</p>'
 - elementId: src
   elementType: text

@@ -58,7 +58,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Квартал 1
 - elementId: ln0
   elementType: shape
@@ -82,7 +82,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Фундамент
 - elementId: b0
   elementType: text
@@ -95,7 +95,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: приказ с регламентом; ответственный; список сервисов; 5 промптов; журнал инцидентов. Стоимость — нулевая.
 - elementId: q1
   elementType: text
@@ -108,7 +108,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Квартал 2
 - elementId: ln1
   elementType: shape
@@ -132,7 +132,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Люди и данные
 - elementId: b1
   elementType: text
@@ -145,7 +145,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: тренажёр для новичков; три журнала — в таблицы; паспорта показателей; первая квартальная панель.
 - elementId: q2
   elementType: text
@@ -158,7 +158,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Квартал 3
 - elementId: ln2
   elementType: shape
@@ -182,7 +182,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Наблюдение
 - elementId: b2
   elementType: text
@@ -195,7 +195,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'по решению совета с врачом: датчики для 5–10 жителей; согласия; маршрут эскалации. Решение о видеопилоте — по итогам.'
 - elementId: q3
   elementType: text
@@ -208,7 +208,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Квартал 4
 - elementId: ln3
   elementType: shape
@@ -232,7 +232,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Видеопилот и отчёт
 - elementId: b3
   elementType: text
@@ -245,7 +245,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'пилот 90 дней на одном отделении; разбор: закрепить / перенастроить / закрыть; годовой отчёт учредителю с замерами.'
 - elementId: note
   elementType: text
@@ -258,7 +258,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Логика — как в проекте вариативного питания: <strong>ступень → замер → закрепление → следующая ступень</strong>. Каждая ступень имеет точку честной остановки — и это результат, а не провал.</p>'
 - elementId: src
   elementType: text

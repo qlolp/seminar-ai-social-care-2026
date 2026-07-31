@@ -58,7 +58,7 @@ elements:
     fontSize: 17
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '1'
 - elementId: h0
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 14
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Камеры в комнатах проживания
 - elementId: b0
   elementType: text
@@ -84,7 +84,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'кроме палат интенсивного наблюдения по решению врача с согласия: коридор — да, спальня — нет'
 - elementId: n1
   elementType: text
@@ -97,7 +97,7 @@ elements:
     fontSize: 17
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '2'
 - elementId: h1
   elementType: text
@@ -110,7 +110,7 @@ elements:
     fontSize: 14
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Распознавание лиц жителей
 - elementId: b1
   elementType: text
@@ -123,7 +123,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: биометрический контур непропорционален задачам учреждения
 - elementId: n2
   elementType: text
@@ -136,7 +136,7 @@ elements:
     fontSize: 17
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '3'
 - elementId: h2
   elementType: text
@@ -149,7 +149,7 @@ elements:
     fontSize: 14
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Скрытое наблюдение
 - elementId: b2
   elementType: text
@@ -162,7 +162,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: без ведома жителей и персонала — под любым предлогом
 - elementId: n3
   elementType: text
@@ -175,7 +175,7 @@ elements:
     fontSize: 17
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '4'
 - elementId: h3
   elementType: text
@@ -188,7 +188,7 @@ elements:
     fontSize: 14
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Оценка сотрудников алгоритмом
 - elementId: b3
   elementType: text
@@ -201,7 +201,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: «скоринг дисциплины» — путь к фальсификации и потере доверия
 - elementId: n4
   elementType: text
@@ -214,7 +214,7 @@ elements:
     fontSize: 17
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '5'
 - elementId: h4
   elementType: text
@@ -227,7 +227,7 @@ elements:
     fontSize: 14
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Данные жителей вовне
 - elementId: b4
   elementType: text
@@ -240,7 +240,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: исследования, обучение моделей, «обезличенные» выгрузки — только отдельным решением совета
 - elementId: note
   elementType: text
@@ -253,7 +253,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p>Фильтр из пяти вопросов (раздел 20.4) занимает десять минут совещания и отсекает плохие идеи раньше, чем они станут закупкой.</p>
 - elementId: src
   elementType: text

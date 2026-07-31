@@ -58,7 +58,7 @@ elements:
     fontSize: 30
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '01'
 - elementId: h0
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 17
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Люди
 - elementId: ln0
   elementType: shape
@@ -95,7 +95,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Смена из четырёх-пяти человек на отделение; вакансии сиделок висят месяцами. Каждый час, отнятый у смены, — час, отнятый у жителей.
 - elementId: n1
   elementType: text
@@ -108,7 +108,7 @@ elements:
     fontSize: 30
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '02'
 - elementId: h1
   elementType: text
@@ -121,7 +121,7 @@ elements:
     fontSize: 17
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Время
 - elementId: ln1
   elementType: shape
@@ -145,7 +145,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Ночь длинная, обходы редкие. Падение, случившееся в 3 ночи, обнаруживается при обходе — если повезёт.
 - elementId: n2
   elementType: text
@@ -158,7 +158,7 @@ elements:
     fontSize: 30
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '03'
 - elementId: h2
   elementType: text
@@ -171,7 +171,7 @@ elements:
     fontSize: 17
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Внимание
 - elementId: ln2
   elementType: shape
@@ -195,7 +195,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Десятки журналов, сотни записей в день. Важное тонет в рутине: сигнал о том, что житель «не тот» третий день, не считывается никакой формой.'
 - elementId: src
   elementType: text

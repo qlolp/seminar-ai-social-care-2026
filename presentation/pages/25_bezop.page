@@ -58,7 +58,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 1. Своя учётная запись
 - elementId: b0
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: общих паролей «на смену» не существует
 - elementId: h1
   elementType: text
@@ -84,7 +84,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 2. Права по роли
 - elementId: b1
   elementType: text
@@ -97,7 +97,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: сиделке не нужны финансы, бухгалтеру — видеозаписи
 - elementId: h2
   elementType: text
@@ -110,7 +110,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 3. Копии 3-2-1
 - elementId: b2
   elementType: text
@@ -123,7 +123,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: три копии, два носителя, одна вне площадки; восстановление проверяется ежеквартально
 - elementId: h3
   elementType: text
@@ -136,7 +136,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 4. Только рабочие носители
 - elementId: b3
   elementType: text
@@ -149,7 +149,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: личные флешки и почта — вне контура
 - elementId: h4
   elementType: text
@@ -162,7 +162,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 5. Увольнение = отключение
 - elementId: b4
   elementType: text
@@ -175,7 +175,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: доступы закрываются в тот же день
 - elementId: h5
   elementType: text
@@ -188,7 +188,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 6. Обновления и антивирус
 - elementId: b5
   elementType: text
@@ -201,7 +201,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: включая «тот старый компьютер у медсестры»
 - elementId: h6
   elementType: text
@@ -214,7 +214,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 7. Длинные разные пароли
 - elementId: b6
   elementType: text
@@ -227,7 +227,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: менеджер паролей для руководителей
 - elementId: h7
   elementType: text
@@ -240,7 +240,7 @@ elements:
     fontSize: 13
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 8. Часовой инструктаж в год
 - elementId: b7
   elementType: text
@@ -253,7 +253,7 @@ elements:
     fontSize: 11.5
     lineHeight: 1.3
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'фишинг: три письма, которые придут к вам'
 - elementId: rule
   elementType: shape
@@ -277,7 +277,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p><strong>Два срока при утечке:</strong> первичное уведомление Роскомнадзора — 24 часа, отчёт о расследовании — 72 часа. Учреждение — не дата-центр: восемь мер на первые годы достаточно; безопасность не «внедряют», её соблюдают.</p>'
 - elementId: src
   elementType: text

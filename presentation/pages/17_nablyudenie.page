@@ -58,7 +58,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.55
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Что делают датчики:</strong> сон, вес, активность, выход из комнаты ночью — для 5–10 жителей из списка врача.</p><p><strong>Чего не делают:</strong> не ставят диагнозов, не заменяют обходы, не «мониторят здоровье» как медицинское изделие.</p><p><strong>Кто подключается:</strong> только добровольцы — согласие письменное, отзыв исполняется в тот же день.</p>
 - elementId: div
   elementType: shape
@@ -82,7 +82,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.55
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Врач в контуре — или направления нет.</strong></p><p>Список жителей — врача. Маршрут эскалации — с врачом. Разбор сигналов — еженедельно с врачом.</p><p>Оборудование, купленное «пока были средства» без врача, живёт на складе (кейс 4).</p>
 - elementId: rule
   elementType: shape
@@ -106,7 +106,7 @@ elements:
     fontSize: 14
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Формула провала: датчики + «врач потом посмотрит». Формула работы: список врача + маршрут эскалации + паспорт пилота + согласия.</p>'
 - elementId: src
   elementType: text

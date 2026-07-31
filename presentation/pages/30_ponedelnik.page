@@ -24,7 +24,7 @@ elements:
     fontSize: 26
     bold: true
     color: $text
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: Четыре действия — и тема под контролем
 - elementId: line
   elementType: shape
@@ -48,7 +48,7 @@ elements:
     fontSize: 22
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '1'
 - elementId: h0
   elementType: text
@@ -61,7 +61,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Издайте приказ с регламентом
 - elementId: b0
   elementType: text
@@ -74,7 +74,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: страница текста (приложение 3), которая закрывает главную дыру утечек и делает инструмент управляемым
 - elementId: n1
   elementType: text
@@ -87,7 +87,7 @@ elements:
     fontSize: 22
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '2'
 - elementId: h1
   elementType: text
@@ -100,7 +100,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Назначьте ответственного и заведите реестр
 - elementId: b1
   elementType: text
@@ -113,7 +113,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'у темы появляется хозяин — и подменяющий: экспертиза не должна уходить с одним человеком'
 - elementId: n2
   elementType: text
@@ -126,7 +126,7 @@ elements:
     fontSize: 22
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '3'
 - elementId: h2
   elementType: text
@@ -139,7 +139,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Выберите одну измеримую боль и замерьте её
 - elementId: b2
   elementType: text
@@ -152,7 +152,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: число «до» — до любых закупок; без него эффект любого пилота недоказуем
 - elementId: n3
   elementType: text
@@ -165,7 +165,7 @@ elements:
     fontSize: 22
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '4'
 - elementId: h3
   elementType: text
@@ -178,7 +178,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Поставьте дорожную карту на совет с врачом
 - elementId: b3
   elementType: text
@@ -191,7 +191,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'с правом сказать «нам рано» по любой ступени: отказ по критериям — зрелость, а не провал'
 - elementId: rule
   elementType: shape
@@ -215,7 +215,7 @@ elements:
     fontSize: 14.5
     lineHeight: 1.4
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p><strong>Технологии меняются, логика остаётся: ступень → замер → закрепление → следующая ступень.</strong></p>'
 - elementId: src
   elementType: text

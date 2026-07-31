@@ -128,7 +128,7 @@ elements:
     fontSize: 13
     color: $primary
     bold: true
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Порядок строк — не случайность: дорожная карта идёт от дешёвого и обратимого к дорогому и ответственному.'
 - elementId: src
   elementType: text

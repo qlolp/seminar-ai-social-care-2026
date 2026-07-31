@@ -58,7 +58,7 @@ elements:
     fontSize: 20
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '1'
 - elementId: h0
   elementType: text
@@ -72,7 +72,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Только утверждённые сервисы
 - elementId: b0
   elementType: text
@@ -85,7 +85,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Список допущенных сервисов — в приказе. Сервис «как у всех на телефоне» для рабочих текстов не существует.
 - elementId: n1
   elementType: text
@@ -98,7 +98,7 @@ elements:
     fontSize: 20
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '2'
 - elementId: h1
   elementType: text
@@ -112,7 +112,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Только обезличенные тексты
 - elementId: b1
   elementType: text
@@ -125,7 +125,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Фамилия + диагноз, номер комнаты + состояние — персональные данные даже без паспорта. Обезличивание — по умолчанию.
 - elementId: n2
   elementType: text
@@ -138,7 +138,7 @@ elements:
     fontSize: 20
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '3'
 - elementId: h2
   elementType: text
@@ -152,7 +152,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Проверка человеком обязательна
 - elementId: b2
   elementType: text
@@ -165,7 +165,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Каждый факт, норма и реквизит из текста модели проверяются по источнику. Подписант отвечает за текст целиком.
 - elementId: n3
   elementType: text
@@ -178,7 +178,7 @@ elements:
     fontSize: 20
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '4'
 - elementId: h3
   elementType: text
@@ -192,7 +192,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Инциденты фиксируются без наказания
 - elementId: b3
   elementType: text
@@ -205,7 +205,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Сообщивший о своей ошибке не наказывается — иначе практика уйдёт в тень, и об утечке вы узнаете последним.
 - elementId: note
   elementType: text
@@ -218,7 +218,7 @@ elements:
     fontSize: 14
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Одна страница приказа превращает стихийное использование чат-ботов в управляемый инструмент — и это первое действие в понедельник.</strong></p>
 - elementId: src
   elementType: text

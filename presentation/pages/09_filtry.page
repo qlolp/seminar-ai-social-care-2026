@@ -48,7 +48,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '1'
 - elementId: pg
   elementType: text
@@ -85,7 +85,7 @@ elements:
     fontSize: 15.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 1. Боль
 - elementId: n1
   elementType: text
@@ -101,7 +101,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '2'
 - elementId: b0
   elementType: text
@@ -114,7 +114,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Есть измеримая проблема: жалобы, минуты, случаи. Назовите число «до».'
 - elementId: bg1
   elementType: shape
@@ -138,7 +138,7 @@ elements:
     fontSize: 15.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 2. Измеримость
 - elementId: n2
   elementType: text
@@ -154,7 +154,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '3'
 - elementId: b1
   elementType: text
@@ -167,7 +167,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Понятно, как узнать, что стало лучше: метрика и способ замера — до старта.'
 - elementId: bg2
   elementType: shape
@@ -191,7 +191,7 @@ elements:
     fontSize: 15.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 3. Обратимость
 - elementId: n3
   elementType: text
@@ -207,7 +207,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '4'
 - elementId: b2
   elementType: text
@@ -220,7 +220,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Провал пилота не вредит жителям и не сжигает бюджет: малый охват, короткий срок.'
 - elementId: bg3
   elementType: shape
@@ -244,7 +244,7 @@ elements:
     fontSize: 15.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 4. Правовая чистота
 - elementId: b3
   elementType: text
@@ -257,7 +257,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Без биометрии, без решений о людях алгоритмом, с прозрачным контуром данных.
 - elementId: note
   elementType: text
@@ -270,7 +270,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Прошла все четыре — в пилот (паспорт, приложение 7). Провалила хотя бы один — в реестр идей на пересмотр через квартал.</strong></p>
 - elementId: src
   elementType: text

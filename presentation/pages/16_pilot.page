@@ -112,7 +112,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Три исхода записаны заранее: <strong>закрепить / перенастроить один раз / закрыть</strong>. Критерии, написанные после результатов, — не критерии, а оправдание. Паспорт пилота подписывают директор и врач.</p>'
 - elementId: src
   elementType: text

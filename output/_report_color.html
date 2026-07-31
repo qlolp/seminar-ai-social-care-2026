@@ -1,114 +1,120 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
 <title>Искусственный интеллект в домах социального обслуживания — журнальная версия</title>
 <style>
-@page { size: A4; margin: 20mm 18mm 18mm 18mm;
-  @bottom-right { content: counter(page); font-family:'MiSans',sans-serif; font-size:10pt; color:#2F5D50; }
-  @bottom-left { content: 'Искусственный интеллект в домах социального обслуживания · 2026'; font-family:'MiSans',sans-serif; font-size:8.5pt; color:#9AA7A1; } }
-@page cover { margin:0; @bottom-right{content:none} @bottom-left{content:none} }
+@page { size: A4; margin: 20mm 18mm 18mm 18mm; background:#F9F9F7;
+  @bottom-right { content: counter(page); font-family:'Noto Sans',sans-serif; font-size:10pt; color:#D97757; }
+  @bottom-left { content: 'Искусственный интеллект в домах социального обслуживания · 2026'; font-family:'Noto Sans',sans-serif; font-size:8.5pt; color:#A8A294; } }
+@page cover { margin:0; background:#F9F9F7; @bottom-right{content:none} @bottom-left{content:none} }
 html { font-size: 11.5pt; }
-body { font-family:'MiSans','PT Sans',sans-serif; font-size:11.5pt; line-height:1.68; text-align:left; color:#20242A; }
+body { font-family:'Noto Sans',sans-serif; font-size:11.5pt; line-height:1.68; text-align:left; color:#141413; background:#F9F9F7; }
 p, li { text-align:justify; }
 p { margin:0 0 8.5pt; orphans:2; widows:2; }
 
-.cover { page: cover; page-break-after:always; height:297mm; background:linear-gradient(160deg,#1F3D33 0%,#2F5D50 55%,#3A6E5D 100%); color:#fff; padding:30mm 24mm; box-sizing:border-box; }
-.cover-kick { font-size:10.5pt; letter-spacing:2.5pt; color:#DCE6E0; line-height:1.7; }
-.cover-rule { width:90pt; height:3.5pt; background:#B57517; margin:14pt 0 22pt; }
-.cover-title { font-size:34pt; font-weight:bold; line-height:1.12; letter-spacing:0.5pt; }
-.cover-sub { font-size:13.5pt; line-height:1.5; color:#DCE6E0; margin-top:20pt; max-width:155mm; }
-.cover-meta { font-size:10.5pt; line-height:1.6; color:#B9C9C1; margin-top:26pt; }
-.cover-aud { font-size:10pt; color:#9DB4AB; margin-top:12pt; border-top:1pt solid #4E7A6C; padding-top:10pt; }
+.spark { width:11pt; height:11pt; fill:#D97757; }
+.cover { page: cover; page-break-after:always; height:297mm; background:#F9F9F7; color:#141413; padding:26mm 26mm; box-sizing:border-box; }
+.cover-top { display:flex; align-items:center; gap:8pt; margin-bottom:52mm; }
+.cover-spark { width:22pt; height:22pt; }
+.cover-brand { font-family:'PT Serif',serif; font-size:16pt; color:#141413; }
+.cover-kick { font-size:10pt; letter-spacing:2.8pt; color:#6E6A5E; line-height:1.7; margin-bottom:14pt; }
+.cover-title { font-family:'PT Serif',serif; font-size:39pt; line-height:1.14; letter-spacing:0.2pt; max-width:165mm; }
+.cover-rule { width:64pt; height:3.5pt; background:#D97757; margin:24pt 0 20pt; }
+.cover-sub { font-size:13.5pt; line-height:1.55; color:#4A463C; max-width:150mm; }
+.cover-meta { font-size:10.5pt; line-height:1.6; color:#6E6A5E; margin-top:30mm; }
+.cover-aud { font-size:10pt; color:#8A8578; margin-top:12pt; border-top:1pt solid #E5E2D8; padding-top:10pt; max-width:150mm; }
 
-h1 { font-size:17pt; color:#1F3D33; page-break-before:always; margin:0 0 4pt; text-align:left; line-height:1.25; padding-bottom:6pt; border-bottom:2.5pt solid #B57517; page-break-after:avoid; }
-h1.part { background:linear-gradient(135deg,#1F3D33,#2F5D50); color:#fff; font-size:20pt; padding:26pt 20pt; border-bottom:none; margin-top:40pt; }
-h1.part + p, h1.part + p + p { font-size:11.5pt; }
-h2 { font-size:13pt; color:#2F5D50; margin:15pt 0 5pt; text-align:left; page-break-after:avoid; break-after:avoid; padding-left:9pt; border-left:3.5pt solid #B57517;}
-h3 { font-size:11.5pt; color:#B57517; margin:11pt 0 4pt; font-style:normal; font-weight:bold; page-break-after:avoid; break-after:avoid;}
+h1 { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; page-break-before:always; margin:0 0 10pt; text-align:left; line-height:1.22; page-break-after:avoid; }
+h1::after { content:''; display:block; width:46pt; height:2.5pt; background:#D97757; margin-top:6pt; }
+h1.part { background:none; color:#141413; font-size:20pt; padding:0; border-bottom:none; margin-top:0; }
+h2 { font-family:'PT Serif',serif; font-size:14pt; font-weight:bold; color:#141413; margin:16pt 0 5pt; text-align:left; page-break-after:avoid; break-after:avoid; padding-left:9pt; border-left:3.5pt solid #D97757; }
+h3 { font-size:11pt; color:#B85C3D; margin:11pt 0 4pt; font-style:normal; font-weight:bold; page-break-after:avoid; break-after:avoid; }
 
-table { border-collapse:collapse; width:100%; font-size:10pt; margin:10pt 0; page-break-inside:auto; }
+table { border-collapse:collapse; width:100%; font-size:10pt; margin:10pt 0; page-break-inside:auto; background:#FFFFFF; }
 tr { page-break-inside:avoid; }
 thead { display:table-header-group; }
-td, th { border:0.7pt solid #C7BFAF; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.3; overflow-wrap:anywhere; word-break:break-word; }
-th { background:#2F5D50; color:#fff; font-size:9.5pt; overflow-wrap:normal; word-break:normal; }
-tr:nth-child(even) td { background:#F4F1EA; }
+td, th { border:0.7pt solid #E5E2D8; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.3; overflow-wrap:anywhere; word-break:break-word; }
+th { background:#F2EFE6; color:#141413; font-size:9.5pt; overflow-wrap:normal; word-break:normal; }
+tr:nth-child(even) td { background:#FAF8F3; }
 
-sup { font-size:8pt; color:#B57517; font-weight:bold; }
-a { color:#1F3D33; text-decoration:none; overflow-wrap:anywhere; word-break:break-all; }
-blockquote { margin:7pt 14pt; padding:8pt 12pt; background:#F2F5F3; border-left:3.5pt solid #2F5D50; font-style:italic; color:#37423C; }
+sup { font-size:8pt; color:#B85C3D; font-weight:bold; }
+a { color:#141413; text-decoration:none; overflow-wrap:anywhere; word-break:break-all; }
+blockquote { margin:7pt 14pt; padding:8pt 12pt; background:#F2EFE6; border-left:3.5pt solid #D97757; font-style:italic; color:#4A463C; }
 ul, ol { margin:0 0 7pt 0; padding-left:20pt; }
 li { margin-bottom:3pt; }
-li::marker { color:#B57517; font-weight:bold; }
-hr { border:none; border-top:1pt solid #C7BFAF; margin:12pt 0; }
+li::marker { color:#D97757; font-weight:bold; }
+hr { border:none; border-top:1pt solid #E5E2D8; margin:12pt 0; }
 
 .toc { page-break-after:always; }
-.toc-title { font-size:17pt; font-weight:bold; color:#1F3D33; margin-bottom:12pt; padding-bottom:6pt; border-bottom:2.5pt solid #B57517; }
-.toc table { font-size:10pt; }
-.toc td { border:none; border-bottom:0.5pt dotted #B9A77F; padding:3pt 4pt; text-align:left !important; }
+.toc-title { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; margin-bottom:12pt; padding-bottom:6pt; border-bottom:1pt solid #E5E2D8; }
+.toc table { font-size:10pt; background:none; }
+.toc td { border:none; border-bottom:0.5pt dotted #D8D2C2; padding:3pt 4pt; text-align:left !important; }
 .toc td a { display:inline; text-align:left; }
-.toc-p { width:40pt; text-align:right; color:#2F5D50; font-weight:bold; }
-.toc-part td { background:#EEF4F1; font-weight:bold; color:#1F3D33; padding-top:6pt; }
+.toc-p { width:40pt; text-align:right; color:#B85C3D; font-weight:bold; }
+.toc-part td { background:#F2EFE6; font-weight:bold; color:#141413; padding-top:6pt; }
 
 .page-inf h1, .page-inf h2 { page-break-before:avoid; }
 h2.case { margin-top:0; }
 .casebox { page-break-inside:avoid; margin-bottom:18pt; }
-.casebox + .casebox { border-top:1.5pt solid #C9BFA8; padding-top:16pt; }
+.casebox + .casebox { border-top:1.5pt solid #E5E2D8; padding-top:16pt; }
 h1 + .casebox h2.case { margin-top:6pt; }
-@page part { margin:0; @bottom-right{content:none} @bottom-left{content:none} }
+@page part { margin:0; background:#F1EDE3; @bottom-right{content:none} @bottom-left{content:none} }
 .part-page { page: part; page-break-before:always; page-break-after:always; height:297mm; box-sizing:border-box;
-  background:linear-gradient(160deg,#1F3D33 0%,#2F5D50 60%,#3A6E5D 100%); color:#fff; padding:55mm 28mm 28mm; }
-.part-page .pp-kick { font-size:13pt; letter-spacing:5pt; color:#B9C9C1; font-weight:bold; margin-bottom:18pt; }
-.part-page h1 { page-break-before:avoid; border-bottom:none; color:#fff; font-size:32pt; line-height:1.2; margin:0; padding-bottom:0; }
-.part-page .pp-rule { width:90pt; height:3.5pt; background:#B57517; margin:26pt 0 24pt; }
-.part-page .pp-desc { font-size:13pt; line-height:1.7; color:#DCE6E0; max-width:150mm; text-align:left; }
+  background:#F1EDE3; color:#141413; padding:52mm 28mm 28mm; }
+.part-page .pp-kick { display:flex; align-items:center; gap:9pt; font-size:11pt; letter-spacing:4pt; color:#B85C3D; font-weight:bold; margin-bottom:22pt; }
+.part-page .pp-kick .spark { width:15pt; height:15pt; }
+.part-page h1 { page-break-before:avoid; border-bottom:none; color:#141413; font-size:34pt; line-height:1.18; margin:0; padding-bottom:0; }
+.part-page h1::after { display:none; }
+.part-page .pp-rule { width:64pt; height:3.5pt; background:#D97757; margin:26pt 0 24pt; }
+.part-page .pp-desc { font-size:13pt; line-height:1.7; color:#4A463C; max-width:150mm; text-align:left; }
 </style>
 
 <style>
 figure.fg{margin:18pt 0 14pt;page-break-inside:avoid;}
-.fg-cap{font-weight:bold;font-size:11.5pt;color:#1F3D33;margin-bottom:6pt;line-height:1.3;}
-.fg-note{font-size:9.5pt;color:#444;margin-top:6pt;line-height:1.3;}
-.fg-src{font-size:9pt;color:#6B7280;margin-top:3pt;line-height:1.3;}
-.fg-h{font-weight:bold;font-size:10.5pt;color:#1F3D33;margin:0 0 3pt;}
+.fg-cap{font-family:'PT Serif',serif;font-weight:bold;font-size:11.5pt;color:#141413;margin-bottom:6pt;line-height:1.3;}
+.fg-note{font-size:9.5pt;color:#4A463C;margin-top:6pt;line-height:1.3;}
+.fg-src{font-size:9pt;color:#8A8578;margin-top:3pt;line-height:1.3;}
+.fg-h{font-weight:bold;font-size:10.5pt;color:#141413;margin:0 0 3pt;}
 
 .fg-grid{display:flex;flex-wrap:wrap;gap:8pt;margin-top:4pt;}
-.fg-cell{flex:1 1 28%;border:1pt solid #C7BFAF;border-top:3pt solid #2F5D50;background:#FBFAF7;padding:7pt;font-size:9.5pt;line-height:1.35;}
+.fg-cell{flex:1 1 28%;border:1pt solid #E5E2D8;border-top:3pt solid #D97757;background:#FFFFFF;padding:7pt;font-size:9.5pt;line-height:1.35;}
 
 .fg-flow{display:flex;flex-wrap:wrap;gap:6pt;align-items:center;margin-top:4pt;}
-.fg-node{flex:1 1 12%;border:1.2pt solid #2F5D50;background:#EEF4F1;padding:4pt;font-size:9pt;text-align:center;display:flex;align-items:center;justify-content:center;min-width:60pt;}
-.fg-arrow{text-align:center;font-size:14pt;line-height:1;color:#B57517;font-weight:bold;}
+.fg-node{flex:1 1 12%;border:1.2pt solid #D97757;background:#F7F4EC;padding:4pt;font-size:9pt;text-align:center;display:flex;align-items:center;justify-content:center;min-width:60pt;}
+.fg-arrow{text-align:center;font-size:14pt;line-height:1;color:#B85C3D;font-weight:bold;}
 
 .fg-bar-row{display:flex;align-items:center;margin:3pt 0;}
 .fg-bar-lab{width:34%;text-align:right;padding-right:6pt;line-height:1.15;font-size:9.5pt;}
-.fg-bar{height:14pt;background:#2F5D50;}
-.fg-bar.alt{background:#B57517;}
-.fg-bar-val{font-size:9.5pt;font-weight:bold;padding-left:5pt;color:#1F3D33;}
+.fg-bar{height:14pt;background:#D97757;}
+.fg-bar.alt{background:#B85C3D;}
+.fg-bar-val{font-size:9.5pt;font-weight:bold;padding-left:5pt;color:#141413;}
 
 table.fg-t{border-collapse:collapse;width:100%;font-size:10pt;margin-top:4pt;}
-table.fg-t td,table.fg-t th{border:0.8pt solid #8FA79E;padding:3.5pt 5pt;vertical-align:top;text-align:left;}
-table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:normal;word-break:normal;}
+table.fg-t td,table.fg-t th{border:0.8pt solid #E5E2D8;padding:3.5pt 5pt;vertical-align:top;text-align:left;}
+table.fg-t th{background:#F2EFE6;color:#141413;font-size:10pt;overflow-wrap:normal;word-break:normal;}
 
-.hm-a{background:#BFD9BE;} .hm-b{background:#F2DC9B;} .hm-c{background:#E8A39B;} .hm-n{background:#E4E2DC;}
+.hm-a{background:#DDEBD9;} .hm-b{background:#F4E3B0;} .hm-c{background:#EFB4A8;} .hm-n{background:#EDEAE2;}
 
-.fg-step{flex:1;border:1.2pt solid #2F5D50;padding:5pt;font-size:9.5pt;text-align:center;background:#EEF4F1;}
-.fg-step.solid{background:#2F5D50;color:#fff;}
+.fg-step{flex:1;border:1.2pt solid #D97757;padding:5pt;font-size:9.5pt;text-align:center;background:#F7F4EC;}
+.fg-step.solid{background:#D97757;color:#fff;}
 .fg-steps{display:flex;gap:6pt;align-items:flex-end;margin-top:4pt;}
 
 .fg-tl{display:flex;gap:0;margin-top:4pt;}
-.fg-tl-i{flex:1;border-top:3pt solid #2F5D50;padding:5pt 6pt;font-size:9.5pt;line-height:1.3;background:#FBFAF7;}
-.fg-tl-i.acc{border-top-color:#B57517;}
+.fg-tl-i{flex:1;border-top:3pt solid #D97757;padding:5pt 6pt;font-size:9.5pt;line-height:1.3;background:#FFFFFF;}
+.fg-tl-i.acc{border-top-color:#B85C3D;}
 
 .fg-dash{display:flex;flex-wrap:wrap;gap:8pt;margin-top:4pt;}
-.fg-card{flex:1 1 20%;background:#1F3D33;color:#fff;padding:9pt;font-size:9.5pt;line-height:1.3;}
-.fg-card b{display:block;font-size:17pt;color:#E8C37E;margin-bottom:3pt;}
+.fg-card{flex:1 1 20%;background:#141413;color:#F9F9F7;padding:9pt;font-size:9.5pt;line-height:1.3;}
+.fg-card b{display:block;font-size:17pt;color:#D97757;margin-bottom:3pt;}
 
-.fg-circ{width:128pt;height:128pt;border:2pt solid #2F5D50;border-radius:65pt;display:flex;align-items:center;justify-content:center;text-align:center;font-size:8.5pt;line-height:1.2;padding:6pt;margin:0;background:#F4F7F5;box-sizing:border-box;}
-.fg-circ b{font-size:8.8pt;color:#1F3D33;}
-.fg-circ.c1{background:#DCE6E0;} .fg-circ.c2{background:#EFE6D2;} .fg-circ.c3{background:#E8EFEA;}
+.fg-circ{width:128pt;height:128pt;border:2pt solid #D97757;border-radius:65pt;display:flex;align-items:center;justify-content:center;text-align:center;font-size:8.5pt;line-height:1.2;padding:6pt;margin:0;background:#F7F4EC;box-sizing:border-box;}
+.fg-circ b{font-size:8.8pt;color:#141413;}
+.fg-circ.c1{background:#F2EFE6;} .fg-circ.c2{background:#F7E5DC;} .fg-circ.c3{background:#F7F4EC;}
 .fg-circs,.fg-circles{display:flex;align-items:center;justify-content:space-between;gap:10pt;margin-top:6pt;}
 
 .page-inf{margin:10pt 0 10pt;page-break-before:always;}
-.page-inf .fg-cap{font-size:16pt;color:#1F3D33;border-bottom:3pt solid #B57517;padding-bottom:7pt;margin-bottom:16pt;}
+.page-inf .fg-cap{font-size:17pt;color:#141413;border-bottom:3pt solid #D97757;padding-bottom:7pt;margin-bottom:16pt;}
 .page-inf .fg-grid{gap:12pt;}
-.page-inf .fg-cell{flex:1 1 26%;border:1pt solid #C7BFAF;border-top:4.5pt solid #2F5D50;background:#FBFAF7;padding:13pt;font-size:11.5pt;line-height:1.5;min-height:115pt;}
-.page-inf .fg-cell .fg-h{font-size:13pt;color:#B57517;letter-spacing:0.5pt;margin-bottom:5pt;}
+.page-inf .fg-cell{flex:1 1 26%;border:1pt solid #E5E2D8;border-top:4.5pt solid #D97757;background:#FFFFFF;padding:13pt;font-size:11.5pt;line-height:1.5;min-height:115pt;}
+.page-inf .fg-cell .fg-h{font-size:13pt;color:#B85C3D;letter-spacing:0.5pt;margin-bottom:5pt;}
 .page-inf .fg-note{font-size:10.5pt;margin-top:12pt;}
 .page-inf .fg-src{font-size:9.5pt;margin-top:5pt;}
 .page-inf table.fg-t{font-size:11pt;margin-top:6pt;}
@@ -118,15 +124,16 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 </head><body>
 
 <div class="cover">
-  <div class="cover-kick">МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ<br>«ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0»</div>
+  <div class="cover-top"><svg class="spark cover-spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span class="cover-brand">Пространство новых идей 2.0</span></div>
+  <div class="cover-kick">МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ</div>
+  <div class="cover-title">Искусственный интеллект в&nbsp;домах социального обслуживания</div>
   <div class="cover-rule"></div>
-  <div class="cover-title">ИСКУССТВЕННЫЙ<br>ИНТЕЛЛЕКТ<br>В ДОМАХ<br>СОЦИАЛЬНОГО<br>ОБСЛУЖИВАНИЯ</div>
-  <div class="cover-sub">Практическое руководство для руководителей: что внедрять, чего не делать и с чего начать в понедельник</div>
+  <div class="cover-sub">Практическое руководство для руководителей: что внедрять, чего не делать и&nbsp;с&nbsp;чего начать в&nbsp;понедельник</div>
   <div class="cover-meta">Санкт-Петербург · 25–27 августа 2026 года<br>Министерство труда и социальной защиты Российской Федерации · Комитет по социальной политике Санкт-Петербурга</div>
   <div class="cover-aud">Доклад для руководителей стационарных организаций социального обслуживания из 51 субъекта Российской Федерации</div>
 </div>
 
-<div class="toc"><p class="toc-title">Содержание</p><table><tr><td class="toc-t"><a href="#2_Как_читать_этот_доклад">2. Как читать этот доклад</a></td><td class="toc-p">4</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_I_Основания_для_решений">Часть I. Основания для решений</a></td><td class="toc-p">6</td></tr><tr><td class="toc-t"><a href="#3_Объективка_что_происходит_вокруг_и_почему_это_касается_нас">3. Объективка: что происходит вокруг и почему это касается нас</a></td><td class="toc-p">7</td></tr><tr><td class="toc-t"><a href="#4_Шесть_направлений_на_одной_странице">4. Шесть направлений на одной странице</a></td><td class="toc-p">9</td></tr><tr><td class="toc-t"><a href="#5_Что_такое_искусственный_интеллект_без_магии_в_обе_стороны">5. Что такое искусственный интеллект — без магии в обе стороны</a></td><td class="toc-p">11</td></tr><tr><td class="toc-t"><a href="#6_Что_уже_работает_практики_в_социальной_сфере_и_рядом_с_ней">6. Что уже работает: практики в социальной сфере и рядом с ней</a></td><td class="toc-p">15</td></tr><tr><td class="toc-t"><a href="#7_Задачи_учреждения_которые_претендуют_на_ИИ_инвентаризация">7. Задачи учреждения, которые претендуют на ИИ: инвентаризация</a></td><td class="toc-p">17</td></tr><tr><td class="toc-t"><a href="#8_Термины_которые_понадобятся_в_разговоре_с_вендором">8. Термины, которые понадобятся в разговоре с вендором</a></td><td class="toc-p">20</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_II_Шесть_прикладных_направлений">Часть II. Шесть прикладных направлений</a></td><td class="toc-p">22</td></tr><tr><td class="toc-t"><a href="#9_Направление_А_Документы_и_отч_тность_старт_здесь">9. Направление А. Документы и отчётность: старт здесь</a></td><td class="toc-p">23</td></tr><tr><td class="toc-t"><a href="#10_Правовая_рамка_шесть_опор_и_запретная_зона">10. Правовая рамка: шесть опор и запретная зона</a></td><td class="toc-p">25</td></tr><tr><td class="toc-t"><a href="#11_Направление_Б_Видеоаналитика_безопасности_падения_и_уход_">11. Направление Б. Видеоаналитика безопасности: падения и уход из зоны</a></td><td class="toc-p">29</td></tr><tr><td class="toc-t"><a href="#12_Направление_В_Наблюдение_за_состоянием_датчики_и_ранние_с">12. Направление В. Наблюдение за состоянием: датчики и ранние сигналы</a></td><td class="toc-p">31</td></tr><tr><td class="toc-t"><a href="#13_Направление_Г_Голосовые_помощники_и_умные_устройства_для_">13. Направление Г. Голосовые помощники и умные устройства для жителей</a></td><td class="toc-p">34</td></tr><tr><td class="toc-t"><a href="#14_Направление_Д_Обучение_персонала_ИИ_тренаж_ры_сложных_сит">14. Направление Д. Обучение персонала: ИИ-тренажёры сложных ситуаций</a></td><td class="toc-p">36</td></tr><tr><td class="toc-t"><a href="#15_Направление_Е_Управленческая_аналитика_от_журналов_к_пане">15. Направление Е. Управленческая аналитика: от журналов к панели показателей</a></td><td class="toc-p">38</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_III_Внедрение">Часть III. Внедрение</a></td><td class="toc-p">40</td></tr><tr><td class="toc-t"><a href="#16_Дорожная_карта_на_12_месяцев_четыре_квартала_четыре_ступе">16. Дорожная карта на 12 месяцев: четыре квартала, четыре ступени</a></td><td class="toc-p">41</td></tr><tr><td class="toc-t"><a href="#17_Правовой_контур_внедрения_пошагово">17. Правовой контур внедрения: пошагово</a></td><td class="toc-p">44</td></tr><tr><td class="toc-t"><a href="#18_Жители_и_родственники_информирование_согласия_возражения">18. Жители и родственники: информирование, согласия, возражения</a></td><td class="toc-p">47</td></tr><tr><td class="toc-t"><a href="#19_Работа_с_персоналом_страхи_сопротивление_обучение">19. Работа с персоналом: страхи, сопротивление, обучение</a></td><td class="toc-p">50</td></tr><tr><td class="toc-t"><a href="#20_Этика_и_достоинство_где_проходит_граница">20. Этика и достоинство: где проходит граница</a></td><td class="toc-p">52</td></tr><tr><td class="toc-t"><a href="#21_Безопасность_данных_и_инциденты">21. Безопасность данных и инциденты</a></td><td class="toc-p">55</td></tr><tr><td class="toc-t"><a href="#22_Экономика_и_закупки_сколько_это_стоит_на_самом_деле">22. Экономика и закупки: сколько это стоит на самом деле</a></td><td class="toc-p">58</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_IV_Честные_ограничения">Часть IV. Честные ограничения</a></td><td class="toc-p">62</td></tr><tr><td class="toc-t"><a href="#23_Где_искусственный_интеллект_не_нужен">23. Где искусственный интеллект не нужен</a></td><td class="toc-p">63</td></tr><tr><td class="toc-t"><a href="#24_Чего_делать_не_надо_типовые_ошибки_и_запретная_зона">24. Чего делать не надо: типовые ошибки и запретная зона</a></td><td class="toc-p">65</td></tr><tr><td class="toc-t"><a href="#25_Критерии_отказа_и_остановки_проекта">25. Критерии отказа и остановки проекта</a></td><td class="toc-p">68</td></tr><tr><td class="toc-t"><a href="#Частые_вопросы_директоров_короткие_ответы">Частые вопросы директоров: короткие ответы</a></td><td class="toc-p">71</td></tr><tr><td class="toc-t"><a href="#Заключение_что_делать_в_понедельник">Заключение: что делать в понедельник</a></td><td class="toc-p">73</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_V_Учебные_кейсы">Часть V. Учебные кейсы</a></td><td class="toc-p">74</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_1">Учебные кейсы. Часть 1</a></td><td class="toc-p">75</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_2">Учебные кейсы. Часть 2</a></td><td class="toc-p">79</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_3">Учебные кейсы. Часть 3</a></td><td class="toc-p">82</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Приложения">Приложения</a></td><td class="toc-p">82</td></tr><tr><td class="toc-t"><a href="#Приложение_1_Глоссарий_рабочий_для_приказов_и_совещаний_">Приложение 1. Глоссарий (рабочий, для приказов и совещаний)</a></td><td class="toc-p">86</td></tr><tr><td class="toc-t"><a href="#Приложение_2_Карта_шести_направлений_одна_страница_для_совещ">Приложение 2. Карта шести направлений (одна страница для совещания)</a></td><td class="toc-p">88</td></tr><tr><td class="toc-t"><a href="#Приложение_3_Проект_приказа_О_порядке_использования_сервисов">Приложение 3. Проект приказа «О порядке использования сервисов генеративного ИИ»</a></td><td class="toc-p">89</td></tr><tr><td class="toc-t"><a href="#Приложение_4_Библиотека_проверенных_промптов">Приложение 4. Библиотека проверенных промптов</a></td><td class="toc-p">90</td></tr><tr><td class="toc-t"><a href="#Приложение_5_Чек_лист_договора_с_вендором_реестр_систем">Приложение 5. Чек-лист договора с вендором + реестр систем</a></td><td class="toc-p">92</td></tr><tr><td class="toc-t"><a href="#Приложение_6_Формы_уведомлений_и_согласий">Приложение 6. Формы уведомлений и согласий</a></td><td class="toc-p">94</td></tr><tr><td class="toc-t"><a href="#Приложение_7_Паспорт_пилотного_проекта_форма_">Приложение 7. Паспорт пилотного проекта (форма)</a></td><td class="toc-p">96</td></tr><tr><td class="toc-t"><a href="#Приложение_8_Положение_о_видеонаблюдении_и_видеоаналитике_пр">Приложение 8. Положение о видеонаблюдении и видеоаналитике (проект)</a></td><td class="toc-p">97</td></tr><tr><td class="toc-t"><a href="#Приложение_9_Маршрут_эскалации_тревожных_событий_направление">Приложение 9. Маршрут эскалации тревожных событий (направление В)</a></td><td class="toc-p">98</td></tr><tr><td class="toc-t"><a href="#Приложение_10_Десять_сценариев_ИИ_тренаж_ра_для_персонала">Приложение 10. Десять сценариев ИИ-тренажёра для персонала</a></td><td class="toc-p">99</td></tr><tr><td class="toc-t"><a href="#Приложение_11_Паспорт_показателя_форма_">Приложение 11. Паспорт показателя (форма)</a></td><td class="toc-p">101</td></tr><tr><td class="toc-t"><a href="#Приложение_12_Формы_журналов_цифрового_контура">Приложение 12. Формы журналов цифрового контура</a></td><td class="toc-p">102</td></tr><tr><td class="toc-t"><a href="#Приложение_13_Регламент_информирования_семьи_проект_один_лис">Приложение 13. Регламент информирования семьи (проект, один лист)</a></td><td class="toc-p">103</td></tr><tr><td class="toc-t"><a href="#Приложение_14_Проект_приказа_о_пилотном_проекте">Приложение 14. Проект приказа о пилотном проекте</a></td><td class="toc-p">104</td></tr><tr><td class="toc-t"><a href="#Приложение_15_Годовой_отч_т_учредителю_о_цифровых_проектах_ш">Приложение 15. Годовой отчёт учредителю о цифровых проектах (шаблон)</a></td><td class="toc-p">105</td></tr><tr><td class="toc-t"><a href="#Приложение_16_Повестка_план_рки_запуска_направления_А_60_мин">Приложение 16. Повестка планёрки запуска направления А (60 минут)</a></td><td class="toc-p">106</td></tr><tr><td class="toc-t"><a href="#Приложение_17_Опрос_смены_после_пилота_десять_вопросов_">Приложение 17. Опрос смены после пилота (десять вопросов)</a></td><td class="toc-p">107</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Список_источников">Список источников</a></td><td class="toc-p">108</td></tr></table></div>
+<div class="toc"><p class="toc-title">Содержание</p><table><tr><td class="toc-t"><a href="#2_Как_читать_этот_доклад">2. Как читать этот доклад</a></td><td class="toc-p">4</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_I_Основания_для_решений">Часть I. Основания для решений</a></td><td class="toc-p">6</td></tr><tr><td class="toc-t"><a href="#3_Объективка_что_происходит_вокруг_и_почему_это_касается_нас">3. Объективка: что происходит вокруг и почему это касается нас</a></td><td class="toc-p">7</td></tr><tr><td class="toc-t"><a href="#4_Шесть_направлений_на_одной_странице">4. Шесть направлений на одной странице</a></td><td class="toc-p">9</td></tr><tr><td class="toc-t"><a href="#5_Что_такое_искусственный_интеллект_без_магии_в_обе_стороны">5. Что такое искусственный интеллект — без магии в обе стороны</a></td><td class="toc-p">13</td></tr><tr><td class="toc-t"><a href="#6_Что_уже_работает_практики_в_социальной_сфере_и_рядом_с_ней">6. Что уже работает: практики в социальной сфере и рядом с ней</a></td><td class="toc-p">17</td></tr><tr><td class="toc-t"><a href="#7_Задачи_учреждения_которые_претендуют_на_ИИ_инвентаризация">7. Задачи учреждения, которые претендуют на ИИ: инвентаризация</a></td><td class="toc-p">20</td></tr><tr><td class="toc-t"><a href="#8_Термины_которые_понадобятся_в_разговоре_с_вендором">8. Термины, которые понадобятся в разговоре с вендором</a></td><td class="toc-p">24</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_II_Шесть_прикладных_направлений">Часть II. Шесть прикладных направлений</a></td><td class="toc-p">26</td></tr><tr><td class="toc-t"><a href="#9_Направление_А_Документы_и_отч_тность_старт_здесь">9. Направление А. Документы и отчётность: старт здесь</a></td><td class="toc-p">27</td></tr><tr><td class="toc-t"><a href="#10_Правовая_рамка_шесть_опор_и_запретная_зона">10. Правовая рамка: шесть опор и запретная зона</a></td><td class="toc-p">30</td></tr><tr><td class="toc-t"><a href="#11_Направление_Б_Видеоаналитика_безопасности_падения_и_уход_">11. Направление Б. Видеоаналитика безопасности: падения и уход из зоны</a></td><td class="toc-p">34</td></tr><tr><td class="toc-t"><a href="#12_Направление_В_Наблюдение_за_состоянием_датчики_и_ранние_с">12. Направление В. Наблюдение за состоянием: датчики и ранние сигналы</a></td><td class="toc-p">36</td></tr><tr><td class="toc-t"><a href="#13_Направление_Г_Голосовые_помощники_и_умные_устройства_для_">13. Направление Г. Голосовые помощники и умные устройства для жителей</a></td><td class="toc-p">39</td></tr><tr><td class="toc-t"><a href="#14_Направление_Д_Обучение_персонала_ИИ_тренаж_ры_сложных_сит">14. Направление Д. Обучение персонала: ИИ-тренажёры сложных ситуаций</a></td><td class="toc-p">41</td></tr><tr><td class="toc-t"><a href="#15_Направление_Е_Управленческая_аналитика_от_журналов_к_пане">15. Направление Е. Управленческая аналитика: от журналов к панели показателей</a></td><td class="toc-p">43</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_III_Внедрение">Часть III. Внедрение</a></td><td class="toc-p">46</td></tr><tr><td class="toc-t"><a href="#16_Дорожная_карта_на_12_месяцев_четыре_квартала_четыре_ступе">16. Дорожная карта на 12 месяцев: четыре квартала, четыре ступени</a></td><td class="toc-p">47</td></tr><tr><td class="toc-t"><a href="#17_Правовой_контур_внедрения_пошагово">17. Правовой контур внедрения: пошагово</a></td><td class="toc-p">50</td></tr><tr><td class="toc-t"><a href="#18_Жители_и_родственники_информирование_согласия_возражения">18. Жители и родственники: информирование, согласия, возражения</a></td><td class="toc-p">53</td></tr><tr><td class="toc-t"><a href="#19_Работа_с_персоналом_страхи_сопротивление_обучение">19. Работа с персоналом: страхи, сопротивление, обучение</a></td><td class="toc-p">56</td></tr><tr><td class="toc-t"><a href="#20_Этика_и_достоинство_где_проходит_граница">20. Этика и достоинство: где проходит граница</a></td><td class="toc-p">59</td></tr><tr><td class="toc-t"><a href="#21_Безопасность_данных_и_инциденты">21. Безопасность данных и инциденты</a></td><td class="toc-p">63</td></tr><tr><td class="toc-t"><a href="#22_Экономика_и_закупки_сколько_это_стоит_на_самом_деле">22. Экономика и закупки: сколько это стоит на самом деле</a></td><td class="toc-p">66</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_IV_Честные_ограничения">Часть IV. Честные ограничения</a></td><td class="toc-p">70</td></tr><tr><td class="toc-t"><a href="#23_Где_искусственный_интеллект_не_нужен">23. Где искусственный интеллект не нужен</a></td><td class="toc-p">71</td></tr><tr><td class="toc-t"><a href="#24_Чего_делать_не_надо_типовые_ошибки_и_запретная_зона">24. Чего делать не надо: типовые ошибки и запретная зона</a></td><td class="toc-p">73</td></tr><tr><td class="toc-t"><a href="#25_Критерии_отказа_и_остановки_проекта">25. Критерии отказа и остановки проекта</a></td><td class="toc-p">76</td></tr><tr><td class="toc-t"><a href="#Частые_вопросы_директоров_короткие_ответы">Частые вопросы директоров: короткие ответы</a></td><td class="toc-p">79</td></tr><tr><td class="toc-t"><a href="#Заключение_что_делать_в_понедельник">Заключение: что делать в понедельник</a></td><td class="toc-p">81</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_V_Учебные_кейсы">Часть V. Учебные кейсы</a></td><td class="toc-p">82</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_1">Учебные кейсы. Часть 1</a></td><td class="toc-p">83</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_2">Учебные кейсы. Часть 2</a></td><td class="toc-p">87</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_Часть_3">Учебные кейсы. Часть 3</a></td><td class="toc-p">90</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Приложения">Приложения</a></td><td class="toc-p">90</td></tr><tr><td class="toc-t"><a href="#Приложение_1_Глоссарий_рабочий_для_приказов_и_совещаний_">Приложение 1. Глоссарий (рабочий, для приказов и совещаний)</a></td><td class="toc-p">94</td></tr><tr><td class="toc-t"><a href="#Приложение_2_Карта_шести_направлений_одна_страница_для_совещ">Приложение 2. Карта шести направлений (одна страница для совещания)</a></td><td class="toc-p">96</td></tr><tr><td class="toc-t"><a href="#Приложение_3_Проект_приказа_О_порядке_использования_сервисов">Приложение 3. Проект приказа «О порядке использования сервисов генеративного ИИ»</a></td><td class="toc-p">97</td></tr><tr><td class="toc-t"><a href="#Приложение_4_Библиотека_проверенных_промптов">Приложение 4. Библиотека проверенных промптов</a></td><td class="toc-p">98</td></tr><tr><td class="toc-t"><a href="#Приложение_5_Чек_лист_договора_с_вендором_реестр_систем">Приложение 5. Чек-лист договора с вендором + реестр систем</a></td><td class="toc-p">100</td></tr><tr><td class="toc-t"><a href="#Приложение_6_Формы_уведомлений_и_согласий">Приложение 6. Формы уведомлений и согласий</a></td><td class="toc-p">102</td></tr><tr><td class="toc-t"><a href="#Приложение_7_Паспорт_пилотного_проекта_форма_">Приложение 7. Паспорт пилотного проекта (форма)</a></td><td class="toc-p">104</td></tr><tr><td class="toc-t"><a href="#Приложение_8_Положение_о_видеонаблюдении_и_видеоаналитике_пр">Приложение 8. Положение о видеонаблюдении и видеоаналитике (проект)</a></td><td class="toc-p">105</td></tr><tr><td class="toc-t"><a href="#Приложение_9_Маршрут_эскалации_тревожных_событий_направление">Приложение 9. Маршрут эскалации тревожных событий (направление В)</a></td><td class="toc-p">106</td></tr><tr><td class="toc-t"><a href="#Приложение_10_Десять_сценариев_ИИ_тренаж_ра_для_персонала">Приложение 10. Десять сценариев ИИ-тренажёра для персонала</a></td><td class="toc-p">107</td></tr><tr><td class="toc-t"><a href="#Приложение_11_Паспорт_показателя_форма_">Приложение 11. Паспорт показателя (форма)</a></td><td class="toc-p">109</td></tr><tr><td class="toc-t"><a href="#Приложение_12_Формы_журналов_цифрового_контура">Приложение 12. Формы журналов цифрового контура</a></td><td class="toc-p">110</td></tr><tr><td class="toc-t"><a href="#Приложение_13_Регламент_информирования_семьи_проект_один_лис">Приложение 13. Регламент информирования семьи (проект, один лист)</a></td><td class="toc-p">111</td></tr><tr><td class="toc-t"><a href="#Приложение_14_Проект_приказа_о_пилотном_проекте">Приложение 14. Проект приказа о пилотном проекте</a></td><td class="toc-p">112</td></tr><tr><td class="toc-t"><a href="#Приложение_15_Годовой_отч_т_учредителю_о_цифровых_проектах_ш">Приложение 15. Годовой отчёт учредителю о цифровых проектах (шаблон)</a></td><td class="toc-p">113</td></tr><tr><td class="toc-t"><a href="#Приложение_16_Повестка_план_рки_запуска_направления_А_60_мин">Приложение 16. Повестка планёрки запуска направления А (60 минут)</a></td><td class="toc-p">114</td></tr><tr><td class="toc-t"><a href="#Приложение_17_Опрос_смены_после_пилота_десять_вопросов_">Приложение 17. Опрос смены после пилота (десять вопросов)</a></td><td class="toc-p">115</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Список_источников">Список источников</a></td><td class="toc-p">116</td></tr></table></div>
 <h1 id="2_Как_читать_этот_доклад">2. Как читать этот доклад</h1>
 <p>Доклад написан для директора, заместителя и врача стационарного учреждения социального обслуживания — человека без технического образования, у которого нет времени на специальную литературу, но есть ответственность за триста жителей, персонал и бюджет. Всё, что здесь написано, проверено по одному правилу: может ли директор после прочтения принять конкретное решение — внедрять, отклонить, отложить или запросить документы.</p>
 <h2 id="из-чего-состоит-доклад">2.1. Из чего состоит доклад</h2>
@@ -137,7 +144,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p>Если у вас полчаса — прочитайте раздел 4 («Шесть направлений на одной странице»), раздел 16 («С чего начать: дорожная карта») и раздел 24 («Чего делать не надо»). Если два часа — добавьте разделы о правовой рамке (10), персонале (19) и безопасности данных (21). Полное чтение нужно тем, кто будет вести проект внедрения, — им доклад даёт формы документов, критерии выбора решений и готовые формулировки для учредителя.</p>
 <h2 id="чего-в-докладе-нет">2.4. Чего в докладе нет</h2>
 <p>Здесь нет обзора «всех технологий», рекламы вендоров и прогнозов на десять лет — и нет утверждения, что ИИ обязателен: внедрение решается по задачам учреждения, а не по моде.</p>
-<div class="part-page"><div class="pp-kick">Часть I</div><h1 id="Часть_I_Основания_для_решений" class="part">Основания для решений</h1><div class="pp-rule"></div><p class="pp-desc">Объективка отрасли, три класса искусственного интеллекта, существующие практики, карта задач и рабочий словарь — всё, чтобы говорить о теме без мифов. Разделы 3–8.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Часть I</span></div><h1 id="Часть_I_Основания_для_решений" class="part">Основания для решений</h1><div class="pp-rule"></div><p class="pp-desc">Объективка отрасли, три класса искусственного интеллекта, существующие практики, карта задач и рабочий словарь — всё, чтобы говорить о теме без мифов. Разделы 3–8.</p></div>
 <h1 id="3_Объективка_что_происходит_вокруг_и_почему_это_касается_нас">3. Объективка: что происходит вокруг и почему это касается нас</h1>
 <h2 id="исходная-позиция-отрасли">3.1. Исходная позиция отрасли</h2>
 <p>Стационарные организации социального обслуживания работают в условиях трёх устойчивых дефицитов: кадров (санитары, сиделки, повара, социальные работники — по всем регионам), времени персонала (старшая смены тратит значительную часть дежурства на журналы и отчётность) и управленческой информации (решения принимаются по представлениям, а не по замерам — точно так же, как было показано для питания в предыдущем докладе). Искусственный интеллект обсуждается в этом докладе не как «технология будущего», а как набор инструментов, которые претендуют закрыть часть этих дефицитов. Вопрос доклада — какую часть реально, по какой цене и с какими рисками.</p>
@@ -408,7 +415,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p><strong>Человек в контуре (human-in-the-loop)</strong> — архитектурный принцип: система готовит сигнал или вариант, решение принимает человек. Всё, что предлагается вам без человека в контуре в вопросах жизни, здоровья и прав жителей, отклоняется сразу.</p>
 <h2 id="ещё-пять-терминов-для-договоров-и-совещаний">8.2. Ещё пять терминов — для договоров и совещаний</h2>
 <p><strong>Оператор персональных данных</strong> — тот, кто определяет цели обработки (учреждение), в отличие от обработчика по поручению (вендор). Ответственность перед законом несёт оператор — договором её не передать. <strong>Утечка</strong> — неправомерная передача данных третьему лицу, включая случайную: «отправил не тому» — тоже утечка. <strong>Валидность модели</strong> — мера того, что система распознаёт именно то, что заявлено, на ваших данных, а не на презентационных; проверяется только пилотом. <strong>Слепая зона</strong> — пространство или ситуация, которых система не видит (камера не покрывает санузел; датчик сна не видит дневное падение); слепые зоны документируются в паспорте пилота, чтобы никто не считал покрытие полным. <strong>Время реакции</strong> — интервал от события до действия человека; главная метрика направлений Б и В, потому что ценность системы определяется не тем, что она заметила, а тем, что после её сигнала успели сделать люди. Контрольный вопрос на владение терминами тот же: сможете объяснить каждый своими словами старшей смены — без слов «алгоритм» и «нейросеть»?</p>
-<div class="part-page"><div class="pp-kick">Часть II</div><h1 id="Часть_II_Шесть_прикладных_направлений" class="part">Шесть прикладных направлений</h1><div class="pp-rule"></div><p class="pp-desc">Документы, правовая рамка, видеоаналитика, наблюдение за состоянием, голосовые помощники, обучение персонала и управленческая аналитика. Разделы 9–15.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Часть II</span></div><h1 id="Часть_II_Шесть_прикладных_направлений" class="part">Шесть прикладных направлений</h1><div class="pp-rule"></div><p class="pp-desc">Документы, правовая рамка, видеоаналитика, наблюдение за состоянием, голосовые помощники, обучение персонала и управленческая аналитика. Разделы 9–15.</p></div>
 <h1 id="9_Направление_А_Документы_и_отч_тность_старт_здесь">9. Направление А. Документы и отчётность: старт здесь</h1>
 <h2 id="что-это-и-почему-первое">9.1. Что это и почему первое</h2>
 <p>Генеративный ИИ (большие языковые модели) умеет: переписать текст официальным языком, свести десять страниц журнала в полстраницы сводки, подготовить каркас плана или ответа на обращение, сделать из протокола список поручений, перевести «с канцелярского на человеческий» для родственников жителя. Это единственное направление с нулевыми капитальными вложениями, эффектом в первую же неделю и обратимостью в один день. Поэтому оно первое — но именно оно чаще всего внедряется неправильно: директор или секретарь вставляет в чат-бот письмо с фамилией жителя и диагнозом — и учреждение получает утечку персональных данных в внешний сервис.</p>
@@ -440,8 +447,8 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <div class="page-inf">
 <p class="fg-cap">Правовая развилка: события или личности</p>
 <div class="fg-grid">
-<div class="fg-cell" style="border-top-color:#2F5D50;"><p class="fg-h">Путь доклада: события</p>Система распознаёт «человек упал», «кто-то пересёк линию» — <b>без установления, кто именно</b>.<br><br>Это обычные персональные данные изображения толпы/фигур в общих помещениях: стандартный контур 152-ФЗ — положение, уведомления, журнал доступа, сроки хранения.<br><br><b>Задачи направления Б закрываются полностью.</b></div>
-<div class="fg-cell" style="border-top-color:#B57517;"><p class="fg-h">Путь, который мы не выбираем: идентификация</p>Распознавание лиц: система знает, <b>кто</b> перед камерой.<br><br>Это биометрические персональные данные: усиленный режим 152-ФЗ, письменные согласия, требования 572-ФЗ о единой биометрической системе, максимальные штрафы за утечку<sup>3</sup><sup>5</sup>.<br><br><b>Добавленной пользы для наших задач — ноль.</b></div>
+<div class="fg-cell" style="border-top-color:#D97757;"><p class="fg-h">Путь доклада: события</p>Система распознаёт «человек упал», «кто-то пересёк линию» — <b>без установления, кто именно</b>.<br><br>Это обычные персональные данные изображения толпы/фигур в общих помещениях: стандартный контур 152-ФЗ — положение, уведомления, журнал доступа, сроки хранения.<br><br><b>Задачи направления Б закрываются полностью.</b></div>
+<div class="fg-cell" style="border-top-color:#8A8578;"><p class="fg-h">Путь, который мы не выбираем: идентификация</p>Распознавание лиц: система знает, <b>кто</b> перед камерой.<br><br>Это биометрические персональные данные: усиленный режим 152-ФЗ, письменные согласия, требования 572-ФЗ о единой биометрической системе, максимальные штрафы за утечку<sup>3</sup><sup>5</sup>.<br><br><b>Добавленной пользы для наших задач — ноль.</b></div>
 </div>
 <p class="fg-note">Развилка проходит в техническом задании, а не в договоре: формулировка «распознавание событий без идентификации личности» проверяется на пилоте — попросите вендора показать, что система не строит и не хранит цифровые слепки лиц (разделы 10.2, 17.5).</p>
 </div>
@@ -530,7 +537,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p>Выбрать пять показателей, которые уже собираются (по итогам предыдущего пилота или действующих журналов), написать им паспорта, собрать квартальную панель в одной таблице и один раз в квартал разбирать её на совете директора. Через два квартала добавить пороговые сигналы. Через год — решать, нужна ли платформа, имея на руках данные, которым вы верите. Так аналитика строится снизу вверх — и любой вендор, приходящий с «ИИ-платформой», встречает директора, который знает свои числа лучше его.</p>
 <h2 id="заполненный-пример-паспорт-показателя-время-обнаружения-падения">15.5. Заполненный пример: паспорт показателя «время обнаружения падения»</h2>
 <p>Форма приложения 11 становится рабочей на примере. <strong>Название:</strong> Среднее время обнаружения падения, минуты. <strong>Определение:</strong> интервал от момента падения (по записи камеры или показаниям жителя) до момента, когда сотрудник вошёл в помещение; считается по всем зафиксированным падениям. <strong>Формула:</strong> сумма интервалов / число падений за квартал; единицы — минуты. <strong>Источник:</strong> журнал событий (время обнаружения) + время падения по видеозаписи или расспросу; вносит старшая смены в день события. <strong>Ответственный за качество:</strong> ответственный за цифровые проекты; проверка — выборочный аудит двух событий в месяц. <strong>Известные искажения:</strong> падения вне зон камер датируются приблизительно; падения без свидетелей могут не попасть в журнал — показатель занижен, и это признаётся в отчёте. <strong>Порог реакции:</strong> любое событие дольше 10 минут разбирается отдельно; рост среднего два квартала подряд — повод для решения о видеопилоте. <strong>Связанные решения:</strong> запуск/расширение видеоаналитики, изменение графика ночных обходов. Показатель с таким паспортом выдерживает вопросы учредителя; показатель без паспорта — рисунок.</p>
-<div class="part-page"><div class="pp-kick">Часть III</div><h1 id="Часть_III_Внедрение" class="part">Внедрение</h1><div class="pp-rule"></div><p class="pp-desc">Дорожная карта на двенадцать месяцев, правовой контур пошагово, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Часть III</span></div><h1 id="Часть_III_Внедрение" class="part">Внедрение</h1><div class="pp-rule"></div><p class="pp-desc">Дорожная карта на двенадцать месяцев, правовой контур пошагово, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.</p></div>
 <h1 id="16_Дорожная_карта_на_12_месяцев_четыре_квартала_четыре_ступе">16. Дорожная карта на 12 месяцев: четыре квартала, четыре ступени</h1>
 <h2 id="логика-карты">16.1. Логика карты</h2>
 <p>Карта повторяет логику, доказавшую себя в вариативном питании: ступень → замер → закрепление → следующая ступень. Каждый квартал закрывает одну ступень и готовит следующую; каждая ступень имеет точку, в которой можно честно остановиться — и это будет результат, а не провал. Карта рассчитана на типовое учреждение без ИТ-специалиста в штате; сроки ориентировочные и сдвигаются вправо без катастрофы.</p>
@@ -673,7 +680,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p class="fg-note">Правило: проект, у которого посчитаны только первые две строки, недооценён в полтора-два раза. Сравнивайте варианты по трёхлетней стоимости, а не по цене входа (раздел 22); условия выхода фиксируйте в договоре до подписания (раздел 17.5).</p>
 </div>
 
-<div class="part-page"><div class="pp-kick">Часть IV</div><h1 id="Часть_IV_Честные_ограничения" class="part">Честные ограничения</h1><div class="pp-rule"></div><p class="pp-desc">Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа — части доклада, которые экономят бюджет и репутацию. Разделы 23–25.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Часть IV</span></div><h1 id="Часть_IV_Честные_ограничения" class="part">Честные ограничения</h1><div class="pp-rule"></div><p class="pp-desc">Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа — части доклада, которые экономят бюджет и репутацию. Разделы 23–25.</p></div>
 <h1 id="23_Где_искусственный_интеллект_не_нужен">23. Где искусственный интеллект не нужен</h1>
 <p>Самая полезная часть доклада для бюджета — эта. Тема ИИ устроена так, что продавать решения выгодно всем: вендорам, консультантам, авторам программ «цифровизации». Невыгодно одно — честно сказать, где технология не нужна. Доклад называет семь таких мест; всё нижесказанное — интерпретация и рекомендация, проверяемые здравым смыслом и вашими журналами.</p>
 <h2 id="там-где-задача-не-существует">23.1. Там, где задача не существует</h2>
@@ -709,7 +716,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <div class="fg-cell"><p class="fg-h">5</p>Не использовать распознавание лиц.</div>
 <div class="fg-cell"><p class="fg-h">6</p>Не покупать предиктивные модели без собственных данных за годы.</div>
 <div class="fg-cell"><p class="fg-h">7</p>Не подписывать договор без семи пунктов раздела 17.5.</div>
-<div class="fg-cell" style="border-top-color:#B57517;"><p class="fg-h">Проверка</p>Любое новое предложение прогоняется через этот список за десять минут совещания. Одно «никогда» — и проект останавливается до переработки (разделы 20.4, 24.4).</div>
+<div class="fg-cell" style="border-top-color:#8A8578;"><p class="fg-h">Проверка</p>Любое новое предложение прогоняется через этот список за десять минут совещания. Одно «никогда» — и проект останавливается до переработки (разделы 20.4, 24.4).</div>
 </div>
 <p class="fg-note">Список короткий специально: запретная зона, которую нельзя запомнить целиком, не работает. Печатается отдельным листом для кабинета ответственного.</p>
 </div>
@@ -733,7 +740,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <div class="fg-cell"><p class="fg-h">Массовый отзыв согласий</p>Система потеряла легитимность. Техника здесь не виновата и не поможет — остановка и разговор с жителями.</div>
 <div class="fg-cell"><p class="fg-h">Отказ врача</p>Без врача в контуре наблюдение за состоянием не существует (раздел 12). Проект не запускается или останавливается.</div>
 <div class="fg-cell"><p class="fg-h">Тихий сигнал</p>Система работает, но ей не пользуются: панель не открывается, сводки не читаются. Неиспользуемая система — затраты без пользы.</div>
-<div class="fg-cell" style="border-top-color:#B57517;"><p class="fg-h">Критерии — до старта</p>Критерии, написанные после получения результатов, — не критерии, а оправдание. Паспорт пилота подписывается до первого включения (раздел 25.1).</div>
+<div class="fg-cell" style="border-top-color:#8A8578;"><p class="fg-h">Критерии — до старта</p>Критерии, написанные после получения результатов, — не критерии, а оправдание. Паспорт пилота подписывается до первого включения (раздел 25.1).</div>
 </div>
 <p class="fg-note">Закрытый с разбором проект оставляет учреждению опыт и документы; тихо брошенный — слухи и склад (раздел 25.3). Отказ по критериям — управленческая зрелость.</p>
 </div>
@@ -756,7 +763,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p>Доклад написан против двух крайностей, которые одинаково дорого обходятся отрасли. Первая — «ИИ решит всё»: закупки под обещания, платформы без задач, биометрия без нужды. Вторая — «это всё не про нас»: упущенные годы, в которые соседние учреждения уже освободили смены от бумажной работы и научились находить упавшего жителя за минуты. Между ними — рабочая полоса, и она не требует ни программистов, ни миллионов.</p>
 <p>Она начинается с четырёх действий, доступных любому учреждению в ближайшую неделю. Первое: издайте приказ с регламентом использования генеративного ИИ (приложение 3) — страница текста, которая превращает стихийное использование чат-ботов в управляемый инструмент и закрывает главную дыру утечек. Второе: назначьте ответственного за цифровые проекты и заведите реестр систем — теперь у темы есть хозяин. Третье: выберите одну измеримую боль по фильтрам раздела 7 и замерьте её до любых закупок. Четвёртое: поставьте в план совета с врачом разбор дорожной карты раздела 16 — с правом сказать «нам рано» по любой ступени.</p>
 <p>Всё остальное — пилоты датчиков, видеоаналитика, тренажёры, аналитика — придёт в своём квартале, на своих замерах и с вашими критериями остановки. Искусственный интеллект в этом докладе — не цель и не угроза, а инструмент, который в грамотном учреждении освобождает время человека для человека. Тем, кто прошёл с нами проект вариативного питания, логика знакома: ступень → замер → закрепление → следующая ступень. Технологии меняются, логика остаётся.</p>
-<div class="part-page"><div class="pp-kick">Часть V</div><h1 id="Часть_V_Учебные_кейсы" class="part">Учебные кейсы</h1><div class="pp-rule"></div><p class="pp-desc">Четырнадцать кейсов с вопросами для разбора и опорными ответами — материал для семинара и внутреннего обучения персонала.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Часть V</span></div><h1 id="Часть_V_Учебные_кейсы" class="part">Учебные кейсы</h1><div class="pp-rule"></div><p class="pp-desc">Четырнадцать кейсов с вопросами для разбора и опорными ответами — материал для семинара и внутреннего обучения персонала.</p></div>
 <h1 id="Учебные_кейсы_Часть_1">Учебные кейсы. Часть 1</h1>
 <p>Двенадцать кейсов собраны для разбора на семинаре и для внутреннего обучения. Все кейсы — <strong>иллюстративный материал</strong>: они построены на типовых ситуациях, обобщённых из публикаций и практики внедрений в социальной и медицинской сферах; имена, названия учреждений и числа вымышлены, если не сказано иное. К каждому кейсу — вопросы для разбора; «правильного ответа» у большинства нет, есть решения с разной ценой.</p>
 <div class="casebox"><h2 class="case">Кейс 1. Письмо в чат-бот</h2>
@@ -817,7 +824,7 @@ table.fg-t th{background:#DCE6E0;color:#1F3D33;font-size:10pt;overflow-wrap:norm
 <p><strong>Ситуация.</strong> Учреждение на 300 мест, без ИТ-специалиста. Директор издаёт приказ с регламентом (приложение 3), назначает ответственным заместителя по АХЧ, выбирает два сервиса в список допущенных, собирает четырёх офисных сотрудников на час практики на своих документах. Замер «до» за неделю: типовой ответ на обращение — 40–60 минут, сводка месяца — полдня. Через квартал: ответ на обращение — 15–20 минут с проверкой, сводка — час; библиотека выросла до 14 промптов; журнал инцидентов содержит две записи (обе — необезличенные вставки, разобраны на планёрке, повтора нет).</p>
 <p><strong>Вопросы для разбора.</strong> Что в этом кейсе решающее: сервисы, регламент, замер или журнал инцидентов? Как директору представить результат учредителю, не преувеличивая? Почему две записи в журнале — признак здоровья, а не слабости?</p>
 <p><strong>Опорный разбор.</strong> Решающее — связка: регламент без замера дал бы «бумажное внедрение», замер без регламента — утечку. Представление учредителю — часы и инциденты: «освобождено ~N часов в месяц на документной работе, два инцидента обезличивания выявлены и закрыты обучением» — это язык управления. Журнал с записями говорит, что сотрудники не боятся сообщать об ошибках — значит, контур живой (раздел 9.4). Кейс эталонный не потому, что эффект велик, а потому, что он измерен и воспроизводим: так выглядит квартал 1 дорожной карты. Связь: разделы 9, 16.2.</p>
-<div class="part-page"><div class="pp-kick">Приложения</div></div><h1 id="Приложения" class="part"></h1><div class="pp-rule"></div><p class="pp-desc">Семнадцать приложений с формами документов: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Все формы — проекты для адаптации: реквизиты учреждения и региональные требования подставляет ваш юрист.</p></div>
+<div class="part-page"><div class="pp-kick"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span>Приложения</span></div></div><h1 id="Приложения" class="part"></h1><div class="pp-rule"></div><p class="pp-desc">Семнадцать приложений с формами документов: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Все формы — проекты для адаптации: реквизиты учреждения и региональные требования подставляет ваш юрист.</p></div>
 <h1 id="Приложение_1_Глоссарий_рабочий_для_приказов_и_совещаний_">Приложение 1. Глоссарий (рабочий, для приказов и совещаний)</h1>
 <p><strong>Искусственный интеллект (ИИ)</strong> — технологии, выполняющие задачи, ранее требовавшие человеческого восприятия или речи: распознавание, прогноз, генерация текста. В документах учреждения термин применяется без оценки «умности» системы.</p>
 <p><strong>Большая языковая модель (LLM)</strong> — модель, обученная на массивах текстов и генерирующая связный текст по запросу. Пример применения: черновик ответа на обращение. Ограничение: может уверенно излагать неверные факты.</p>

@@ -69,7 +69,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Языковые модели стали доступны
 - elementId: t0
   elementType: text
@@ -82,7 +82,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Российские сервисы (GigaChat, YandexGPT и другие) работают по подписке из любого кабинета. Черновик документа — минуты вместо часа. Цена входа — почти ноль.
 - elementId: b1
   elementType: shape
@@ -106,7 +106,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Видеоаналитика стала серийной
 - elementId: t1
   elementType: text
@@ -119,7 +119,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Распознавание падений и ухода из зоны — больше не научный проект: решения продаются «из коробки» и ставятся на существующие камеры.'
 - elementId: b2
   elementType: shape
@@ -143,7 +143,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Появилась государственная рамка
 - elementId: t2
   elementType: text
@@ -156,7 +156,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Национальная стратегия развития ИИ до 2030 года (указ № 490) означает: вопрос учредителя «а что у вас с ИИ?» — не «если», а «когда». Лучше встретить его с планом.'
 - elementId: src
   elementType: text

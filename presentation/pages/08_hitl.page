@@ -73,7 +73,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Событие или данные
 - elementId: ar0
   elementType: text
@@ -89,7 +89,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: →
 - elementId: box1
   elementType: shape
@@ -117,7 +117,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Система сигнализирует
 - elementId: ar1
   elementType: text
@@ -133,7 +133,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: →
 - elementId: box2
   elementType: shape
@@ -161,7 +161,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Человек проверяет
 - elementId: ar2
   elementType: text
@@ -177,7 +177,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: →
 - elementId: box3
   elementType: shape
@@ -205,7 +205,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Человек решает
 - elementId: ar3
   elementType: text
@@ -221,7 +221,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: →
 - elementId: box4
   elementType: shape
@@ -249,7 +249,7 @@ elements:
     align:
     - center
     - middle
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Решение фиксируется
 - elementId: l1
   elementType: text
@@ -262,7 +262,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Система:</strong> смотрит, слушает, считает, черновит, напоминает. Не устаёт, не отвлекается.</p>
 - elementId: l2
   elementType: text
@@ -275,7 +275,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p><strong>Человек:</strong> проверяет, решает, отвечает перед жителем, семьёй и законом.</p>
 - elementId: div
   elementType: shape
@@ -299,7 +299,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Это не только этика: ст. 16 закона о персональных данных запрещает решения о человеке на основе <strong>исключительно</strong> автоматизированной обработки. Проверка вендора проста: попросите показать, где в схеме человек — и успевает ли он проверить.</p>'
 - elementId: src
   elementType: text

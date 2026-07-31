@@ -58,7 +58,7 @@ elements:
     fontSize: 16.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Распознающие
 - elementId: ln0
   elementType: shape
@@ -82,7 +82,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Видят и слышат: падение в коридоре, речь в текст, документ в скане. Не устают и не спят на посту.'
 - elementId: u0
   elementType: text
@@ -95,7 +95,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $muted
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Слабое место: ложные тревоги и слепые зоны.'
 - elementId: h1
   elementType: text
@@ -108,7 +108,7 @@ elements:
     fontSize: 16.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Предсказывающие
 - elementId: ln1
   elementType: shape
@@ -132,7 +132,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Оценивают риски по данным: «у этого жителя высокая вероятность падения».'
 - elementId: u1
   elementType: text
@@ -145,7 +145,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $muted
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Слабое место: мусор на входе — мусор на выходе. Нам рано: данных за годы нет.'
 - elementId: h2
   elementType: text
@@ -158,7 +158,7 @@ elements:
     fontSize: 16.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Генерирующие
 - elementId: ln2
   elementType: shape
@@ -182,7 +182,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Пишут и говорят: черновики, сводки, тренажёры диалогов. Экономят часы в первую же неделю.'
 - elementId: u2
   elementType: text
@@ -195,7 +195,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $muted
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Слабое место: уверенно сочиняют факты. Проверка человеком — навсегда.'
 - elementId: bottom
   elementType: text
@@ -208,7 +208,7 @@ elements:
     fontSize: 14
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p><strong>Ни один класс не «думает»: все три находят закономерности в данных. Поэтому два правила неизменны — проверка человеком и обезличивание.</strong></p>'
 - elementId: src
   elementType: text

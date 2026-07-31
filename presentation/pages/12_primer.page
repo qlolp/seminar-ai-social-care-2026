@@ -58,7 +58,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $muted
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'До: 25–30 минут в конце дежурства'
 - elementId: b1
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>«За смену происшествий не было. Жильцов 41. К врачу обращались 2. В столовой всё по расписанию».</p><p>Такая сводка ничего не даёт управлению — но никого и не винит: форма не требовала большего.</p>'
 - elementId: div
   elementType: shape
@@ -95,7 +95,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'После: 10 минут, и есть что обсудить'
 - elementId: b2
   elementType: text
@@ -108,7 +108,7 @@ elements:
     fontSize: 13
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Обезличенный журнал → проверенный промпт: «события, требующие решения; отклонения от распорядка; обращения к врачу; что закупить».</p><p>Черновик за минуту; старшая смены проверяет и правит 10 минут.</p>'
 - elementId: rule
   elementType: shape
@@ -132,7 +132,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Три выигрыша, а не «экономия 20 минут»: сводка стала <strong>содержательной</strong> (структура задана промптом), <strong>сравнимой по сменам</strong> и вернула время старшей смены — к жителям.</p><p>Соберите три-четыре таких примера в первый месяц: это ваш внутренний отчёт и аргумент для учредителя.</p>'
 - elementId: src
   elementType: text

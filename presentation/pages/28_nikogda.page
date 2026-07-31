@@ -58,7 +58,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '1'
 - elementId: t0
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: запускать системы, влияющие на жителей, без их ведома
 - elementId: n1
   elementType: text
@@ -84,7 +84,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '2'
 - elementId: t1
   elementType: text
@@ -97,7 +97,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: отправлять необезличенные данные жителей во внешние сервисы
 - elementId: n2
   elementType: text
@@ -110,7 +110,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '3'
 - elementId: t2
   elementType: text
@@ -123,7 +123,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: принимать решения о жителях по выводу алгоритма
 - elementId: n3
   elementType: text
@@ -136,7 +136,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '4'
 - elementId: t3
   elementType: text
@@ -149,7 +149,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: ставить камеры в комнатах проживания вне палат интенсивного наблюдения
 - elementId: n4
   elementType: text
@@ -162,7 +162,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '5'
 - elementId: t4
   elementType: text
@@ -175,7 +175,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: использовать распознавание лиц
 - elementId: n5
   elementType: text
@@ -188,7 +188,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '6'
 - elementId: t5
   elementType: text
@@ -201,7 +201,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: покупать предиктивные модели без собственных данных за годы
 - elementId: n6
   elementType: text
@@ -214,7 +214,7 @@ elements:
     fontSize: 24
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: '7'
 - elementId: t6
   elementType: text
@@ -227,7 +227,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: подписывать договор без семи пунктов раздела 17.5
 - elementId: note
   elementType: text
@@ -240,7 +240,7 @@ elements:
     fontSize: 14
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p><strong>Список короткий специально: запретная зона, которую нельзя запомнить целиком, не работает.</strong></p>'
 - elementId: src
   elementType: text

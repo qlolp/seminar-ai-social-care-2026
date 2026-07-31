@@ -68,7 +68,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Технология серийная; в медицине РФ работает годами. Задача для нас реальна: ночные падения и уходы из зоны — «тихие» события, которые обходы ловят плохо.'
 - elementId: r0
   elementType: shape
@@ -102,7 +102,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Подтверждённых данных по домам социального обслуживания в открытом доступе нет. Цифры вендоров — с чужих площадок и без методики: «снижение падений на 40 %» путает падение с поздним обнаружением.'
 - elementId: r1
   elementType: shape
@@ -136,7 +136,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Свои данные: пилот 90 дней на одном отделении, четыре метрики, базовая линия из наших журналов, критерии исхода — до первого включения.'
 - elementId: r2
   elementType: shape

@@ -1,72 +1,107 @@
 pageType: content
 background:
   type: solid
-  color: $dark
+  color: $bg
 elements:
+- elementId: spark
+  elementType: text
+  bounds:
+  - 70
+  - 58
+  - 34
+  - 34
+  content:
+    fontSize: 26
+    color: $accent
+    fontFamily: Noto Sans
+    text: "✦"
+- elementId: brand
+  elementType: text
+  bounds:
+  - 112
+  - 64
+  - 620
+  - 26
+  content:
+    fontSize: 16
+    color: $text
+    fontFamily: PT Serif
+    text: Пространство новых идей 2.0
 - elementId: kick
   elementType: text
   bounds:
   - 70
-  - 60
+  - 150
   - 820
   - 40
   content:
     fontSize: 11
-    color: '#DCE6E0'
+    color: $primary
     letterSpacing: 2
     bold: true
-    fontFamily: MiSans
-    text: МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ «ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0»
-- elementId: rule
-  elementType: shape
-  bounds:
-  - 70
-  - 112
-  - 90
-  - 3
-  shapeName: rect
-  fill:
-    type: solid
-    color: '#B57517'
+    fontFamily: Noto Sans
+    text: МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ
 - elementId: title
   elementType: text
   bounds:
   - 70
-  - 140
+  - 196
   - 820
   - 150
   content:
     fontSize: 40
     bold: true
-    color: '#FFFFFF'
+    color: $text
     lineHeight: 1.15
-    fontFamily: MiSans
+    fontFamily: PT Serif
     text: Искусственный интеллект в домах социального обслуживания
+- elementId: rule
+  elementType: shape
+  bounds:
+  - 70
+  - 330
+  - 90
+  - 3
+  shapeName: rect
+  fill:
+    type: solid
+    color: $accent
 - elementId: sub
   elementType: text
   bounds:
   - 70
-  - 300
+  - 350
   - 700
   - 60
   content:
     fontSize: 17
-    color: '#DCE6E0'
+    color: $primary
     lineHeight: 1.4
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Что внедрять, чего не делать и с чего начать в понедельник
+- elementId: topline
+  elementType: shape
+  bounds:
+  - 70
+  - 428
+  - 820
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
 - elementId: meta
   elementType: text
   bounds:
   - 70
-  - 430
+  - 444
   - 760
   - 60
   content:
     fontSize: 11.5
-    color: '#9DB4AB'
+    color: $muted
     lineHeight: 1.5
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Санкт-Петербург · 25–27 августа 2026 года
 
       Министерство труда и социальной защиты РФ · Комитет по социальной политике Санкт-Петербурга'

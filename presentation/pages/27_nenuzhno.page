@@ -59,7 +59,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Где задачи не существует
 - elementId: b0
   elementType: text
@@ -72,7 +72,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Не назвали измеримую боль и число «до» — проекта нет, есть покупка.
 - elementId: ln0
   elementType: shape
@@ -97,7 +97,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Где проще без технологий
 - elementId: b1
   elementType: text
@@ -110,7 +110,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Лист бумаги, таблица, регламент — сначала они. Технология — когда простое средство упёрлось в предел.
 - elementId: ln1
   elementType: shape
@@ -135,7 +135,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Где решает человек по долгу службы
 - elementId: b2
   elementType: text
@@ -148,7 +148,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Медицинские решения, переводы, ограничительные меры: ИИ готовит сводку, но не вердикт.'
 - elementId: ln2
   elementType: shape
@@ -173,7 +173,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Где нет данных и не будет
 - elementId: b3
   elementType: text
@@ -186,7 +186,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Предиктивные модели без лет качественных записей — кровать в доме без фундамента.
 - elementId: ln3
   elementType: shape
@@ -211,7 +211,7 @@ elements:
     bold: true
     color: $primary
     lineHeight: 1.2
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Где технология заменяет внимание
 - elementId: b4
   elementType: text
@@ -224,7 +224,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Колонка не заменяет сиделку, панель не заменяет обход: мы освобождаем время человека для человека — не от человека.'
 - elementId: ln4
   elementType: shape

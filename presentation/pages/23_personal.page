@@ -106,7 +106,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p>Внедрение, не ответившее на все четыре страха явно и публично, встретит сопротивление — тихое, грамотное и непобедимое. Первые пользователи — не самые компьютерные, а самые авторитетные.</p>
 - elementId: src
   elementType: text

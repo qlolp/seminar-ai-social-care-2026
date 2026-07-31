@@ -69,7 +69,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Проходит все четыре фильтра сразу
 - elementId: t0
   elementType: text
@@ -82,7 +82,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Боль известна каждому (часы на однотипные документы); эффект меряется в часах; откат — один день; правовой контур — один приказ.
 - elementId: b1
   elementType: shape
@@ -106,7 +106,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Эффект в первую неделю
 - elementId: t1
   elementType: text
@@ -119,7 +119,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Ответ на обращение: 40–60 минут вручную → 15–20 минут с черновиком модели и проверкой. Сводка месяца: полдня → час.'
 - elementId: b2
   elementType: shape
@@ -143,7 +143,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Учит главному навыку
 - elementId: t2
   elementType: text
@@ -156,7 +156,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Проверка текста модели, обезличивание, журнал инцидентов — эти три привычки потом работают на всех остальных направлениях.
 - elementId: f
   elementType: text
@@ -169,7 +169,7 @@ elements:
     fontSize: 13
     color: $muted
     lineHeight: 1.4
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Начинать с видеоаналитики — значит провалиться по всем осям одновременно: дорого, сложно юридически, пугает персонал.</p>'
 - elementId: src
   elementType: text

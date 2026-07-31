@@ -58,7 +58,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 1. Оборудование
 - elementId: ln0
   elementType: shape
@@ -82,7 +82,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: устройства, монтаж, сеть — единственная строка, которую называет продавец
 - elementId: h1
   elementType: text
@@ -95,7 +95,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 2. Программы и подписки
 - elementId: ln1
   elementType: shape
@@ -119,7 +119,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: за три года обгоняют оборудование
 - elementId: h2
   elementType: text
@@ -132,7 +132,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 3. Внедрение
 - elementId: ln2
   elementType: shape
@@ -156,7 +156,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: настройка, интеграция, обучение — у вендора и своё
 - elementId: h3
   elementType: text
@@ -169,7 +169,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 4. Эксплуатация
 - elementId: ln3
   elementType: shape
@@ -193,7 +193,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: сопровождение, замена 10–15 % парка в год, канал
 - elementId: h4
   elementType: text
@@ -206,7 +206,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 5. Люди
 - elementId: ln4
   elementType: shape
@@ -230,7 +230,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: часы ответственного, разборы тревог, обучение — переведите в ставки
 - elementId: h5
   elementType: text
@@ -243,7 +243,7 @@ elements:
     fontSize: 14.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 6. Выход
 - elementId: ln5
   elementType: shape
@@ -267,7 +267,7 @@ elements:
     fontSize: 12
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'выгрузка данных, демонтаж: строка, которую считают последней, кусается первой'
 - elementId: note
   elementType: text
@@ -280,7 +280,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.5
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p>Проект, у которого посчитаны только первые две строки, недооценён в полтора-два раза. Сравнивайте трёхлетнюю стоимость, а не цену входа; условия выхода — в договоре до подписания.</p>
 - elementId: src
   elementType: text

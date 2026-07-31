@@ -58,7 +58,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 0–5
 - elementId: h0
   elementType: text
@@ -71,7 +71,7 @@ elements:
     fontSize: 13.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Сценарий и правила
 - elementId: b0
   elementType: text
@@ -84,7 +84,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'наставник: «жительница обвиняет вас в краже очков; цель — помочь и зафиксировать, а не оправдаться»'
 - elementId: t1
   elementType: text
@@ -97,7 +97,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 5–15
 - elementId: h1
   elementType: text
@@ -110,7 +110,7 @@ elements:
     fontSize: 13.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Диалог с моделью
 - elementId: b1
   elementType: text
@@ -123,7 +123,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: сотрудник ведёт диалог; наставник наблюдает и не вмешивается
 - elementId: t2
   elementType: text
@@ -136,7 +136,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 15–20
 - elementId: h2
   elementType: text
@@ -149,7 +149,7 @@ elements:
     fontSize: 13.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Разбор модели
 - elementId: b2
   elementType: text
@@ -162,7 +162,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: сотрудник сам читает разбор по критериям сценария
 - elementId: t3
   elementType: text
@@ -175,7 +175,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 20–35
 - elementId: h3
   elementType: text
@@ -188,7 +188,7 @@ elements:
     fontSize: 13.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Живой разбор
 - elementId: b3
   elementType: text
@@ -201,7 +201,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: что модель оценила верно, где отстала от нашей реальности, как было вчера в смене
 - elementId: t4
   elementType: text
@@ -214,7 +214,7 @@ elements:
     fontSize: 13
     bold: true
     color: $accent
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 35–40
 - elementId: h4
   elementType: text
@@ -227,7 +227,7 @@ elements:
     fontSize: 13.5
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Одна фраза-вывод
 - elementId: b4
   elementType: text
@@ -240,7 +240,7 @@ elements:
     fontSize: 12.5
     lineHeight: 1.35
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: в личную карту обучения; повтор сценария — через месяц
 - elementId: note
   elementType: text
@@ -253,7 +253,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: <p>Десять сценариев — приложение 10 к докладу; закупок не нужно. <strong>Тренажёр — повод для разговора о нашей работе, а не инструмент аттестации.</strong></p>
 - elementId: src
   elementType: text

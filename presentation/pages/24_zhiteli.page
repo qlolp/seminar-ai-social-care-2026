@@ -69,7 +69,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Общий
 - elementId: t0
   elementType: text
@@ -82,7 +82,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'На стенде и в договоре: какие технологии применяются в учреждении. Никто не должен узнавать о камере случайно.'
 - elementId: b1
   elementType: shape
@@ -106,7 +106,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Персональный
 - elementId: t1
   elementType: text
@@ -119,7 +119,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: 'Перед датчиком в комнате — беседа и письменное согласие простым языком: что считает, кто видит, как отказаться. Отказ — без последствий, отзыв — в тот же день.'
 - elementId: b2
   elementType: shape
@@ -143,7 +143,7 @@ elements:
     fontSize: 16
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Событийный
 - elementId: t2
   elementType: text
@@ -156,7 +156,7 @@ elements:
     fontSize: 13.5
     lineHeight: 1.45
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Система сработала — житель или представитель узнаёт о событии и о том, какие данные обрабатывались (форма 6.5, до 24 часов).
 - elementId: note
   elementType: text
@@ -169,7 +169,7 @@ elements:
     fontSize: 13
     lineHeight: 1.4
     color: $text
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: '<p>Регламент информирования семьи — одна страница при поступлении: что сообщаем сразу, что по расписанию, чего не делаем никогда.</p>'
 - elementId: src
   elementType: text

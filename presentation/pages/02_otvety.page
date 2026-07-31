@@ -58,7 +58,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: Для кого
 - elementId: b0
   elementType: text
@@ -92,7 +92,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: О чём
 - elementId: b1
   elementType: text
@@ -126,7 +126,7 @@ elements:
     fontSize: 15
     bold: true
     color: $primary
-    fontFamily: MiSans
+    fontFamily: Noto Sans
     text: С чем уйдёте
 - elementId: b2
   elementType: text
