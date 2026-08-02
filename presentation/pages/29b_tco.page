@@ -1,0 +1,78 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: ЭКОНОМИКА · ПОРЯДКИ, НЕ СМЕТА
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Три года владения: подписки обгоняют оборудование'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 840, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Год", "Оборудование", "Подписки", "Часы"]
+    rows:
+    - ["Год 1", 100, 40, 30]
+    - ["Год 2", 5, 40, 20]
+    - ["Год 3", 5, 45, 15]
+  series:
+    - type: bar
+      encode: {x: "Год", y: "Оборудование"}
+      name: "Оборудование и монтаж"
+      stack: "value"
+      fill: "#4A463C"
+    - type: bar
+      encode: {x: "Год", y: "Подписки"}
+      name: "Подписки и программы"
+      stack: "value"
+      fill: "$accent"
+    - type: bar
+      encode: {x: "Год", y: "Часы"}
+      name: "Свои часы (в переводе на деньги)"
+      stack: "value"
+      fill: "#A8A294"
+  legend: {position: bottom, color: "#6E6A5E"}
+  yAxis: {title: "условные единицы", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+  xAxis: {label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+  barWidth: 0.45
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Условные единицы для пересчёта на своих числах: к третьему году подписки дороже «железа» — именно их надо торговать, а не скидку на камеры.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Модель полной стоимости — раздел 22 доклада
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '39'

@@ -1,0 +1,74 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Е · САМООЦЕНКА
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Четыре ступени аналитики: где вы сегодня'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 122, 840, 336]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Ось", "Сегодня", "Через год"]
+    rows:
+    - ["Данные из журналов", 2, 4]
+    - ["Правила и пороги", 1, 3]
+    - ["Чтение моделью", 0, 3]
+    - ["Управленческие решения", 1, 3]
+  series:
+    - type: radar
+      encode: {category: "Ось", y: "Сегодня"}
+      name: "Типовое учреждение сегодня"
+      lineColor: "#A8A294"
+      width: 3
+      areaColor: "#A8A29433"
+    - type: radar
+      encode: {category: "Ось", y: "Через год"}
+      name: "Через год по дорожной карте"
+      lineColor: "$accent"
+      width: 3
+      areaColor: "#D9775733"
+  legend: {position: bottom, color: "#6E6A5E"}
+  spokeAxis: {min: 0, max: 4, label: {color: "#4A463C"}, gridLine: {color: "#E5E2D8"}, axisLine: {color: "#D6D1C4"}}
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Шкала 0–4 — качественная самооценка для планёрки: отметьте своё учреждение по каждой оси до выбора первых журналов.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Шкала 0–4 по ступеням раздела 13 доклада
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '29'

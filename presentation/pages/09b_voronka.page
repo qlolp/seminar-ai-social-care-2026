@@ -1,0 +1,70 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: ЧЕТЫРЕ ФИЛЬТРА · ПРАКТИКА
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Как сорок идей становятся одной задачей'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 840, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Этап", "Число"]
+    rows:
+    - ["Идеи с планёрки", 40]
+    - ["Фильтр данных: есть ли записи", 12]
+    - ["Фильтр людей: чьё время вернётся", 5]
+    - ["Фильтр риска: что закрыто регламентом", 2]
+    - ["Первая задача пилота", 1]
+  series:
+    - type: bar
+      encode: {x: "Число", y: "Этап"}
+      name: "Задачи"
+      fill: "$accent"
+      dataLabels: {show: true, color: "#FFFFFF"}
+  legend: false
+  yAxis: {type: "category", label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false, reverse: true}
+  xAxis: {min: 0, max: 45, label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+  barWidth: 0.55
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Типовая воронка отбора: сужение — это не потеря идей, а защита первого пилота от перегрузки.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Типовой проход по фильтрам раздела 9 доклада
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '13'

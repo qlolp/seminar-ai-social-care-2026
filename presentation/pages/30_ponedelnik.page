@@ -239,4 +239,4 @@ elements:
     - right
     - top
     style: $small
-    text: '30'
+    text: '40'

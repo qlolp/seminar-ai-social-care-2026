@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '10'
+    text: '14'
 - elementId: b0
   elementType: shape
   bounds:

@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '14'
+    text: '18'
 - elementId: h1c
   elementType: text
   bounds:

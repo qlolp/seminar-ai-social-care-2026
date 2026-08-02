@@ -1,0 +1,64 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Б · УРОК НАСТРОЙКИ
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: '111 тревог и 2 падения: цена плохого порога'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 520, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Тип", "Число"]
+    rows:
+    - ["Реальные падения", 2]
+    - ["Ложные тревоги", 109]
+  series:
+    - type: pie
+      encode: {category: "Тип", value: "Число"}
+      innerRadius: 0.58
+      fill: ["#B85C3D", "#E5E2D8"]
+      dataLabels: {show: true, content: "value"}
+  legend: {position: bottom, color: "#6E6A5E"}
+
+- elementId: side
+  elementType: text
+  bounds: [620, 150, 280, 240]
+  content:
+    fontSize: 14
+    lineHeight: 1.55
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p><strong>111 тревог за первый месяц</strong> пилота видеоаналитики — смена начала игнорировать звук панели.</p><p>Паспорт пилота: <strong>не больше 2 ложных тревог на камеру в неделю</strong> — иначе перенастройка порогов, а не героизм смены.</p>'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Кейс из раздела 11 доклада
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '20'

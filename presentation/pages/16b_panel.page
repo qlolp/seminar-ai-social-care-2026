@@ -1,0 +1,86 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Б · ИНСТРУМЕНТ
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Панель метрик пилота: шаблон, который вы заполните'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 840, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Неделя", "Обнаружение", "Тревоги"]
+    rows:
+    - ["1", 45, 14]
+    - ["2", 38, 11]
+    - ["3", 30, 9]
+    - ["4", 18, 6]
+    - ["5", 9, 4]
+    - ["6", 5, 2]
+    - ["7", 4, 2]
+    - ["8", 4, 1]
+    - ["9", 3, 1]
+    - ["10", 3, 1]
+    - ["11", 3, 1]
+    - ["12", 3, 1]
+  series:
+    - type: line
+      encode: {x: "Неделя", y: "Обнаружение"}
+      name: "Время обнаружения падения, мин"
+      smooth: true
+      width: 3
+      lineColor: "$accent"
+      marker: {size: 7, fill: "$accent"}
+    - type: line
+      encode: {x: "Неделя", y: "Тревоги"}
+      name: "Ложные тревоги на камеру в неделю"
+      smooth: true
+      width: 3
+      lineStyle: "dash"
+      lineColor: "#4A463C"
+      marker: {size: 7, fill: "#4A463C"}
+  legend: {position: bottom, color: "#6E6A5E"}
+  yAxis: {min: 0, label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+  xAxis: {label: {color: "#8A8578"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Линии — иллюстрация того, как читается панель; ваши цифры — только из ваших журналов. Цель: обнаружение ≤ 5 минут, ложные тревоги ≤ 2 на камеру в неделю.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Форма паспорта пилота — приложение к докладу
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '22'

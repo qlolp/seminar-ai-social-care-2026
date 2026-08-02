@@ -1,0 +1,84 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: КАРТА · ВЫБОР ПЕРВОГО ШАГА
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Вложения и эффект: почему первым идёт направление А'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 840, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["n1", "x1", "y1", "n2", "x2", "y2", "n3", "x3", "y3", "n4", "x4", "y4", "n5", "x5", "y5", "n6", "x6", "y6"]
+    rows:
+    - ["", 1, 5, "", 5, 2, "", 4, 3, "", 3, 3, "", 2, 4, "", 2, 4]
+  series:
+    - type: scatter
+      encode: {x: "x1", y: "y1"}
+      name: "А. Документы"
+      marker: {size: 16, fill: "$accent"}
+    - type: scatter
+      encode: {x: "x2", y: "y2"}
+      name: "Б. Видео"
+      marker: {size: 16, fill: "#B85C3D"}
+    - type: scatter
+      encode: {x: "x3", y: "y3"}
+      name: "В. Датчики"
+      marker: {size: 16, fill: "#4A463C"}
+    - type: scatter
+      encode: {x: "x4", y: "y4"}
+      name: "Г. Голос"
+      marker: {size: 16, fill: "#8A8578"}
+    - type: scatter
+      encode: {x: "x5", y: "y5"}
+      name: "Д. Обучение"
+      marker: {size: 16, fill: "#D9A28B"}
+    - type: scatter
+      encode: {x: "x6", y: "y6"}
+      name: "Е. Аналитика"
+      marker: {size: 16, fill: "#6E6A5E"}
+  legend: {position: bottom, color: "#6E6A5E"}
+  xAxis: {title: "вложения (шкала 1–5)", min: 0, max: 6, label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+  yAxis: {title: "скорость эффекта (шкала 1–5)", min: 0, max: 6, label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Шкала 1–5 — качественная оценка автора доклада, а не стоимостной расчёт: у направления А нулевые вложения и эффект в первый же месяц.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Оценка по материалам раздела 5 доклада
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '7'

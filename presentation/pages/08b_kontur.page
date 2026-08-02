@@ -1,0 +1,75 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: ЧЕЛОВЕК В КОНТУРЕ
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Что делает машина — и что остаётся человеку'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: chart
+  elementType: chart
+  bounds: [60, 126, 840, 330]
+  fontFamily: Noto Sans
+  data:
+    cols: ["Процесс", "Машина", "Человек"]
+    rows:
+    - ["Сводка смены", 70, 30]
+    - ["Ночное наблюдение", 80, 20]
+    - ["Ответ на обращение", 60, 40]
+  series:
+    - type: bar
+      encode: {x: "Процесс", y: "Машина"}
+      name: "Машина: черновик, сигнал, подсчёт"
+      stack: "percent"
+      fill: "$accent"
+      dataLabels: {show: true, color: "#FFFFFF"}
+    - type: bar
+      encode: {x: "Процесс", y: "Человек"}
+      name: "Человек: проверка, решение, подпись"
+      stack: "percent"
+      fill: "#4A463C"
+      dataLabels: {show: true, color: "#FFFFFF"}
+  legend: {position: bottom, color: "#6E6A5E"}
+  yAxis: {min: 0, max: 100, title: "доля процесса, %", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+  xAxis: {label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+  barWidth: 0.5
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Правило доклада: машина готовит, человек решает. Доля человека в решении не опускается ниже зоны подписи и ответственности.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Принцип раздела 8 доклада; доли — качественная оценка
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '11'

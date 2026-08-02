@@ -1,0 +1,336 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: 'БЕЗОПАСНОСТЬ · КАРТА ПОКРЫТИЯ'
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Шесть мер против шести главных рисков'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: ylab0
+  elementType: text
+  bounds: [50, 135, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Регламент'
+- elementId: c00
+  elementType: shape
+  bounds: [191, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c01
+  elementType: shape
+  bounds: [309, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c02
+  elementType: shape
+  bounds: [427, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c03
+  elementType: shape
+  bounds: [545, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c04
+  elementType: shape
+  bounds: [663, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c05
+  elementType: shape
+  bounds: [781, 119, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: ylab1
+  elementType: text
+  bounds: [50, 187, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Обезличивание'
+- elementId: c10
+  elementType: shape
+  bounds: [191, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c11
+  elementType: shape
+  bounds: [309, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c12
+  elementType: shape
+  bounds: [427, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c13
+  elementType: shape
+  bounds: [545, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c14
+  elementType: shape
+  bounds: [663, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c15
+  elementType: shape
+  bounds: [781, 171, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: ylab2
+  elementType: text
+  bounds: [50, 239, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Подпись'
+- elementId: c20
+  elementType: shape
+  bounds: [191, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c21
+  elementType: shape
+  bounds: [309, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c22
+  elementType: shape
+  bounds: [427, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c23
+  elementType: shape
+  bounds: [545, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c24
+  elementType: shape
+  bounds: [663, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c25
+  elementType: shape
+  bounds: [781, 223, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: ylab3
+  elementType: text
+  bounds: [50, 291, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Паспорт'
+- elementId: c30
+  elementType: shape
+  bounds: [191, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c31
+  elementType: shape
+  bounds: [309, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c32
+  elementType: shape
+  bounds: [427, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c33
+  elementType: shape
+  bounds: [545, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c34
+  elementType: shape
+  bounds: [663, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c35
+  elementType: shape
+  bounds: [781, 275, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: ylab4
+  elementType: text
+  bounds: [50, 343, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Журнал'
+- elementId: c40
+  elementType: shape
+  bounds: [191, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c41
+  elementType: shape
+  bounds: [309, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c42
+  elementType: shape
+  bounds: [427, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c43
+  elementType: shape
+  bounds: [545, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c44
+  elementType: shape
+  bounds: [663, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c45
+  elementType: shape
+  bounds: [781, 327, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: ylab5
+  elementType: text
+  bounds: [50, 395, 132, 18]
+  content:
+    align: [right, middle]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Обучение'
+- elementId: c50
+  elementType: shape
+  bounds: [191, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: c51
+  elementType: shape
+  bounds: [309, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c52
+  elementType: shape
+  bounds: [427, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c53
+  elementType: shape
+  bounds: [545, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F0C4AC"}
+- elementId: c54
+  elementType: shape
+  bounds: [663, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#B85C3D"}
+- elementId: c55
+  elementType: shape
+  bounds: [781, 379, 116, 50]
+  shapeName: rect
+  fill: {type: solid, color: "#F2EFE6"}
+- elementId: xlab0
+  elementType: text
+  bounds: [190, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'ПД'
+- elementId: xlab1
+  elementType: text
+  bounds: [308, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Текст'
+- elementId: xlab2
+  elementType: text
+  bounds: [426, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Тревоги'
+- elementId: xlab3
+  elementType: text
+  bounds: [544, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Суждение'
+- elementId: xlab4
+  elementType: text
+  bounds: [662, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Проклик'
+- elementId: xlab5
+  elementType: text
+  bounds: [780, 436, 118, 16]
+  content:
+    align: [center, top]
+    fontSize: 11.5
+    color: "#4A463C"
+    fontFamily: Noto Sans
+    text: 'Вендор'
+
+- elementId: note
+  elementType: text
+  bounds: [60, 462, 840, 40]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Тёмная ячейка — мера закрывает риск, средняя — снижает. ПД — персональные данные; Проклик — согласие без чтения; Вендор — зависимость от поставщика.'
+
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: Качественная оценка автора доклада по разделам 17–18
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '34'
