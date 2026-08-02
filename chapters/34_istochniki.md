@@ -14,3 +14,13 @@
 10. Права субъектов персональных данных при автоматизированных решениях: разъяснение условий ч. 2–4 ст. 16 Закона № 152-ФЗ (Гарант). URL: https://www.garant.ru/actual/persona/prava/
 11. Практика применения норм об уведомлении Роскомнадзора об утечках: порядок, сроки, штрафы, судебная практика 2025–2026 годов (обзор). URL: https://www.klerk.ru/user/2689193/698844/
 12. Российские генеративные модели, доступные учреждениям: GigaChat (Сбер) — https://developers.sber.ru/portal/products/gigachat; YandexGPT (Яндекс Облако) — https://cloud.yandex.ru/services/yandexgpt
+
+## Дополнение августа 2026: научные публикации 2024–2026 годов
+
+Рецензируемые источники, подтверждающие выводы доклада (добавлены при обновлении; проверены 02.08.2026).
+
+13. **[S045]** Ronan I., Tabirca S., Murphy D., Cornally N. et al. «Artificially intelligent nursing homes: a scoping review of palliative care interventions» — Frontiers in Digital Health, 2025. URL: https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1484304/full — скопинг-обзор ИИ-вмешательств в домах ухода; подтверждает классификацию направлений доклада.
+14. **[S046]** Wong K.L.Y., Hung L., Wong J., Park J., Alfares H., Zhao Y. et al. «Adoption of artificial intelligence–enabled robots in long-term care homes by health care providers: scoping review» — JMIR Aging, 2024. URL: https://aging.jmir.org/2024/1/e55257/ — барьеры внедрения: регламент, обучение, доверие персонала, а не техника.
+15. **[S047]** Gorce P., Jacquier-Bret J. «Fall detection in elderly people: a systematic review of ambient assisted living and smart home-related technology performance» — Sensors, 2025. URL: https://www.mdpi.com/1424-8220/25/21/6540 — разброс точности и доля ложных срабатываний ambient-систем; обоснование порога ложных тревог в паспорте пилота.
+16. **[S048]** Mess S.A., Mackey A.J. et al. «Artificial intelligence scribe and large language model technology in healthcare documentation: advantages, limitations, and recommendations» — 2025. URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC11737491/ — ИИ-секретари в клинической документации; обязательность проверки человеком (принцип «человек в контуре»).
+17. **[S049]** Kim Y., Jeong H., Chen S., Li S.S., Park C., Lu M. et al. «Medical hallucination in foundation models and their impact on healthcare» — medRxiv, 2025. URL: https://www.medrxiv.org/content/10.1101/2025.02.28.25323115.abstract — самая цитируемая свежая работа о галлюцинациях медицинских моделей; обоснование мер «подпись человека» и «обучение на своих сценариях».

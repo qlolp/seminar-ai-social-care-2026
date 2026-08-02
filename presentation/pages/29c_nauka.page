@@ -1,0 +1,82 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds: [60, 34, 700, 16]
+  content:
+    style: $kicker
+    text: НАУКА 2024–2026 · ПОСЛЕДНИЕ ПРОВЕРКИ
+- elementId: title
+  elementType: text
+  bounds: [60, 56, 840, 40]
+  content:
+    style: $h1
+    text: 'Что подтвердилось в рецензируемой литературе'
+- elementId: line
+  elementType: shape
+  bounds: [60, 108, 840, 1]
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: i1
+  elementType: text
+  bounds: [60, 128, 405, 118]
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p><strong>Падения: ложные тревоги — системная проблема.</strong> Систематический обзор систем детекции падений (Sensors, 2025) фиксирует разброс качества ambient-решений — аргумент за порог «не больше 2 ложных в неделю на камеру».</p>'
+- elementId: i2
+  elementType: text
+  bounds: [495, 128, 405, 118]
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p><strong>Документы: ИИ-секретари уже в мейнстриме.</strong> Обзор AI-scribe технологий в клинической документации (2025) — преимущества и границы: проверка человеком остаётся обязательной, как и в нашем регламенте.</p>'
+- elementId: i3
+  elementType: text
+  bounds: [60, 256, 405, 118]
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p><strong>Галлюцинации — риск № 1 по цитируемости.</strong> Работа «Medical hallucination in foundation models» (2025) — самая цитируемая свежая публикация по теме; подтверждает выбор мер «подпись человека» и «паспорт пилота».</p>'
+- elementId: i4
+  elementType: text
+  bounds: [495, 256, 405, 118]
+  content:
+    fontSize: 13
+    lineHeight: 1.5
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p><strong>ИИ в домах ухода — отдельная полка.</strong> Скопинг-обзор «Artificially intelligent nursing homes» (Frontiers, 2025) и обзор внедрения ИИ-роботов в long-term care (JMIR Aging, 2024): барьеры — не техника, а регламент и обучение.</p>'
+- elementId: note
+  elementType: text
+  bounds: [60, 392, 840, 60]
+  content:
+    fontSize: 12.5
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: 'Все четыре вывода совпадают с принципами доклада: машина готовит — человек решает; пилот начинается с регламента, а не с закупки.'
+- elementId: src
+  elementType: text
+  bounds: [60, 508, 760, 24]
+  content:
+    style: $small
+    text: 'Gorce & Jacquier-Bret 2025; Mess et al. 2025; Kim et al. 2025; Ronan et al. 2025; Wong et al. 2024 — список в докладе'
+- elementId: pg
+  elementType: text
+  bounds: [900, 508, 40, 20]
+  content:
+    align: [right, top]
+    style: $small
+    text: '40'
