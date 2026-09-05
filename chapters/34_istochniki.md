@@ -70,3 +70,13 @@
 46. **[S078]** Безопасность и приватность голосового управления (152-ФЗ) — Хабр. URL: https://habr.com/ru/articles/1023434/ — голос + разрешения + 152-ФЗ.
 47. **[S079]** НМИЦК Чазова + ИИ + обезличивание — Хабр / Yandex Cloud. URL: https://habr.com/ru/companies/yandex_cloud_and_infra/articles/1042516/ — клинический пайплайн с обезличиванием ПДн.
 48. **[S080]** Методические рекомендации Банка России № 3-МР по безопасности ИИ — Хабр. URL: https://habr.com/ru/companies/swordfish_security/articles/1063648/ — категории рисков + обязательная человеческая валидация высокорисковых процессов (переносимо).
+
+## Дополнение сентября 2026: международные обзоры LTC и практика
+
+Рецензируемые обзоры и политический доклад — опора для доказательной скромности. Пункт 53 — не научное доказательство, а живой язык практики (обсуждения медсестёр и семей). Проверены 05.09.2026.
+
+49. **[S081]** Imran R., Khan S.S. «A systematic review on the efficacy of artificial intelligence in geriatric healthcare» — BMC Geriatrics, 2025;25:248. URL: https://link.springer.com/article/10.1186/s12877-025-05878-w — систематический обзор ИИ в LTC: слабый консенсус по эффективности; соцроботы — лучшие данные по настроению/одиночеству; высокий риск bias.
+50. **[S082]** «Artificial Intelligence in Nursing Care for Older Adults in Long-Term Care Facilities: An Umbrella Review» — JMIR Preprints #96479. URL: https://preprints.jmir.org/preprint/96479 — umbrella-обзор: 5 классов применений; барьеры — ложные тревоги, приватность, ломка workflow; качество первичных обзоров низкое/критически низкое.
+51. **[S083]** OECD. «Scaling Artificial Intelligence in Health» — 2026. URL: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf — политика масштабирования ИИ в здравоохранении: доверие, данные, oversight.
+52. **[S084]** medRxiv / fall documentation with obfuscated CV (AUGi) — https://doi.org/10.1101/2025.10.10.25337770 — детекция падений с силуэтом/пикселизацией; сырое видео не хранится (по описанию производителя).
+53. **[S085]** Обсуждения практикующих медсестёр и семей на Reddit (r/nursing, r/eldercare, r/AssistedLiving, 2019–2026) о камерах, telesitter, кроватных датчиках и роботах в уходе — см. подборку тезисов в главах; не рецензируемый источник, а живой язык практики. Примеры тредов: https://www.reddit.com/r/nursing/comments/1vxbhmm/ ; https://www.reddit.com/r/AssistedLiving/comments/1m4ydbk/ ; https://www.reddit.com/r/nursing/comments/1ujj7fq/ ; https://www.reddit.com/r/eldercare/comments/1lwrieg/
