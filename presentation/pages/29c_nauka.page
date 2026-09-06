@@ -60,23 +60,23 @@ elements:
     text: '<p><strong>ИИ в домах ухода — отдельная полка.</strong> Скопинг-обзор «Artificially intelligent nursing homes» (Frontiers, 2025) и обзор внедрения ИИ-роботов в long-term care (JMIR Aging, 2024): барьеры — не техника, а регламент и обучение.</p>'
 - elementId: note
   elementType: text
-  bounds: [60, 392, 840, 60]
+  bounds: [60, 386, 840, 72]
   content:
     fontSize: 12.5
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: 'Все четыре вывода совпадают с принципами доклада: машина готовит — человек решает; пилот начинается с регламента, а не с закупки.'
+    text: 'Библиография доклада — около 81 источника. Пилоты кожи / пролежней (фото → медсестре, не масштаб) и европейская рамка DHT подтверждают то же: пилот ≠ сеть; машина готовит — человек решает.'
 - elementId: src
   elementType: text
   bounds: [60, 508, 760, 24]
   content:
     style: $small
-    text: 'Gorce & Jacquier-Bret 2025; Mess et al. 2025; Kim et al. 2025; Ronan et al. 2025; Wong et al. 2024 — список в докладе'
+    text: 'Gorce 2025; Mess 2025; Kim 2025; Ronan 2025; Wong 2024; DHT / кожа — список в докладе (~81)'
 - elementId: pg
   elementType: text
   bounds: [900, 508, 40, 20]
   content:
     align: [right, top]
     style: $small
-    text: '40'
+    text: '43'

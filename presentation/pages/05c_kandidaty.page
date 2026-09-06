@@ -1,0 +1,138 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: КАРТА · КАНДИДАТЫ Ж–Н
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Семь расширений: не вместо А–Е и не биллинг США'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: '8'
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 122
+  - 840
+  - 336
+  columnWidths:
+  - 0.22
+  - 0.48
+  - 0.3
+  rowHeights:
+  - 0.125
+  - 0.125
+  - 0.125
+  - 0.125
+  - 0.125
+  - 0.125
+  - 0.125
+  - 0.125
+  style:
+    cellStyle:
+      fontSize: 11.5
+      lineHeight: 1.25
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12
+      fill:
+        type: solid
+        color: $primary
+  rows:
+  - - text: Кандидат
+    - text: Одна строка
+    - text: Не делать
+  - - text: Ж. Лекарства HITL
+    - text: Сверка списка врача; флаги взаимодействий / PIM — медсестре
+    - text: Не смена дозы, не назначение
+  - - text: З. Смены
+    - text: Черновик по правилам учреждения; старшая утверждает
+    - text: Не «ИИ знает, сколько людей нужно»
+  - - text: И. Реминисценция
+    - text: Добровольные плейлисты по согласию, рядом с персоналом
+    - text: Не лечение возбуждения
+  - - text: К. Дайджесты семье
+    - text: Фиксированные поля из проверенной сводки; человек утверждает
+    - text: Не чат-бот «обучения родственников»
+  - - text: Л. Дыры в журналах
+    - text: Флаги пропуска, противоречия, просрочки — человеку на разбор
+    - text: Не автоподпись, не MDS / биллинг
+  - - text: М. Кухня, не клиника
+    - text: Утверждённый рецептурник, поля ограничений, сводка отходов
+    - text: Не автономная лечебная диета
+  - - text: Н. Кожа / пролежни
+    - text: Фото → подсказка стадии медсестре; человек подтверждает
+    - text: Не автолечение, не биометрия
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 468
+  - 840
+  - 30
+  content:
+    fontSize: 13
+    color: $primary
+    bold: true
+    fontFamily: Noto Sans
+    text: 'Садятся на уже названные ступени карты — не открывают «пятый квартал» и не сдвигают видеопилот.'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Доклад §4.2; фильтры — раздел 7.3; посадка на карту — §16.8

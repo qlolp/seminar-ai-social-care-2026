@@ -67,4 +67,4 @@ elements:
   content:
     align: [right, top]
     style: $small
-    text: '13'
+    text: '16'

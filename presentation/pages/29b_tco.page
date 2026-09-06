@@ -75,4 +75,4 @@ elements:
   content:
     align: [right, top]
     style: $small
-    text: '39'
+    text: '42'
