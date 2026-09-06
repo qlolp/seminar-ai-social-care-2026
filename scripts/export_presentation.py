@@ -112,7 +112,7 @@ def render_text(el, theme):
     hm, vm = flex_align(align)
     ta = {"flex-start": "left", "center": "center", "flex-end": "right"}[hm]
     extra = (
-        f"display:flex;align-items:{vm};justify-content:{hm};"
+        f"display:flex;flex-direction:column;align-items:{hm};justify-content:{vm};"
         f"text-align:{ta};overflow:hidden;{css_font(style)}"
     )
     return f'<div style="{box_style(el["bounds"], extra)}">{text_html(content.get("text"))}</div>'
@@ -406,6 +406,8 @@ def build_html(manifest):
     page-break-after: always; break-after: page;
   }}
   .slide:last-child {{ page-break-after: auto; }}
+  .slide p {{ margin: 0 0 0.55em 0; }}
+  .slide p:last-child {{ margin-bottom: 0; }}
   * {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
 </style>
 </head>
@@ -418,17 +420,20 @@ def build_html(manifest):
 
 def export_pdf(html_path: Path, pdf_path: Path):
     chrome = "google-chrome"
+    profile = Path("/tmp/chrome-pres-export")
+    profile.mkdir(parents=True, exist_ok=True)
     cmd = [
         chrome,
         "--headless=new",
         "--disable-gpu",
         "--no-pdf-header-footer",
         "--hide-scrollbars",
+        f"--user-data-dir={profile}",
+        "--crash-dumps-dir=/tmp/chrome-crash",
         f"--print-to-pdf={pdf_path}",
-        "--no-pdf-header-footer",
         html_path.resolve().as_uri(),
     ]
-    subprocess.run(cmd, check=True, cwd=str(PRES))
+    subprocess.run(cmd, check=True, cwd=str(PRES), timeout=90)
 
 
 def main():
@@ -438,10 +443,15 @@ def main():
     print(f"HTML: {OUT_HTML} ({len(manifest['pages'])} slides)")
     try:
         export_pdf(OUT_HTML, OUT_PDF)
-        print(f"PDF:  {OUT_PDF} ({OUT_PDF.stat().st_size} bytes)")
+    except subprocess.TimeoutExpired:
+        if not OUT_PDF.exists() or OUT_PDF.stat().st_size < 10000:
+            print("PDF export timed out before a file was written", file=sys.stderr)
+            return 1
+        print("Chrome timed out after writing PDF (headless hang); file kept")
     except Exception as exc:
         print(f"PDF export failed: {exc}", file=sys.stderr)
         return 1
+    print(f"PDF:  {OUT_PDF} ({OUT_PDF.stat().st_size} bytes)")
     return 0
 
 
