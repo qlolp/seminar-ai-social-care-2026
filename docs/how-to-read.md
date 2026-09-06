@@ -38,4 +38,6 @@
 
 - Границы пакета: [limitations.md](limitations.md)
 - Этика, HITL, 152-ФЗ: [ethics-and-safety.md](ethics-and-safety.md)
+- Российская правовая рамка vs сравнение с зарубежным: [regulatory-note.md](regulatory-note.md)
+- Как предложить правку: [CONTRIBUTING.md](../CONTRIBUTING.md)
 - Старт с обложки репозитория: [README.md](../README.md)
