@@ -8,7 +8,7 @@ elements:
   bounds: [60, 34, 700, 16]
   content:
     style: $kicker
-    text: НАУКА 2024–2026 · ПОСЛЕДНИЕ ПРОВЕРКИ
+    text: НАУКА 2024–2026
 - elementId: title
   elementType: text
   bounds: [60, 56, 840, 40]
@@ -30,7 +30,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Падения: ложные тревоги — системная проблема.</strong> Систематический обзор систем детекции падений (Sensors, 2025) фиксирует разброс качества ambient-решений — аргумент за порог «не больше 2 ложных в неделю на камеру».</p>'
+    text: '<p><strong>Падения.</strong> Ложные тревоги — обычная беда, не сбой одной камеры. Обзор 2025 года показывает разброс качества. Поэтому порог: не больше двух ложных тревог в неделю на камеру.</p>'
 - elementId: i2
   elementType: text
   bounds: [495, 128, 405, 118]
@@ -39,7 +39,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Документы: ИИ-секретари уже в мейнстриме.</strong> Обзор AI-scribe технологий в клинической документации (2025) — преимущества и границы: проверка человеком остаётся обязательной, как и в нашем регламенте.</p>'
+    text: '<p><strong>Документы.</strong> Программы, которые пишут черновик записи, уже входят в практику. Человек всё равно проверяет. Как в нашем регламенте.</p>'
 - elementId: i3
   elementType: text
   bounds: [60, 256, 405, 118]
@@ -48,7 +48,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Галлюцинации — риск № 1 по цитируемости.</strong> Работа «Medical hallucination in foundation models» (2025) — самая цитируемая свежая публикация по теме; подтверждает выбор мер «подпись человека» и «паспорт пилота».</p>'
+    text: '<p><strong>Выдумки модели.</strong> Свежая работа 2025 года — самая цитируемая по этой теме. Подтверждает наше правило: подпись человека и паспорт пилота.</p>'
 - elementId: i4
   elementType: text
   bounds: [495, 256, 405, 118]
@@ -57,7 +57,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>ИИ в домах ухода — отдельная полка.</strong> Скопинг-обзор «Artificially intelligent nursing homes» (Frontiers, 2025) и обзор внедрения ИИ-роботов в long-term care (JMIR Aging, 2024): барьеры — не техника, а регламент и обучение.</p>'
+    text: '<p><strong>Дома ухода — отдельная полка.</strong> Обзоры 2024–2025 годов говорят одно: мешает не техника, а регламент и обучение.</p>'
 - elementId: note
   elementType: text
   bounds: [60, 386, 840, 72]
@@ -66,13 +66,13 @@ elements:
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: 'Библиография доклада — около 81 источника. Пилоты кожи / пролежней (фото → медсестре, не масштаб) и европейская рамка DHT подтверждают то же: пилот ≠ сеть; машина готовит — человек решает.'
+    text: 'Четыре вывода совпадают с докладом. Машина готовит — человек решает. Удачный пилот ещё не сеть.'
 - elementId: src
   elementType: text
   bounds: [60, 508, 760, 24]
   content:
     style: $small
-    text: 'Gorce 2025; Mess 2025; Kim 2025; Ronan 2025; Wong 2024; DHT / кожа — список в докладе (~81)'
+    text: 'Gorce 2025; Mess 2025; Kim 2025; Ronan 2025; Wong 2024 — список в докладе'
 - elementId: pg
   elementType: text
   bounds: [900, 508, 40, 20]

@@ -12,7 +12,7 @@ elements:
   - 16
   content:
     style: $kicker
-    text: КАРТА · СТАРТ А–Е
+    text: КАРТА
 - elementId: title
   elementType: text
   bounds:
@@ -22,7 +22,7 @@ elements:
   - 40
   content:
     style: $h1
-    text: 'А–Е — стартовая карта, не вся отрасль'
+    text: 'Шесть направлений: с чего начать и что потребуется'
 - elementId: line
   elementType: shape
   bounds:
@@ -139,4 +139,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Кандидаты Ж–Н — следующие слайды / доклад §4.2–4.4. Подробная карта А–Е — приложение 2
+    text: Дальше — семь задач рядом с этой картой. Подробности А–Е — приложение 2

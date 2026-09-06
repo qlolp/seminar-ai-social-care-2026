@@ -12,7 +12,7 @@ elements:
   - 16
   content:
     style: $kicker
-    text: КАРТА · КАНДИДАТЫ Ж–Н
+    text: РЯДОМ С КАРТОЙ
 - elementId: title
   elementType: text
   bounds:
@@ -22,7 +22,7 @@ elements:
   - 40
   content:
     style: $h1
-    text: 'Семь расширений: не вместо А–Е и не биллинг США'
+    text: Ещё семь задач. Карту А–Е они не заменяют.
 - elementId: line
   elementType: shape
   bounds:
@@ -47,85 +47,293 @@ elements:
     - top
     style: $small
     text: '8'
-- elementId: tbl
-  elementType: table
+- elementId: lZh
+  elementType: text
   bounds:
   - 60
   - 122
-  - 840
-  - 336
-  columnWidths:
-  - 0.22
-  - 0.48
-  - 0.3
-  rowHeights:
-  - 0.125
-  - 0.125
-  - 0.125
-  - 0.125
-  - 0.125
-  - 0.125
-  - 0.125
-  - 0.125
-  style:
-    cellStyle:
-      fontSize: 11.5
-      lineHeight: 1.25
-      align:
-      - left
-      - middle
-      border:
-      - null
-      - null
-      - style: solid
-        width: 1
-        color: $line
-      - null
-    firstRowStyle:
-      bold: true
-      color: '#FFFFFF'
-      fontSize: 12
-      fill:
-        type: solid
-        color: $primary
-  rows:
-  - - text: Кандидат
-    - text: Одна строка
-    - text: Не делать
-  - - text: Ж. Лекарства HITL
-    - text: Сверка списка врача; флаги взаимодействий / PIM — медсестре
-    - text: Не смена дозы, не назначение
-  - - text: З. Смены
-    - text: Черновик по правилам учреждения; старшая утверждает
-    - text: Не «ИИ знает, сколько людей нужно»
-  - - text: И. Реминисценция
-    - text: Добровольные плейлисты по согласию, рядом с персоналом
-    - text: Не лечение возбуждения
-  - - text: К. Дайджесты семье
-    - text: Фиксированные поля из проверенной сводки; человек утверждает
-    - text: Не чат-бот «обучения родственников»
-  - - text: Л. Дыры в журналах
-    - text: Флаги пропуска, противоречия, просрочки — человеку на разбор
-    - text: Не автоподпись, не MDS / биллинг
-  - - text: М. Кухня, не клиника
-    - text: Утверждённый рецептурник, поля ограничений, сводка отходов
-    - text: Не автономная лечебная диета
-  - - text: Н. Кожа / пролежни
-    - text: Фото → подсказка стадии медсестре; человек подтверждает
-    - text: Не автолечение, не биометрия
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: Ж
+- elementId: hZh
+  elementType: text
+  bounds:
+  - 96
+  - 126
+  - 340
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Лекарства
+- elementId: bZh
+  elementType: text
+  bounds:
+  - 96
+  - 148
+  - 340
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Сверяет список врача и предупреждает медсестру. Человек подтверждает. Дозу меняет врач.
+- elementId: lZ
+  elementType: text
+  bounds:
+  - 60
+  - 204
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: З
+- elementId: hZ
+  elementType: text
+  bounds:
+  - 96
+  - 208
+  - 340
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Смены
+- elementId: bZ
+  elementType: text
+  bounds:
+  - 96
+  - 230
+  - 340
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Черновик графика по правилам дома. Утверждает старшая.
+- elementId: lI
+  elementType: text
+  bounds:
+  - 60
+  - 286
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: И
+- elementId: hI
+  elementType: text
+  bounds:
+  - 96
+  - 290
+  - 340
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Память и музыка
+- elementId: bI
+  elementType: text
+  bounds:
+  - 96
+  - 312
+  - 340
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Плейлист по согласию, рядом с персоналом. Это не лечение.
+- elementId: lK
+  elementType: text
+  bounds:
+  - 60
+  - 368
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: К
+- elementId: hK
+  elementType: text
+  bounds:
+  - 96
+  - 372
+  - 340
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Письма семье
+- elementId: bK
+  elementType: text
+  bounds:
+  - 96
+  - 394
+  - 340
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Короткая сводка из проверенных полей. Человек читает и отправляет.
+- elementId: lL
+  elementType: text
+  bounds:
+  - 500
+  - 122
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: Л
+- elementId: hL
+  elementType: text
+  bounds:
+  - 536
+  - 126
+  - 360
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Дыры в журналах
+- elementId: bL
+  elementType: text
+  bounds:
+  - 536
+  - 148
+  - 360
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Помечает пропуски и противоречия. Разбирает и подписывает человек.
+- elementId: lM
+  elementType: text
+  bounds:
+  - 500
+  - 204
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: М
+- elementId: hM
+  elementType: text
+  bounds:
+  - 536
+  - 208
+  - 360
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Кухня
+- elementId: bM
+  elementType: text
+  bounds:
+  - 536
+  - 230
+  - 360
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Рецепты из списка, который уже утвердил врач. Ведомость остатков ведёт кухня.
+- elementId: lN
+  elementType: text
+  bounds:
+  - 500
+  - 286
+  - 28
+  - 24
+  content:
+    fontSize: 20
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: Н
+- elementId: hN
+  elementType: text
+  bounds:
+  - 536
+  - 290
+  - 360
+  - 20
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Кожа
+- elementId: bN
+  elementType: text
+  bounds:
+  - 536
+  - 312
+  - 360
+  - 48
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: Фото даёт подсказку медсестре. Сначала журнал поворотов.
 - elementId: note
   elementType: text
   bounds:
   - 60
-  - 468
+  - 456
   - 840
-  - 30
+  - 36
   content:
     fontSize: 13
+    lineHeight: 1.35
     color: $primary
     bold: true
     fontFamily: Noto Sans
-    text: 'Садятся на уже названные ступени карты — не открывают «пятый квартал» и не сдвигают видеопилот.'
+    text: Садятся на уже живые ступени карты. Видеопилот остаётся на своём месте.
 - elementId: src
   elementType: text
   bounds:
@@ -135,4 +343,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Доклад §4.2; фильтры — раздел 7.3; посадка на карту — §16.8
+    text: Доклад, раздел 4.2. Фильтры — 7.3. Связь с картой — 16.8
