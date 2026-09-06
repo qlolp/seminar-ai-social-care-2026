@@ -44,7 +44,7 @@
 | --- | --- |
 | `chapters/` | Исходные разделы доклада (Markdown) |
 | `scripts/` | Сборка: `build.py` → полный Markdown; `build_color.py` → журнальный HTML; инфографика |
-| `output/` | Собранные `_report_full.md`, `_report_color.html` и PDF доклада |
+| `output/` | Готовый PDF доклада. Промежуточные `_report_*` и `toc_pages_*.json` собираются `scripts/` локально и **не коммитятся** |
 | `presentation/` | Слайды семинара (`.pptd` / `.page`) и PDF-копии для просмотра |
 | `docs/` | Как читать, границы, этика и безопасность — поверх глав, не вместо них |
 | `LICENSE` | CC BY-NC-SA 4.0 (учебные материалы семинара) |
@@ -85,7 +85,7 @@ google-chrome --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
   file://$PWD/output/_report_color.html
 ```
 
-Нужны Python 3 и **pandoc** (HTML-сборка). Журнальные номера страниц в оглавлении живут в `output/toc_pages_color.json` (второй проход после PDF). PDF в `output/` — собранный артефакт; пока его не пересобрали, он может отставать от `chapters/` — это ожидаемо, см. [docs/limitations.md](docs/limitations.md).
+Нужны Python 3 и **pandoc** (HTML-сборка). Промежуточные `_report_full.md`, `_report_color.html` и `toc_pages_color.json` пишет конвейер в `output/` **локально** и в git не входят. Для чтения без сборки берите PDF. Журнальные номера страниц в оглавлении считаются вторым проходом после PDF (`toc_pages_color.json`). Пока PDF не пересобрали, он может отставать от `chapters/` — это ожидаемо, см. [docs/limitations.md](docs/limitations.md).
 
 ## Лицензия
 

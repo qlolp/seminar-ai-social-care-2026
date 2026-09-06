@@ -11,5 +11,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Промежуточная HTML-сборка (журнальный HTML при необходимости коммитят явно)
-# output/_report_*.html
+# Локальные промежуточные сборки (не коммитить; читателям — PDF)
+output/_report_*
+output/toc_pages_*.json
