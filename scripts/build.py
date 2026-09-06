@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """Сборка _report_full.md из chapters/ с разделителями частей и инфографикой."""
 import os
+import sys
 
-BASE = '/mnt/agents/output/seminar_ai_2026'
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import resolve_base
+
+BASE = str(resolve_base())
 CH = os.path.join(BASE, 'chapters')
 OUT = os.path.join(BASE, 'output')
 os.makedirs(OUT, exist_ok=True)
@@ -78,4 +82,4 @@ for kind, val in parts:
 
 md = '\n'.join(out)
 open(os.path.join(OUT, '_report_full.md'), 'w', encoding='utf-8').write(md)
-print('assembled:', len(md), 'chars,', len(md.split()), 'words')
+print('assembled:', len(md), 'chars,', len(md.split()), 'words; base=', BASE)

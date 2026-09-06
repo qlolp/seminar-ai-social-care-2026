@@ -2,7 +2,10 @@
 """Журнальная цветная сборка доклада об ИИ: _report_full.md → HTML → PDF."""
 import os, re, sys, json, subprocess
 
-BASE = '/mnt/agents/output/seminar_ai_2026'
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import resolve_base
+
+BASE = str(resolve_base())
 OUT  = os.path.join(BASE, 'output')
 sys.path.insert(0, os.path.join(BASE, 'scripts'))
 from figures_color import CSS_COLOR
@@ -169,4 +172,4 @@ html = f"""<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
 </body></html>"""
 
 open(f'{OUT}/_report_color.html', 'w', encoding='utf-8').write(html)
-print('color HTML written:', len(html), 'chars; TOC entries:', len(toc_rows))
+print('color HTML written:', len(html), 'chars; TOC entries:', len(toc_rows), '; base=', BASE)
