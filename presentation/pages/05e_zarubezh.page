@@ -12,7 +12,7 @@ elements:
   - 16
   content:
     style: $kicker
-    text: ЗАРУБЕЖНЫЙ LTC · РАМКА, НЕ ВИТРИНА
+    text: ЗАРУБЕЖНЫЙ ОПЫТ
 - elementId: title
   elementType: text
   bounds:
@@ -22,7 +22,7 @@ elements:
   - 40
   content:
     style: $h1
-    text: 'DHT, семья, роботы: что берём и чего не берём'
+    text: Три урока из Европы. Не каталог закупок.
 - elementId: line
   elementType: shape
   bounds:
@@ -59,7 +59,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: DHT — пилот ≠ масштаб
+    text: Цифровой уход
 - elementId: ln0
   elementType: shape
   bounds:
@@ -79,24 +79,24 @@ elements:
   - 258
   - 200
   content:
-    fontSize: 13
-    lineHeight: 1.45
+    fontSize: 13.5
+    lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: 'Европейский обзор цифровых технологий здорового старения фиксирует потенциал — и барьеры сети: валидация, включённость, этика, оплата. Чужой обзор — гипотеза, не разрешение масштабировать.'
+    text: 'В Европе видят и пользу, и барьеры: проверка на месте, доступ, этика, оплата. Один удачный дом ещё не сеть. Чужой обзор ничего не разрешает.'
 - elementId: u0
   elementType: text
   bounds:
   - 60
-  - 384
+  - 390
   - 258
-  - 50
+  - 44
   content:
     fontSize: 12
     lineHeight: 1.35
     color: $muted
     fontFamily: Noto Sans
-    text: 'Не закупка «под ключ». Карта та же: замер → закрепление.'
+    text: Карта та же. Замер, потом закрепление.
 - elementId: h1
   elementType: text
   bounds:
@@ -109,7 +109,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: Eurocarers — семья
+    text: Семья
 - elementId: ln1
   elementType: shape
   bounds:
@@ -129,24 +129,24 @@ elements:
   - 258
   - 200
   content:
-    fontSize: 13
-    lineHeight: 1.45
+    fontSize: 13.5
+    lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: ИИ в неформальном уходе и LTC ещё «эмбрионален». Цифра не заменяет живой контакт. Три стороны — семья, смена, житель — партнёрство, не чат-бот вместо визита.
+    text: В семейном уходе ИИ ещё в самом начале. Цифра не заменяет живой разговор. Семья, смена и житель — партнёры.
 - elementId: u1
   elementType: text
   bounds:
   - 347
-  - 384
+  - 390
   - 258
-  - 50
+  - 44
   content:
     fontSize: 12
     lineHeight: 1.35
     color: $muted
     fontFamily: Noto Sans
-    text: Кандидат К — проверенные поля, не «ИИ научит родственников».
+    text: Письмо семье — из проверенных полей.
 - elementId: h2
   elementType: text
   bounds:
@@ -159,7 +159,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: NL-роботы — не ставка
+    text: Роботы
 - elementId: ln2
   elementType: shape
   bounds:
@@ -179,24 +179,24 @@ elements:
   - 258
   - 200
   content:
-    fontSize: 13
-    lineHeight: 1.45
+    fontSize: 13.5
+    lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: Голландские HI-SAR («обнимаемые» соцроботы) — исследование потенциала и барьеров в LTC. Соцробот ≠ сиделка. В карту кандидатов робот не входит.
+    text: Голландские «обнимаемые» роботы изучают в домах ухода. Робот не заменяет сиделку. В нашу карту он не входит.
 - elementId: u2
   elementType: text
   bounds:
   - 634
-  - 384
+  - 390
   - 258
-  - 50
+  - 44
   content:
     fontSize: 12
     lineHeight: 1.35
     color: $muted
     fontFamily: Noto Sans
-    text: Не лицензия сократить ставку. Не продукт к закупке.
+    text: Это исследование. Ставку оно не сокращает.
 - elementId: note
   elementType: text
   bounds:
@@ -209,7 +209,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Не витрина вендора:</strong> берём рамку и запреты, не чужую платёжную модель и не робот вместо обхода.</p>'
+    text: Берём осторожность и запреты. Робота вместо обхода не берём.
 - elementId: src
   elementType: text
   bounds:
@@ -219,4 +219,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Доклад §16.6 (DHT), §18.4 / 20.4 (Eurocarers), §23.5 (HI-SAR)
+    text: Доклад, 16.6 — цифровой уход; 18.4 и 20.4 — семья; 23.5 — роботы

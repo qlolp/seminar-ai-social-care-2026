@@ -241,7 +241,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Список короткий специально.</strong> К карте Ж–Н: нет автолечения раны и нет автономной лечебной диеты.</p>'
+    text: '<p><strong>Список короткий специально.</strong> Запретную зону нельзя помнить целиком — она не работает. Рана и диета — решает человек.</p>'
 - elementId: src
   elementType: text
   bounds:
