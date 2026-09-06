@@ -62,7 +62,7 @@ elements:
     - right
     - top
     style: $small
-    text: '12'
+    text: '15'
 - elementId: bg0
   elementType: shape
   bounds:

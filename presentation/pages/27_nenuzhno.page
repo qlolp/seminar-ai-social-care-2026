@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '36'
+    text: '39'
 - elementId: h0
   elementType: text
   bounds:
@@ -219,13 +219,13 @@ elements:
   - 360
   - 410
   - 540
-  - 60
+  - 68
   content:
-    fontSize: 13
-    lineHeight: 1.4
+    fontSize: 12.5
+    lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: 'Колонка не заменяет сиделку, панель не заменяет обход: мы освобождаем время человека для человека — не от человека.'
+    text: 'Колонка и соцробот ≠ сиделка. Голландские HI-SAR — исследование потенциала в LTC, не лицензия сократить ставку. Панель не заменяет обход: время человека — для человека, не от человека.'
 - elementId: ln4
   elementType: shape
   bounds:

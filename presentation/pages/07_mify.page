@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '9'
+    text: '12'
 - elementId: tbl
   elementType: table
   bounds:

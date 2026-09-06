@@ -71,4 +71,4 @@ elements:
   content:
     align: [right, top]
     style: $small
-    text: '29'
+    text: '32'

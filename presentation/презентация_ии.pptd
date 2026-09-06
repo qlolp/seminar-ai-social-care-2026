@@ -45,6 +45,9 @@ pages:
 - pages/04b_vremya.page
 - pages/05_karta.page
 - pages/05b_scatter.page
+- pages/05c_kandidaty.page
+- pages/05d_pitanie_kozha.page
+- pages/05e_zarubezh.page
 - pages/06_klassy.page
 - pages/07_mify.page
 - pages/08_hitl.page

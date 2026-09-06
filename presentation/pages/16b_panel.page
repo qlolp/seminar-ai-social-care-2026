@@ -83,4 +83,4 @@ elements:
   content:
     align: [right, top]
     style: $small
-    text: '22'
+    text: '25'
