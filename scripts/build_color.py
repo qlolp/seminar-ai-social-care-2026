@@ -108,14 +108,14 @@ p { margin:0 0 8.5pt; orphans:2; widows:2; }
 
 .spark { width:11pt; height:11pt; fill:#D97757; }
 .cover { page: cover; page-break-after:always; height:297mm; background:#F9F9F7; color:#141413; padding:26mm 26mm; box-sizing:border-box; }
-.cover-top { display:flex; align-items:center; gap:8pt; margin-bottom:52mm; }
+.cover-top { display:flex; align-items:center; gap:8pt; margin-bottom:48mm; }
 .cover-spark { width:22pt; height:22pt; }
 .cover-brand { font-family:'PT Serif',serif; font-size:16pt; color:#141413; }
 .cover-kick { font-size:10pt; letter-spacing:2.8pt; color:#6E6A5E; line-height:1.7; margin-bottom:14pt; }
 .cover-title { font-family:'PT Serif',serif; font-size:39pt; line-height:1.14; letter-spacing:0.2pt; max-width:165mm; }
 .cover-rule { width:64pt; height:3.5pt; background:#D97757; margin:24pt 0 20pt; }
 .cover-sub { font-size:13.5pt; line-height:1.55; color:#4A463C; max-width:150mm; }
-.cover-meta { font-size:10.5pt; line-height:1.6; color:#6E6A5E; margin-top:30mm; }
+.cover-meta { font-size:10.5pt; line-height:1.6; color:#6E6A5E; margin-top:18mm; }
 .cover-aud { font-size:10pt; color:#8A8578; margin-top:12pt; border-top:1pt solid #E5E2D8; padding-top:10pt; max-width:150mm; }
 
 h1 { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; page-break-before:always; margin:0 0 10pt; text-align:left; line-height:1.22; page-break-after:avoid; }
