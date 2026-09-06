@@ -49,6 +49,10 @@
 | `docs/` | Как читать, границы, этика и безопасность — поверх глав, не вместо них |
 | `LICENSE` | CC BY-NC-SA 4.0 (учебные материалы семинара) |
 | `SECURITY.md` | Это документация, не сервис; секретов в репозитории не ожидается |
+| `CONTRIBUTING.md` | Как предложить правку глав, `docs/` и скриптов сборки |
+| `CITATION.cff` | Как цитировать доклад (на титуле личного автора нет) |
+
+На репозитории выставлены GitHub Topics: `responsible-ai`, `social-care`, `long-term-care`, `artificial-intelligence`, `seminar`, `education`. Как предложить правку — [CONTRIBUTING.md](CONTRIBUTING.md). Как цитировать — [CITATION.cff](CITATION.cff). Правовая рамка российская, зарубежные акты только для сравнения: [docs/regulatory-note.md](docs/regulatory-note.md).
 
 Готовые артефакты для чтения без сборки:
 
