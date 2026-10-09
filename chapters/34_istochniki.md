@@ -336,3 +336,10 @@
 251. **[S283]** Rogers E.M. «Diffusion of Innovations». 5th ed. — New York: Free Press, 2003 — теория диффузии инноваций; роль лидеров мнений в принятии новшеств.
 252. **[S284]** Edmondson A. «Psychological safety and learning behavior in work teams» — Administrative Science Quarterly, 1999;44(2):350–383. doi:10.2307/2666999 — психологическая безопасность команды и готовность сообщать об ошибках как условие обучения.
 253. **[S285]** Budzyń K., Romańczyk M., Kitala D. et al. «Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy: a multicentre, observational study» — The Lancet Gastroenterology & Hepatology, 2025 — четыре польских центра: частота выявления аденом в колоноскопиях без ИИ снизилась примерно с 28,4 до 22,4 % после внедрения ИИ-подсказок; наблюдательный дизайн.
+
+## Дополнение октября 2026: этика ухода и автоматизации (глава 20)
+
+254. **[S286]** Beauchamp T.L., Childress J.F. «Principles of Biomedical Ethics». 8th ed. — New York: Oxford University Press, 2019 — четыре принципа биомедицинской этики: уважение автономии, непричинение вреда, благодеяние, справедливость.
+255. **[S287]** Kitwood T. «Dementia Reconsidered: The Person Comes First» — Buckingham: Open University Press, 1997 — личностно-ориентированный уход при деменции; понятие «злокачественной социальной психологии».
+256. **[S288]** Sharkey A., Sharkey N. «Granny and the robots: ethical issues in robot care for the elderly» — Ethics and Information Technology, 2012;14(1):27–40. doi:10.1007/s10676-010-9234-6 — этические риски роботизированного ухода: сокращение человеческого контакта, утрата контроля и приватности, объективация, обман.
+257. **[S289]** Sheridan T.B., Verplank W.L. «Human and computer control of undersea teleoperators» — Technical report. Cambridge, MA: MIT Man-Machine Systems Laboratory, 1978 — исходная шкала уровней автоматизации от ручного управления до полностью автономного действия компьютера.
