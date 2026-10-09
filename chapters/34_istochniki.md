@@ -351,3 +351,12 @@
 260. **[S292]** Heinrich S., Rapp K., Rissmann U., Becker C., König H.-H. «Cost of falls in old age: a systematic review» — Osteoporosis International, 2010;21(6):891–902. doi:10.1007/s00198-009-1100-1 — систематический обзор стоимости падений пожилых; основная часть затрат связана с госпитализацией после переломов.
 261. **[S293]** Morozov E. «To Save Everything, Click Here: The Folly of Technological Solutionism» — New York: PublicAffairs, 2013 — критика технологического солюционизма.
 262. **[S294]** Holt-Lunstad J., Smith T.B., Layton J.B. «Social relationships and mortality risk: a meta-analytic review» — PLoS Medicine, 2010;7(7):e1000316. doi:10.1371/journal.pmed.1000316 — метаанализ 148 исследований (308 849 участников): прочные социальные связи связаны примерно с 50 % ростом шансов на выживание.
+
+## Дополнение октября 2026: питание при дисфагии и профилактика пролежней (глава 4)
+
+263. **[S295]** Cichero J.A.Y., Lam P., Steele C.M. et al. «Development of international terminology and definitions for texture-modified foods and thickened fluids used in dysphagia management: the IDDSI framework» — Dysphagia, 2017;32(2):293–314. doi:10.1007/s00455-016-9758-y — международная восьмиуровневая шкала консистенции пищи и жидкостей при дисфагии.
+264. **[S296]** European Pressure Ulcer Advisory Panel, National Pressure Injury Advisory Panel, Pan Pacific Pressure Injury Alliance. «Prevention and Treatment of Pressure Ulcers/Injuries: Clinical Practice Guideline. The International Guideline» / Ed. E. Haesler. — EPUAP/NPIAP/PPPIA, 2019 — международное клиническое руководство: оценка риска, осмотр кожи, перемена положения, опорные поверхности, питание.
+
+## Дополнение октября 2026: зарубежный опыт роботизации ухода (глава 6)
+
+265. **[S297]** Wright J. «Robots Won't Save Japan: An Ethnography of Eldercare Automation» — Ithaca: Cornell University Press, 2023 — этнография внедрения роботов в японских домах ухода: роботы часто добавляли персоналу работы и выходили из употребления.
