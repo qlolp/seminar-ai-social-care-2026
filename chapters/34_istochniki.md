@@ -360,3 +360,9 @@
 ## Дополнение октября 2026: зарубежный опыт роботизации ухода (глава 6)
 
 265. **[S297]** Wright J. «Robots Won't Save Japan: An Ethnography of Eldercare Automation» — Ithaca: Cornell University Press, 2023 — этнография внедрения роботов в японских домах ухода: роботы часто добавляли персоналу работы и выходили из употребления.
+
+## Дополнение октября 2026: голосовые помощники и согласие (главы 13, 18)
+
+266. **[S298]** Pradhan A., Lazar A., Findlater L. «Use of intelligent voice assistants by older adults with low technology use» — ACM Transactions on Computer-Human Interaction, 2020;27(4):31. doi:10.1145/3373759 — пожилые пользователи с малым опытом технологий ценят голосовых помощников за простые функции; разговорное взаимодействие требует подстройки речи под машину.
+267. **[S299]** Taylor P. «Text-to-Speech Synthesis» — Cambridge: Cambridge University Press, 2009 — классическое руководство по синтезу речи; нормализация текста (числа, даты, сокращения) как источник ошибок.
+268. **[S300]** Dewing J. «Participatory research: a method for process consent with persons who have dementia» — Dementia, 2007;6(1):11–25. doi:10.1177/1471301207075625 — процессуальное согласие: непрерывное подтверждение согласия людей с деменцией на всём протяжении участия.
