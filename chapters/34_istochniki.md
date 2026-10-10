@@ -326,16 +326,16 @@
 
 ## Дополнение октября 2026: ступенчатое внедрение, автоматизация и устойчивость (глава 16)
 
-247. **[S279]** Taylor M.J., McNicholas C., Nicolay C., Darzi A., Bell D., Reed J.E. «Systematic review of the application of the plan–do–study–act method to improve quality in healthcare» — BMJ Quality & Safety, 2014;23(4):290–298. doi:10.1136/bmjqs-2013-001862 — систематический обзор 73 работ о цикле «планируй — делай — изучай — действуй»: повторяющиеся циклы с регулярным замером во времени описывало лишь меньшинство публикаций.
+247. **[S279]** Taylor M.J., McNicholas C., Nicolay C., Darzi A., Bell D., Reed J.E. «Systematic review of the application of the plan–do–study–act method to improve quality in healthcare» — BMJ Quality & Safety, 2014;23(4):290–298. doi:10.1136/bmjqs-2013-001862 — систематический обзор 73 работ о цикле «планируй — делай — изучай — действуй»: последовательность повторяющихся циклов полностью описали 14 из 73 (менее 20 %), ежемесячные или более частые количественные данные — 7 из 47 (15 %).
 248. **[S280]** Bainbridge L. «Ironies of automation» — Automatica, 1983;19(6):775–779. doi:10.1016/0005-1098(83)90046-8 — «ирония автоматизации»: чем надёжнее автоматика, тем меньше у оператора практики и тем труднее ему справиться с отказом, который автоматика оставила человеку.
-249. **[S281]** Wiltsey Stirman S., Kimberly J., Cook N., Calloway A., Castro F., Charns M. «The sustainability of new programs and interventions: a review of the empirical literature and recommendations for future research» — Implementation Science, 2012;7:17. doi:10.1186/1748-5908-7-17 — обзор эмпирических исследований устойчивости нововведений: частичное сохранение программ встречается часто; среди факторов — кадры, встроенность в процедуры, ответственные лица.
+249. **[S281]** Wiltsey Stirman S., Kimberly J., Cook N., Calloway A., Castro F., Charns M. «The sustainability of new programs and innovations: a review of the empirical literature and recommendations for future research» — Implementation Science, 2012;7:17. doi:10.1186/1748-5908-7-17 — обзор эмпирических исследований устойчивости нововведений: среди исследований со строгой оценкой лишь немногие сообщали о полном сохранении программы или высокой точности исполнения; факторы — организационный контекст, ресурсы, процессы, свойства нововведения.
 
 ## Дополнение октября 2026: принятие технологий персоналом (глава 19)
 
 250. **[S282]** Davis F.D. «Perceived usefulness, perceived ease of use, and user acceptance of information technology» — MIS Quarterly, 1989;13(3):319–340. doi:10.2307/249008 — модель принятия технологий (TAM): воспринимаемая полезность и простота использования; полезность сильнее связана с фактическим использованием.
 251. **[S283]** Rogers E.M. «Diffusion of Innovations». 5th ed. — New York: Free Press, 2003 — теория диффузии инноваций; роль лидеров мнений в принятии новшеств.
 252. **[S284]** Edmondson A. «Psychological safety and learning behavior in work teams» — Administrative Science Quarterly, 1999;44(2):350–383. doi:10.2307/2666999 — психологическая безопасность команды и готовность сообщать об ошибках как условие обучения.
-253. **[S285]** Budzyń K., Romańczyk M., Kitala D. et al. «Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy: a multicentre, observational study» — The Lancet Gastroenterology & Hepatology, 2025 — четыре польских центра: частота выявления аденом в колоноскопиях без ИИ снизилась примерно с 28,4 до 22,4 % после внедрения ИИ-подсказок; наблюдательный дизайн.
+253. **[S285]** Budzyń K., Romańczyk M., Kitala D. et al. «Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy: a multicentre, observational study» — The Lancet Gastroenterology & Hepatology, 2025. URL: https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00133-5/abstract — четыре польских центра, 19 эндоскопистов, 1443 колоноскопии без ИИ: частота выявления аденом в колоноскопиях без ИИ снизилась примерно с 28,4 до 22,4 % после внедрения ИИ-подсказок; наблюдательный дизайн.
 
 ## Дополнение октября 2026: этика ухода и автоматизации (глава 20)
 
@@ -348,7 +348,7 @@
 
 258. **[S290]** Brynjolfsson E. «The productivity paradox of information technology» — Communications of the ACM, 1993;36(12):66–77. doi:10.1145/163298.163309 — парадокс производительности: вложения в ИТ долго не отражаются в статистике; одно из объяснений — запаздывание отдачи и необходимость перестройки организации.
 259. **[S291]** Brynjolfsson E., Rock D., Syverson C. «The productivity J-curve: how intangibles complement general purpose technologies» — American Economic Journal: Macroeconomics, 2021;13(1):333–372. doi:10.1257/mac.20180386 — J-кривая: неосязаемые вложения в технологии общего назначения сначала занижают измеряемую производительность.
-260. **[S292]** Heinrich S., Rapp K., Rissmann U., Becker C., König H.-H. «Cost of falls in old age: a systematic review» — Osteoporosis International, 2010;21(6):891–902. doi:10.1007/s00198-009-1100-1 — систематический обзор стоимости падений пожилых; основная часть затрат связана с госпитализацией после переломов.
+260. **[S292]** Heinrich S., Rapp K., Rissmann U., Becker C., König H.-H. «Cost of falls in old age: a systematic review» — Osteoporosis International, 2010;21(6):891–902. doi:10.1007/s00198-009-1100-1 — 32 исследования; национальные расходы, связанные с падениями, — 0,85–1,5 % общих расходов на здравоохранение; существенный вклад дают переломы.
 261. **[S293]** Morozov E. «To Save Everything, Click Here: The Folly of Technological Solutionism» — New York: PublicAffairs, 2013 — критика технологического солюционизма.
 262. **[S294]** Holt-Lunstad J., Smith T.B., Layton J.B. «Social relationships and mortality risk: a meta-analytic review» — PLoS Medicine, 2010;7(7):e1000316. doi:10.1371/journal.pmed.1000316 — метаанализ 148 исследований (308 849 участников): прочные социальные связи связаны примерно с 50 % ростом шансов на выживание.
 
@@ -359,10 +359,10 @@
 
 ## Дополнение октября 2026: зарубежный опыт роботизации ухода (глава 6)
 
-265. **[S297]** Wright J. «Robots Won't Save Japan: An Ethnography of Eldercare Automation» — Ithaca: Cornell University Press, 2023 — этнография внедрения роботов в японских домах ухода: роботы часто добавляли персоналу работы и выходили из употребления.
+265. **[S297]** Wright J. «Robots Won't Save Japan: An Ethnography of Eldercare Automation» — Ithaca: Cornell University Press, 2023 — этнография внедрения роботов в японском доме ухода (Hug, Paro, Pepper): роботы не сократили, а в чём-то увеличили нагрузку на персонал; учреждение отказалось от их внедрения.
 
 ## Дополнение октября 2026: голосовые помощники и согласие (главы 13, 18)
 
-266. **[S298]** Pradhan A., Lazar A., Findlater L. «Use of intelligent voice assistants by older adults with low technology use» — ACM Transactions on Computer-Human Interaction, 2020;27(4):31. doi:10.1145/3373759 — пожилые пользователи с малым опытом технологий ценят голосовых помощников за простые функции; разговорное взаимодействие требует подстройки речи под машину.
+266. **[S298]** Pradhan A., Lazar A., Findlater L. «Use of intelligent voice assistants by older adults with low technology use» — ACM Transactions on Computer-Human Interaction, 2020;27(4):31. doi:10.1145/3373759 — трёхнедельное полевое исследование, 7 человек старше 65 лет: устойчивое использование — поиск информации; мало пользовались напоминаниями из-за сомнений в надёжности; основные трудности — ошибки распознавания речи и запоминание команд.
 267. **[S299]** Taylor P. «Text-to-Speech Synthesis» — Cambridge: Cambridge University Press, 2009 — классическое руководство по синтезу речи; нормализация текста (числа, даты, сокращения) как источник ошибок.
 268. **[S300]** Dewing J. «Participatory research: a method for process consent with persons who have dementia» — Dementia, 2007;6(1):11–25. doi:10.1177/1471301207075625 — процессуальное согласие: непрерывное подтверждение согласия людей с деменцией на всём протяжении участия.
