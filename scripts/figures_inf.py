@@ -32,24 +32,37 @@ INF['classes'] = """
 
 INF['hitl'] = """
 <div class="page-inf">
-<p class="fg-cap">Принцип «человек в контуре»: как устроено любое наше решение</p>
-<div class="fg-flow">
-<div class="fg-node">Событие<br>или данные</div>
-<div class="fg-arrow">→</div>
-<div class="fg-node">Система<br>сигнализирует</div>
-<div class="fg-arrow">→</div>
-<div class="fg-node">Человек<br>проверяет</div>
-<div class="fg-arrow">→</div>
-<div class="fg-node">Человек<br>решает</div>
-<div class="fg-arrow">→</div>
-<div class="fg-node">Решение<br>фиксируется</div>
+<p class="fg-cap">Человек в контуре: контур любого решения в докладе</p>
+<svg viewBox="0 0 720 118" width="100%" height="118" role="img" aria-label="Контур: данные, сигнал, проверка, решение, фиксация">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7A2E22"/></marker>
+  </defs>
+  <rect x="8" y="28" width="118" height="62" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.4"/>
+  <text x="67" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1C1917">Событие</text>
+  <text x="67" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">или данные</text>
+  <line x1="130" y1="59" x2="154" y2="59" stroke="#7A2E22" stroke-width="1.6" marker-end="url(#arr)"/>
+  <rect x="158" y="28" width="118" height="62" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.4"/>
+  <text x="217" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1C1917">Система</text>
+  <text x="217" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">сигнализирует</text>
+  <line x1="280" y1="59" x2="304" y2="59" stroke="#7A2E22" stroke-width="1.6" marker-end="url(#arr)"/>
+  <rect x="308" y="22" width="126" height="74" rx="3" fill="#7A2E22"/>
+  <text x="371" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#FFFDF8" font-weight="700">Человек</text>
+  <text x="371" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#F4EFE6">проверяет и решает</text>
+  <line x1="438" y1="59" x2="462" y2="59" stroke="#7A2E22" stroke-width="1.6" marker-end="url(#arr)"/>
+  <rect x="466" y="28" width="118" height="62" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.4"/>
+  <text x="525" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1C1917">Решение</text>
+  <text x="525" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">фиксируется</text>
+  <line x1="588" y1="59" x2="612" y2="59" stroke="#7A2E22" stroke-width="1.6" marker-end="url(#arr)"/>
+  <rect x="616" y="28" width="96" height="62" rx="3" fill="#FFFFFF" stroke="#7A2E22" stroke-width="1.4"/>
+  <text x="664" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1C1917">След</text>
+  <text x="664" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">проверки</text>
+</svg>
+<div class="fg-grid" style="margin-top:10pt;">
+<div class="fg-cell"><p class="fg-h">Что делает система</p>Смотрит, слушает, считает, готовит черновик, напоминает. Не устаёт и не спит на ночном посту.</div>
+<div class="fg-cell"><p class="fg-h">Что делает человек</p>Проверяет сигнал опытом, принимает решение, отвечает за него перед жителем, семьёй и законом.</div>
+<div class="fg-cell"><p class="fg-h">Почему это не только этика</p>Статья 16 закона о персональных данных запрещает решения о человеке исключительно на автоматизированной обработке<sup>2</sup>. Полный разбор — разделы 5.3 и 10.</div>
 </div>
-<div class="fg-grid" style="margin-top:14pt;">
-<div class="fg-cell"><p class="fg-h">Что делает система</p>Смотрит, слушает, считает, черновит, напоминает. Не устаёт, не отвлекается, не спит на ночном посту.</div>
-<div class="fg-cell"><p class="fg-h">Что делает человек</p>Проверяет сигнал глазами и опытом, принимает решение, отвечает за него перед жителем, семьёй и законом.</div>
-<div class="fg-cell"><p class="fg-h">Почему это не только этика</p>Ст. 16 закона о персональных данных запрещает решения о человеке на основе исключительно автоматизированной обработки<sup>2</sup>. «Человек в контуре» — юридическая необходимость.</div>
-</div>
-<p class="fg-note">Проверка любого предложения вендора: попросите показать, в каком месте схемы человек и успевает ли он проверить. Если человека в схеме нет или он «подтверждает» сто решений в минуту — контура нет.</p>
+<p class="fg-note">Контур состоялся, если сотрудник понимает, что проверяет, вправе отказать и оставляет след проверки. Кнопка «согласовать» сто раз в минуту — ещё автомат.</p>
 </div>
 """
 
@@ -166,6 +179,46 @@ INF['ethics'] = """
 <tr><td>Передача данных жителей вовне (исследования, обучение моделей, «обезличенные» выгрузки партнёрам)</td><td>Только отдельным прозрачным решением совета учреждения — никогда «по умолчанию»</td></tr>
 </table>
 <p class="fg-note">Этический фильтр для любого нового предложения — пять вопросов раздела 20.4; один неверный ответ останавливает проект до переработки.</p>
+</div>
+"""
+
+INF['lifecycle'] = """
+<div class="page-inf">
+<p class="fg-cap">Жизненный цикл внедрения: ступень, замер, решение</p>
+<svg viewBox="0 0 720 168" width="100%" height="168" role="img" aria-label="Жизненный цикл внедрения">
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7A2E22"/></marker>
+  </defs>
+  <rect x="8" y="18" width="128" height="78" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.3"/>
+  <text x="72" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#7A2E22">0. Задача</text>
+  <text x="72" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">боль и замер «до»</text>
+  <text x="72" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">фильтры раздела 7</text>
+  <line x1="140" y1="57" x2="162" y2="57" stroke="#7A2E22" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <rect x="166" y="18" width="128" height="78" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.3"/>
+  <text x="230" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#7A2E22">1. Контур</text>
+  <text x="230" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">приказ, ответственный</text>
+  <text x="230" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">паспорт пилота</text>
+  <line x1="298" y1="57" x2="320" y2="57" stroke="#7A2E22" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <rect x="324" y="18" width="128" height="78" rx="3" fill="#FFFFFF" stroke="#7A2E22" stroke-width="1.3"/>
+  <text x="388" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#7A2E22">2. Пилот</text>
+  <text x="388" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">узкий охват, срок</text>
+  <text x="388" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">человек в контуре</text>
+  <line x1="456" y1="57" x2="478" y2="57" stroke="#7A2E22" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <rect x="482" y="18" width="128" height="78" rx="3" fill="#7A2E22"/>
+  <text x="546" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#FFFDF8">3. Разбор</text>
+  <text x="546" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#F4EFE6">закрепить / сдвинуть</text>
+  <text x="546" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#F4EFE6">или закрыть</text>
+  <line x1="614" y1="57" x2="636" y2="57" stroke="#7A2E22" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <rect x="640" y="18" width="72" height="78" rx="3" fill="#F4EFE6" stroke="#7A2E22" stroke-width="1.3"/>
+  <text x="676" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#7A2E22">4.</text>
+  <text x="676" y="70" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#3F3A34">масштаб</text>
+  <line x1="546" y1="96" x2="546" y2="118" stroke="#7A2E22" stroke-width="1.3"/>
+  <line x1="72" y1="118" x2="546" y2="118" stroke="#7A2E22" stroke-width="1.3"/>
+  <line x1="72" y1="118" x2="72" y2="96" stroke="#7A2E22" stroke-width="1.3" marker-end="url(#arr2)"/>
+  <text x="310" y="138" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">Остановка по критериям раздела 25 — штатный исход, не провал</text>
+  <text x="310" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5C574E">Новая ступень начинается только после замера предыдущей</text>
+</svg>
+<p class="fg-note">Та же лестница, что в проекте вариативного питания: ступень, замер, закрепление. Дорожная карта на двенадцать месяцев — раздел 16; критерии отказа — раздел 25.</p>
 </div>
 """
 
