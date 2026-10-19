@@ -31,12 +31,12 @@ SPARK = '<svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L
 PART_FULL_RE = re.compile(r'^(Часть [IVX]+\..*|Приложения)')
 PART_RE = re.compile(r'^(Часть [IVX]+\..*|Приложения|Список источников)')
 PART_DESC = {
- 'Часть I. Основания для решений': 'Объективка отрасли, три класса искусственного интеллекта, существующие практики, карта задач и рабочий словарь — всё, чтобы говорить о теме без мифов. Разделы 3–8.',
+ 'Часть I. Основания для решений': 'Исходная позиция отрасли, три класса систем, существующие практики, карта задач и рабочий словарь. Разделы 3–8.',
  'Часть II. Шесть прикладных направлений': 'Документы, правовая рамка, видеоаналитика, наблюдение за состоянием, голосовые помощники, обучение персонала и управленческая аналитика. Разделы 9–15.',
- 'Часть III. Внедрение': 'Дорожная карта на двенадцать месяцев, правовой контур пошагово, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.',
- 'Часть IV. Честные ограничения': 'Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа — части доклада, которые экономят бюджет и репутацию. Разделы 23–25.',
- 'Часть V. Учебные кейсы': 'Четырнадцать кейсов с вопросами для разбора и опорными ответами — материал для семинара и внутреннего обучения персонала.',
- 'Приложения': 'Семнадцать приложений с формами документов: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Все формы — проекты для адаптации: реквизиты учреждения и региональные требования подставляет ваш юрист.'}
+ 'Часть III. Внедрение': 'Дорожная карта на двенадцать месяцев, правовой контур, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.',
+ 'Часть IV. Честные ограничения': 'Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа. Разделы 23–25.',
+ 'Часть V. Учебные кейсы': 'Четырнадцать учебных кейсов с вопросами для разбора и опорным комментарием — материал семинара и внутреннего обучения.',
+ 'Приложения': 'Семнадцать приложений: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Формы — проекты для адаптации юристом учреждения.'}
 def add_anchor(m):
     t = re.sub(r'<[^>]+>', '', m.group(1)).strip()
     aid = re.sub(r'[^0-9A-Za-zА-Яа-я]+', '_', t)[:60]
@@ -71,13 +71,17 @@ frag = wrap_cases(frag)
 
 COVER = """
 <div class="cover">
-  <div class="cover-top"><svg class="spark cover-spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span class="cover-brand">Пространство новых идей 2.0</span></div>
-  <div class="cover-kick">МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ</div>
+  <div class="cover-kicker">Межрегиональный методический семинар-совещание</div>
+  <div class="cover-series">Пространство новых идей 2.0</div>
   <div class="cover-title">Искусственный интеллект в&nbsp;домах социального обслуживания</div>
   <div class="cover-rule"></div>
-  <div class="cover-sub">Что внедрять, чего не делать и&nbsp;с&nbsp;чего начать в&nbsp;понедельник.<br>Практическое руководство для директора, заместителя и врача.</div>
-  <div class="cover-meta">Санкт-Петербург · 25–27 августа 2026 года<br>Министерство труда и социальной защиты Российской Федерации · Комитет по социальной политике Санкт-Петербурга</div>
-  <div class="cover-aud">Доклад для руководителей стационарных организаций социального обслуживания из 51 субъекта Российской Федерации</div>
+  <p class="cover-sub">Методический доклад: карта применений, принцип «человек в&nbsp;контуре» и критерии отказа. Для руководителей стационарных организаций социального обслуживания.</p>
+  <div class="cover-meta">
+    <div>Санкт-Петербург · 25–27 августа 2026 года</div>
+    <div>Министерство труда и социальной защиты Российской Федерации</div>
+    <div>Комитет по социальной политике Санкт-Петербурга</div>
+  </div>
+  <div class="cover-aud">Аудитория: директора, заместители и врачи стационарных учреждений из 51 субъекта Российской Федерации. Редакция текста: 16 октября 2026 года.</div>
 </div>
 """
 # обложка вставляется в шаблон первой, перед оглавлением
@@ -95,77 +99,272 @@ for t in toc_entries:
 TOC_HTML = ('<div class="toc"><p class="toc-title">Содержание</p><table>'
             + ''.join(toc_rows) + '</table></div>')
 
+FONTS = """
+<style>
+@font-face { font-family:'Noto Serif'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerif-Regular.ttf'); font-weight:400; font-style:normal; }
+@font-face { font-family:'Noto Serif'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerif-Bold.ttf'); font-weight:700; font-style:normal; }
+@font-face { font-family:'Noto Serif'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerif-Italic.ttf'); font-weight:400; font-style:italic; }
+@font-face { font-family:'Noto Serif'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerif-BoldItalic.ttf'); font-weight:700; font-style:italic; }
+@font-face { font-family:'Noto Serif Display'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerifDisplay-Regular.ttf'); font-weight:400; font-style:normal; }
+@font-face { font-family:'Noto Serif Display'; src:url('file:///usr/share/fonts/truetype/noto/NotoSerifDisplay-Bold.ttf'); font-weight:700; font-style:normal; }
+@font-face { font-family:'Inter'; src:url('file:///usr/share/fonts/truetype/macos/Inter-Regular.ttf'); font-weight:400; font-style:normal; }
+@font-face { font-family:'Inter'; src:url('file:///usr/share/fonts/truetype/macos/Inter-Medium.ttf'); font-weight:500; font-style:normal; }
+@font-face { font-family:'Inter'; src:url('file:///usr/share/fonts/truetype/macos/Inter-SemiBold.ttf'); font-weight:600; font-style:normal; }
+@font-face { font-family:'Inter'; src:url('file:///usr/share/fonts/truetype/macos/Inter-Bold.ttf'); font-weight:700; font-style:normal; }
+</style>
+"""
+
 CSS = """
 <style>
-@page { size: A4; margin: 20mm 18mm 18mm 18mm; background:#F9F9F7;
-  @bottom-right { content: counter(page); font-family:'Noto Sans',sans-serif; font-size:10pt; color:#D97757; }
-  @bottom-left { content: 'Искусственный интеллект в домах социального обслуживания · 2026'; font-family:'Noto Sans',sans-serif; font-size:8.5pt; color:#A8A294; } }
-@page cover { margin:0; background:#F9F9F7; @bottom-right{content:none} @bottom-left{content:none} }
-html { font-size: 11.5pt; }
-body { font-family:'Noto Sans',sans-serif; font-size:11.5pt; line-height:1.68; text-align:left; color:#141413; background:#F9F9F7; }
-p, li { text-align:justify; }
-p { margin:0 0 8.5pt; orphans:2; widows:2; }
+@page {
+  size: A4;
+  margin: 22mm 20mm 20mm 20mm;
+  background: #FFFdf8;
+  @top-left {
+    content: string(chapter);
+    font-family: Inter, sans-serif;
+    font-size: 8pt;
+    color: #7A7468;
+    letter-spacing: 0.02em;
+  }
+  @top-right {
+    content: "Методический доклад · 2026";
+    font-family: Inter, sans-serif;
+    font-size: 8pt;
+    color: #7A7468;
+  }
+  @bottom-left {
+    content: "Искусственный интеллект в домах социального обслуживания";
+    font-family: Inter, sans-serif;
+    font-size: 8pt;
+    color: #9A9488;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: Inter, sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #7A2E22;
+  }
+}
+@page cover {
+  margin: 0;
+  background: #F4EFE6;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-right { content: none; }
+  @bottom-left { content: none; }
+}
+@page part {
+  margin: 0;
+  background: #F4EFE6;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-right { content: none; }
+  @bottom-left { content: none; }
+}
 
-.spark { width:11pt; height:11pt; fill:#D97757; }
-.cover { page: cover; page-break-after:always; height:297mm; background:#F9F9F7; color:#141413; padding:26mm 26mm; box-sizing:border-box; }
-.cover-top { display:flex; align-items:center; gap:8pt; margin-bottom:48mm; }
-.cover-spark { width:22pt; height:22pt; }
-.cover-brand { font-family:'PT Serif',serif; font-size:16pt; color:#141413; }
-.cover-kick { font-size:10pt; letter-spacing:2.8pt; color:#6E6A5E; line-height:1.7; margin-bottom:14pt; }
-.cover-title { font-family:'PT Serif',serif; font-size:39pt; line-height:1.14; letter-spacing:0.2pt; max-width:165mm; }
-.cover-rule { width:64pt; height:3.5pt; background:#D97757; margin:24pt 0 20pt; }
-.cover-sub { font-size:13.5pt; line-height:1.55; color:#4A463C; max-width:150mm; }
-.cover-meta { font-size:10.5pt; line-height:1.6; color:#6E6A5E; margin-top:18mm; }
-.cover-aud { font-size:10pt; color:#8A8578; margin-top:12pt; border-top:1pt solid #E5E2D8; padding-top:10pt; max-width:150mm; }
+html { font-size: 11pt; }
+body {
+  font-family: "Noto Serif", "Liberation Serif", serif;
+  font-size: 11pt;
+  line-height: 1.62;
+  text-align: left;
+  color: #1C1917;
+  background: #FFFdf8;
+}
+p, li { text-align: justify; hyphens: auto; }
+p { margin: 0 0 8pt; orphans: 3; widows: 3; }
 
-h1 { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; page-break-before:always; margin:0 0 10pt; text-align:left; line-height:1.22; page-break-after:avoid; }
-h1::after { content:''; display:block; width:46pt; height:2.5pt; background:#D97757; margin-top:6pt; }
-h1.part { background:none; color:#141413; font-size:20pt; padding:0; border-bottom:none; margin-top:0; }
-h2 { font-family:'PT Serif',serif; font-size:14pt; font-weight:bold; color:#141413; margin:16pt 0 5pt; text-align:left; page-break-after:avoid; break-after:avoid; padding-left:9pt; border-left:3.5pt solid #D97757; }
-h3 { font-size:11pt; color:#B85C3D; margin:11pt 0 4pt; font-style:normal; font-weight:bold; page-break-after:avoid; break-after:avoid; }
+.spark { width: 10pt; height: 10pt; fill: #7A2E22; }
+.cover {
+  page: cover;
+  page-break-after: always;
+  min-height: 240mm;
+  height: auto;
+  background: #F4EFE6;
+  color: #1C1917;
+  padding: 24mm 26mm 20mm;
+  box-sizing: border-box;
+}
+.cover-kicker {
+  font-family: Inter, sans-serif;
+  font-size: 9.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7A2E22;
+  margin-bottom: 8pt;
+}
+.cover-series {
+  font-family: "Noto Serif Display", "Noto Serif", serif;
+  font-size: 15pt;
+  color: #1C1917;
+  margin-bottom: 42mm;
+}
+.cover-title {
+  font-family: "Noto Serif Display", "Noto Serif", serif;
+  font-size: 34pt;
+  font-weight: 700;
+  line-height: 1.16;
+  max-width: 168mm;
+  letter-spacing: -0.01em;
+}
+.cover-rule { width: 42pt; height: 2pt; background: #7A2E22; margin: 22pt 0 18pt; }
+.cover-sub {
+  font-size: 13pt;
+  line-height: 1.5;
+  color: #3F3A34;
+  max-width: 155mm;
+  text-align: left;
+}
+.cover-meta {
+  font-family: Inter, sans-serif;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: #5C574E;
+  margin-top: 28mm;
+}
+.cover-aud {
+  font-family: Inter, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #7A7468;
+  margin-top: 14pt;
+  border-top: 0.6pt solid #D8D1C4;
+  padding-top: 10pt;
+  max-width: 155mm;
+}
 
-table { border-collapse:collapse; width:100%; font-size:10pt; margin:10pt 0; page-break-inside:auto; background:#FFFFFF; }
-tr { page-break-inside:avoid; }
-thead { display:table-header-group; }
-td, th { border:0.7pt solid #E5E2D8; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.3; overflow-wrap:anywhere; word-break:break-word; }
-th { background:#F2EFE6; color:#141413; font-size:9.5pt; overflow-wrap:normal; word-break:normal; }
-tr:nth-child(even) td { background:#FAF8F3; }
+h1 {
+  font-family: "Noto Serif Display", "Noto Serif", serif;
+  font-size: 19pt;
+  font-weight: 700;
+  color: #1C1917;
+  page-break-before: always;
+  margin: 0 0 10pt;
+  text-align: left;
+  line-height: 1.22;
+  page-break-after: avoid;
+  string-set: chapter content();
+}
+h1::after { content: ""; display: block; width: 36pt; height: 2pt; background: #7A2E22; margin-top: 7pt; }
+h1.part { background: none; color: #1C1917; font-size: 20pt; padding: 0; border-bottom: none; margin-top: 0; }
+h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 13.5pt;
+  font-weight: 700;
+  color: #1C1917;
+  margin: 15pt 0 5pt;
+  text-align: left;
+  page-break-after: avoid;
+  break-after: avoid;
+  padding-left: 9pt;
+  border-left: 2.5pt solid #7A2E22;
+}
+h3 {
+  font-family: Inter, sans-serif;
+  font-size: 10.5pt;
+  color: #7A2E22;
+  margin: 11pt 0 4pt;
+  font-weight: 600;
+  page-break-after: avoid;
+  break-after: avoid;
+}
 
-sup { font-size:8pt; color:#B85C3D; font-weight:bold; }
-a { color:#141413; text-decoration:none; overflow-wrap:anywhere; word-break:break-all; }
-blockquote { margin:7pt 14pt; padding:8pt 12pt; background:#F2EFE6; border-left:3.5pt solid #D97757; font-style:italic; color:#4A463C; }
-ul, ol { margin:0 0 7pt 0; padding-left:20pt; }
-li { margin-bottom:3pt; }
-li::marker { color:#D97757; font-weight:bold; }
-hr { border:none; border-top:1pt solid #E5E2D8; margin:12pt 0; }
+table { border-collapse: collapse; width: 100%; font-family: Inter, sans-serif; font-size: 9.2pt; margin: 10pt 0; page-break-inside: auto; background: #FFFFFF; }
+tr { page-break-inside: avoid; }
+thead { display: table-header-group; }
+td, th { border: 0.6pt solid #D8D1C4; padding: 4.5pt 6pt; vertical-align: top; text-align: left; line-height: 1.35; overflow-wrap: anywhere; word-break: break-word; }
+th { background: #F4EFE6; color: #1C1917; font-size: 8.8pt; font-weight: 600; overflow-wrap: normal; word-break: normal; }
+tr:nth-child(even) td { background: #FAF7F1; }
 
-.toc { page-break-after:always; }
-.toc-title { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; margin-bottom:12pt; padding-bottom:6pt; border-bottom:1pt solid #E5E2D8; }
-.toc table { font-size:10pt; background:none; }
-.toc td { border:none; border-bottom:0.5pt dotted #D8D2C2; padding:3pt 4pt; text-align:left !important; }
-.toc td a { display:inline; text-align:left; }
-.toc-p { width:40pt; text-align:right; color:#B85C3D; font-weight:bold; }
-.toc-part td { background:#F2EFE6; font-weight:bold; color:#141413; padding-top:6pt; }
+sup { font-size: 7.5pt; color: #7A2E22; font-weight: 700; font-family: Inter, sans-serif; }
+a { color: #1C1917; text-decoration: none; overflow-wrap: anywhere; word-break: break-all; }
+blockquote { margin: 8pt 0; padding: 8pt 12pt; background: #F4EFE6; border-left: 2.5pt solid #7A2E22; font-style: italic; color: #3F3A34; }
+ul, ol { margin: 0 0 7pt 0; padding-left: 18pt; }
+li { margin-bottom: 3pt; }
+li::marker { color: #7A2E22; font-weight: 600; }
+hr { border: none; border-top: 0.6pt solid #D8D1C4; margin: 12pt 0; }
 
-.page-inf h1, .page-inf h2 { page-break-before:avoid; }
-h2.case { margin-top:0; }
-.casebox { page-break-inside:avoid; margin-bottom:18pt; }
-.casebox + .casebox { border-top:1.5pt solid #E5E2D8; padding-top:16pt; }
-h1 + .casebox h2.case { margin-top:6pt; }
-@page part { margin:0; background:#F1EDE3; @bottom-right{content:none} @bottom-left{content:none} }
-.part-page { page: part; page-break-before:always; page-break-after:always; height:297mm; box-sizing:border-box;
-  background:#F1EDE3; color:#141413; padding:52mm 28mm 28mm; }
-.part-page .pp-kick { display:flex; align-items:center; gap:9pt; font-size:11pt; letter-spacing:4pt; color:#B85C3D; font-weight:bold; margin-bottom:22pt; }
-.part-page .pp-kick .spark { width:15pt; height:15pt; }
-.part-page h1 { page-break-before:avoid; border-bottom:none; color:#141413; font-size:34pt; line-height:1.18; margin:0; padding-bottom:0; }
-.part-page h1::after { display:none; }
-.part-page .pp-rule { width:64pt; height:3.5pt; background:#D97757; margin:26pt 0 24pt; }
-.part-page .pp-desc { font-size:13pt; line-height:1.7; color:#4A463C; max-width:150mm; text-align:left; }
+.lead {
+  font-family: "Noto Serif", serif;
+  font-size: 10.6pt;
+  line-height: 1.5;
+  color: #2A2622;
+  background: #F4EFE6;
+  border-left: 3pt solid #7A2E22;
+  padding: 8pt 11pt;
+  margin: 0 0 12pt;
+  page-break-inside: avoid;
+}
+.lead p { margin: 0; text-align: left; }
+.callout {
+  margin: 9pt 0 11pt;
+  padding: 8pt 11pt;
+  page-break-inside: avoid;
+  background: #FFFFFF;
+  border: 0.6pt solid #D8D1C4;
+}
+.callout.thesis { border-left: 3pt solid #7A2E22; background: #FBF6EF; }
+.callout.example { border-left: 3pt solid #3D5A4C; background: #F3F6F3; }
+.callout p { margin: 0; text-align: left; }
+.callout strong { font-family: Inter, sans-serif; font-size: 9pt; letter-spacing: 0.04em; text-transform: uppercase; color: #7A2E22; }
+
+.toc { page-break-after: always; }
+.toc-title {
+  font-family: "Noto Serif Display", "Noto Serif", serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: 12pt;
+  padding-bottom: 6pt;
+  border-bottom: 1.5pt solid #7A2E22;
+}
+.toc table { font-size: 10pt; background: none; font-family: Inter, sans-serif; }
+.toc td { border: none; border-bottom: 0.5pt dotted #C9C1B4; padding: 3.2pt 4pt; text-align: left !important; }
+.toc td a { display: inline; text-align: left; }
+.toc-p { width: 36pt; text-align: right; color: #7A2E22; font-weight: 600; }
+.toc-part td { background: #F4EFE6; font-weight: 700; color: #1C1917; padding-top: 7pt; }
+
+.page-inf h1, .page-inf h2 { page-break-before: avoid; }
+h2.case { margin-top: 0; }
+.casebox { page-break-inside: avoid; margin-bottom: 16pt; }
+.casebox + .casebox { border-top: 1pt solid #D8D1C4; padding-top: 14pt; }
+h1 + .casebox h2.case { margin-top: 6pt; }
+
+.part-page {
+  page: part;
+  page-break-before: always;
+  page-break-after: always;
+  min-height: 220mm;
+  height: auto;
+  box-sizing: border-box;
+  background: #F4EFE6;
+  color: #1C1917;
+  padding: 36mm 28mm 28mm;
+}
+.part-page .pp-kick {
+  display: flex;
+  align-items: center;
+  gap: 9pt;
+  font-family: Inter, sans-serif;
+  font-size: 10.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7A2E22;
+  font-weight: 600;
+  margin-bottom: 20pt;
+}
+.part-page .pp-kick .spark { width: 12pt; height: 12pt; }
+.part-page h1 { page-break-before: avoid; border-bottom: none; color: #1C1917; font-size: 32pt; line-height: 1.16; margin: 0; padding-bottom: 0; }
+.part-page h1::after { display: none; }
+.part-page .pp-rule { width: 42pt; height: 2pt; background: #7A2E22; margin: 24pt 0 20pt; }
+.part-page .pp-desc { font-size: 13pt; line-height: 1.6; color: #3F3A34; max-width: 150mm; text-align: left; }
 </style>
 """
 
 html = f"""<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
-<title>Искусственный интеллект в домах социального обслуживания — журнальная версия</title>{CSS}{CSS_COLOR}</head><body>
+<title>Искусственный интеллект в домах социального обслуживания</title>{FONTS}{CSS}{CSS_COLOR}</head><body>
 {COVER}
 {TOC_HTML}
 {frag}
