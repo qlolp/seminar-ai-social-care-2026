@@ -1,0 +1,20 @@
+name: Проверка доклада
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pypdf
+      - name: Сноски, источники, отсылки и шрифты PDF
+        run: python3 scripts/check_report.py --pdf "output/Искусственный_интеллект_в_домах_соцобслуживания_доклад.pdf"
+      - name: Контрольные ошибки (проверка обязана их ловить)
+        run: python3 -m unittest discover -s tests -v
