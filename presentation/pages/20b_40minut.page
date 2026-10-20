@@ -5,61 +5,106 @@ background:
 elements:
 - elementId: kicker
   elementType: text
-  bounds: [60, 34, 700, 16]
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
   content:
     style: $kicker
     text: НАПРАВЛЕНИЕ Д · АНАТОМИЯ ЗАНЯТИЯ
 - elementId: title
   elementType: text
-  bounds: [60, 56, 840, 40]
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
   content:
     style: $h1
     text: 'Сорок минут тренажёра: из них тридцать — живые'
 - elementId: line
   elementType: shape
-  bounds: [60, 108, 840, 1]
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
   shapeName: rect
   fill:
     type: solid
     color: $line
 - elementId: chart
   elementType: chart
-  bounds: [60, 126, 520, 330]
+  bounds:
+  - 60
+  - 126
+  - 520
+  - 330
   fontFamily: Noto Sans
   data:
-    cols: ["Часть", "Минуты"]
+    cols:
+    - Часть
+    - Минуты
     rows:
-    - ["Живой разбор с тренером", 20]
-    - ["Диалог с моделью", 12]
-    - ["Правила и подводка", 8]
+    - - Живой разбор с наставником
+      - 15
+    - - Диалог с моделью
+      - 10
+    - - Сценарий, правила, вывод
+      - 10
+    - - Разбор моделью
+      - 5
   series:
-    - type: pie
-      encode: {category: "Часть", value: "Минуты"}
-      innerRadius: 0.58
-      fill: ["$accent", "#B85C3D", "#E5E2D8"]
-      dataLabels: {show: true, content: "value"}
-  legend: {position: bottom, color: "#6E6A5E"}
-
+  - type: pie
+    encode:
+      category: Часть
+      value: Минуты
+    innerRadius: 0.58
+    fill:
+    - $accent
+    - '#B85C3D'
+    - '#E5E2D8'
+    - '#A8A294'
+    dataLabels:
+      show: true
+      content: value
+  legend:
+    position: bottom
+    color: '#6E6A5E'
 - elementId: side
   elementType: text
-  bounds: [620, 150, 280, 240]
+  bounds:
+  - 620
+  - 150
+  - 280
+  - 240
   content:
     fontSize: 14
     lineHeight: 1.55
     color: $text
     fontFamily: Noto Sans
-    text: '<p>Тридцать минут из сорока — <strong>живые</strong>: разбор с тренером и отыгрыш ситуации.</p><p>Модель — спарринг-партнёр, а не экзаменатор: сценарии пишутся из кейсов вашего учреждения.</p>'
-
+    text: '<p>Тридцать минут из сорока — <strong>живые</strong>: сценарий, разбор с наставником и вывод сотрудника.</p><p>Модель — учебный собеседник, а не экзаменатор. Сценарии пишут по случаям вашего учреждения.</p>'
 - elementId: src
   elementType: text
-  bounds: [60, 508, 760, 24]
+  bounds:
+  - 60
+  - 508
+  - 760
+  - 24
   content:
     style: $small
-    text: Устройство занятия — раздел 14 доклада
+    text: Устройство занятия — раздел 14.6 доклада
 - elementId: pg
   elementType: text
-  bounds: [900, 508, 40, 20]
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
   content:
-    align: [right, top]
+    align:
+    - right
+    - top
     style: $small
-    text: '30'
+    text: "33"

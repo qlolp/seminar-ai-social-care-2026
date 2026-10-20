@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '38'
+    text: '42'
 - elementId: n0
   elementType: text
   bounds:
@@ -124,7 +124,7 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: биометрический контур непропорционален задачам учреждения
+    text: биометрическая обработка несоразмерна задачам учреждения
 - elementId: n2
   elementType: text
   bounds:
@@ -202,7 +202,7 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: «скоринг дисциплины» — путь к фальсификации и потере доверия
+    text: рейтинги и «балльная оценка дисциплины» ведут к показному поведению и потере доверия
 - elementId: n4
   elementType: text
   bounds:
@@ -241,14 +241,14 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: исследования, обучение моделей, «обезличенные» выгрузки — только отдельным решением совета
+    text: исследования, обучение моделей, «обезличенная» передача — только по отдельному решению совета
 - elementId: note
   elementType: text
   bounds:
   - 60
-  - 462
+  - 460
   - 840
-  - 30
+  - 42
   content:
     fontSize: 13
     lineHeight: 1.4

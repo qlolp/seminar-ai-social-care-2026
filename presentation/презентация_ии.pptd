@@ -42,6 +42,7 @@ pages:
 - pages/02_otvety.page
 - pages/03_deficita.page
 - pages/04_izmeneniya.page
+- pages/04c_kontekst.page
 - pages/04b_vremya.page
 - pages/05_karta.page
 - pages/05b_scatter.page
@@ -63,7 +64,9 @@ pages:
 - pages/15b_trevogi.page
 - pages/16_pilot.page
 - pages/16b_panel.page
+- pages/16c_90dney.page
 - pages/17_nablyudenie.page
+- pages/17b_medizdelie.page
 - pages/18_eskal.page
 - pages/19_golos.page
 - pages/20_trenazher.page
@@ -73,6 +76,7 @@ pages:
 - pages/22_roadmap.page
 - pages/23_personal.page
 - pages/24_zhiteli.page
+- pages/24b_pni_soglasie.page
 - pages/25_bezop.page
 - pages/25b_teplovaya.page
 - pages/26_etika.page

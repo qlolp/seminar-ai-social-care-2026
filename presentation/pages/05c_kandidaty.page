@@ -46,14 +46,14 @@ elements:
     - right
     - top
     style: $small
-    text: '8'
+    text: '9'
 - elementId: lZh
   elementType: text
   bounds:
   - 60
   - 122
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -92,7 +92,7 @@ elements:
   - 60
   - 204
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -124,14 +124,14 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: Черновик графика по правилам дома. Утверждает старшая.
+    text: Модель готовит черновик графика по правилам дома. Утверждает его старшая.
 - elementId: lI
   elementType: text
   bounds:
   - 60
   - 286
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -163,14 +163,14 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: Плейлист по согласию, рядом с персоналом. Это не лечение.
+    text: Музыку подбирают по согласию и включают рядом с персоналом. Это не лечение.
 - elementId: lK
   elementType: text
   bounds:
   - 60
   - 368
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -202,14 +202,14 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: Короткая сводка из проверенных полей. Человек читает и отправляет.
+    text: Модель собирает сводку из проверенных полей. Человек читает и отправляет.
 - elementId: lL
   elementType: text
   bounds:
   - 500
   - 122
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -248,7 +248,7 @@ elements:
   - 500
   - 204
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -280,14 +280,14 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: Рецепты из списка, который уже утвердил врач. Ведомость остатков ведёт кухня.
+    text: Модель берёт рецепты из списка, который утвердил врач. Ведомость остатков ведёт кухня.
 - elementId: lN
   elementType: text
   bounds:
   - 500
   - 286
   - 28
-  - 24
+  - 28
   content:
     fontSize: 20
     bold: true
@@ -319,7 +319,7 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: Фото даёт подсказку медсестре. Сначала журнал поворотов.
+    text: Сначала ведут журнал поворотов. Фото раны даёт подсказку медсестре.
 - elementId: note
   elementType: text
   bounds:
@@ -333,7 +333,7 @@ elements:
     color: $primary
     bold: true
     fontFamily: Noto Sans
-    text: Садятся на уже живые ступени карты. Видеопилот остаётся на своём месте.
+    text: Эти задачи опираются на ступени карты, которые уже работают. Видеопилот остаётся на своём месте.
 - elementId: src
   elementType: text
   bounds:

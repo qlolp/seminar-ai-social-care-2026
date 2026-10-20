@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import html as html_lib
 import math
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -357,6 +358,109 @@ def render_chart(el, theme):
             svg.append(
                 f'<polygon points="{" ".join(pts)}" fill="{area}" stroke="{color}" stroke-width="2"/>'
             )
+    elif kind == "pie":
+        s = series[0]
+        enc = s.get("encode") or {}
+        ci = cols.index(enc.get("category")) if enc.get("category") in cols else 0
+        vi = cols.index(enc.get("value")) if enc.get("value") in cols else 1
+        fills = s.get("fill") or []
+        if not isinstance(fills, list):
+            fills = [fills]
+        defaults = ["#D97757", "#B85C3D", "#E5E2D8", "#A8A294", "#4A463C"]
+        total = sum(float(r[vi]) for r in rows) or 1
+        cx, cy = w / 2, (h - 40) / 2
+        ro = min(w, h - 40) / 2 - 8
+        ri = ro * float(s.get("innerRadius") or 0)
+        ang = -math.pi / 2
+        legend = []
+        for i, r in enumerate(rows):
+            val = float(r[vi])
+            color = resolve_color(fills[i], colors) if i < len(fills) else defaults[i % len(defaults)]
+            a2 = ang + 2 * math.pi * val / total
+            large = 1 if a2 - ang > math.pi else 0
+            if val >= total:
+                a2 = ang + 2 * math.pi - 1e-4
+            p = [
+                (cx + ro * math.cos(ang), cy + ro * math.sin(ang)),
+                (cx + ro * math.cos(a2), cy + ro * math.sin(a2)),
+                (cx + ri * math.cos(a2), cy + ri * math.sin(a2)),
+                (cx + ri * math.cos(ang), cy + ri * math.sin(ang)),
+            ]
+            svg.append(
+                f'<path d="M{p[0][0]:.1f},{p[0][1]:.1f} A{ro:.1f},{ro:.1f} 0 {large} 1 {p[1][0]:.1f},{p[1][1]:.1f} '
+                f'L{p[2][0]:.1f},{p[2][1]:.1f} A{ri:.1f},{ri:.1f} 0 {large} 0 {p[3][0]:.1f},{p[3][1]:.1f} Z" '
+                f'fill="{color}" stroke="#fff" stroke-width="2"/>'
+            )
+            if (s.get("dataLabels") or {}).get("show"):
+                mid = (ang + a2) / 2
+                rr = (ro + ri) / 2
+                svg.append(
+                    f'<text x="{cx+rr*math.cos(mid):.1f}" y="{cy+rr*math.sin(mid)+5:.1f}" text-anchor="middle" '
+                    f'fill="#141413" font-size="14" font-weight="700" font-family="Noto Sans">{int(val)}</text>'
+                )
+            legend.append((str(r[ci]), color))
+            ang = a2
+        lx, ly = 0, h - 26
+        for name, color in legend:
+            svg.append(f'<rect x="{lx}" y="{ly}" width="10" height="10" fill="{color}"/>')
+            svg.append(
+                f'<text x="{lx+14}" y="{ly+9}" fill="#6E6A5E" font-size="10.5" '
+                f'font-family="Noto Sans">{html_lib.escape(name)}</text>'
+            )
+            lx += 14 + 7 * len(name) + 18
+            if lx > w - 120:
+                lx, ly = 0, ly + 14
+
+    elif kind == "line":
+        xs = [str(r[0]) for r in rows]
+        n = max(len(xs), 1)
+        vals_all = []
+        for s in series:
+            key = (s.get("encode") or {}).get("y")
+            idx = cols.index(key) if key in cols else 1
+            vals_all.append([float(r[idx]) for r in rows])
+        vmax = max((max(v) for v in vals_all if v), default=1) or 1
+        vmax = math.ceil(vmax / 10) * 10
+        vmin = (el.get("yAxis") or {}).get("min", 0)
+        grid = "#E5E2D8"
+        for g in range(5):
+            val = vmin + (vmax - vmin) * g / 4
+            yy = gy(val, vmin, vmax)
+            svg.append(f'<line x1="{pad_l}" y1="{yy}" x2="{pad_l+iw}" y2="{yy}" stroke="{grid}"/>')
+            svg.append(
+                f'<text x="{pad_l-8}" y="{yy+4}" text-anchor="end" fill="#8A8578" font-size="10.5" '
+                f'font-family="Noto Sans">{int(val)}</text>'
+            )
+
+        def lx_(i):
+            return pad_l + (i + 0.5) * iw / n
+
+        for i, xv in enumerate(xs):
+            svg.append(
+                f'<text x="{lx_(i)}" y="{pad_t+ih+16}" text-anchor="middle" fill="#8A8578" '
+                f'font-size="10.5" font-family="Noto Sans">{html_lib.escape(xv)}</text>'
+            )
+        defaults = ["#D97757", "#4A463C"]
+        legend = []
+        for si, s in enumerate(series):
+            color = resolve_color(s.get("lineColor"), colors) or defaults[si % 2]
+            pts = [(lx_(i), gy(v, vmin, vmax)) for i, v in enumerate(vals_all[si])]
+            dash = ' stroke-dasharray="7 5"' if s.get("lineStyle") == "dash" else ""
+            svg.append(
+                f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" '
+                f'stroke="{color}" stroke-width="{s.get("width") or 2}"{dash}/>'
+            )
+            for x_, y_ in pts:
+                svg.append(f'<circle cx="{x_:.1f}" cy="{y_:.1f}" r="3.5" fill="{color}"/>')
+            legend.append((s.get("name") or "", color))
+        lxp = pad_l
+        for name, color in legend:
+            svg.append(f'<rect x="{lxp}" y="{h-12}" width="14" height="3" fill="{color}"/>')
+            svg.append(
+                f'<text x="{lxp+20}" y="{h-7}" fill="#6E6A5E" font-size="10.5" '
+                f'font-family="Noto Sans">{html_lib.escape(name)}</text>'
+            )
+            lxp += 20 + 7 * len(name) + 24
     else:
         svg.append(
             f'<text x="{w/2}" y="{h/2}" text-anchor="middle" fill="#8A8578" '
@@ -419,12 +523,13 @@ def build_html(manifest):
 
 
 def export_pdf(html_path: Path, pdf_path: Path):
-    chrome = "google-chrome"
+    chrome = os.environ.get("CHROME", "google-chrome")
     profile = Path("/tmp/chrome-pres-export")
     profile.mkdir(parents=True, exist_ok=True)
     cmd = [
         chrome,
         "--headless=new",
+        "--no-sandbox",
         "--disable-gpu",
         "--no-pdf-header-footer",
         "--hide-scrollbars",

@@ -1,0 +1,272 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: РОССИЙСКИЙ КОНТЕКСТ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Долговременный уход и интернаты в цифрах
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: "5"
+- elementId: box0
+  elementType: shape
+  bounds:
+  - 60
+  - 126
+  - 195
+  - 136
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n0
+  elementType: text
+  bounds:
+  - 74
+  - 134
+  - 170
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: 174 тыс.
+- elementId: l0
+  elementType: text
+  bounds:
+  - 74
+  - 178
+  - 170
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: человек получали услуги долговременного ухода в мае 2025 года
+- elementId: box1
+  elementType: shape
+  bounds:
+  - 275
+  - 126
+  - 195
+  - 136
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n1
+  elementType: text
+  bounds:
+  - 289
+  - 134
+  - 170
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: 500 тыс.
+- elementId: l1
+  elementType: text
+  bounds:
+  - 289
+  - 178
+  - 170
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: человек — целевой охват к 2030 году; законопроект делает уход постоянным с 2027 года
+- elementId: box2
+  elementType: shape
+  bounds:
+  - 490
+  - 126
+  - 195
+  - 136
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n2
+  elementType: text
+  bounds:
+  - 504
+  - 134
+  - 170
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: '466'
+- elementId: l2
+  elementType: text
+  bounds:
+  - 504
+  - 178
+  - 170
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: психоневрологических интернатов для взрослых, в них 139 тыс. жителей (2024)
+- elementId: box3
+  elementType: shape
+  bounds:
+  - 705
+  - 126
+  - 195
+  - 136
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n3
+  elementType: text
+  bounds:
+  - 719
+  - 134
+  - 170
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: 74 %
+- elementId: l3
+  elementType: text
+  bounds:
+  - 719
+  - 178
+  - 170
+  - 80
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: жителей таких интернатов признаны недееспособными; средний интернат — почти 300 мест
+- elementId: hL
+  elementType: text
+  bounds:
+  - 60
+  - 284
+  - 400
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Кто попадает в стационар
+- elementId: bL
+  elementType: text
+  bounds:
+  - 60
+  - 312
+  - 400
+  - 120
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: Нуждаемость оценивают два эксперта по балльной анкете. Если нужно больше 28 часов ухода в неделю, модель советует стационар. Поэтому в интернатах всё больше людей, которые не могут позвать на помощь.
+- elementId: hR
+  elementType: text
+  bounds:
+  - 500
+  - 284
+  - 400
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Что это значит для ИИ
+- elementId: bR
+  elementType: text
+  bounds:
+  - 500
+  - 312
+  - 400
+  - 120
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: Анкеты, планы и отчёты о часах становятся массовыми документами — работа для направления А. Модель проверяет полноту анкеты, а баллы ставит эксперт.
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 44
+  content:
+    fontSize: 13.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: Noto Sans
+    text: <p>В ПНИ согласие на датчик или камеру часто даёт не житель, а его законный представитель — нередко само учреждение (раздел 18.7).</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: 'Раздел 3.6 доклада: данные Минтруда (май 2025), типовая модель на 2026 год, «Если быть точным» (2024)'
