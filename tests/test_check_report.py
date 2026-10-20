@@ -44,7 +44,7 @@ class PlantedFaults(unittest.TestCase):
 
     def test_citation_to_missing_source(self):
         # та же ошибка, что была в 12.2: S-код вместо номера списка
-        self.edit('12_nablyudenie.md', '<sup>312</sup>', '<sup>344</sup>')
+        self.edit('12_nablyudenie.md', '<sup>317</sup>', '<sup>344</sup>')
         self.assertFailsWith('сноска 344 — такого номера нет')
 
     def test_reference_to_missing_section(self):
@@ -56,16 +56,16 @@ class PlantedFaults(unittest.TestCase):
         self.assertFailsWith('приложения 30 нет')
 
     def test_s_code_mismatch(self):
-        self.edit('34_istochniki.md', '302. **[S334]**', '302. **[S335]**')
-        self.assertFailsWith('код S335, ожидался S334')
+        self.edit('34_istochniki.md', '307. **[S339]**', '307. **[S340]**')
+        self.assertFailsWith('код S340, ожидался S339')
 
     def test_gap_in_source_numbering(self):
-        self.edit('34_istochniki.md', '302. **[S334]**', '303. **[S335]**')
+        self.edit('34_istochniki.md', '307. **[S339]**', '308. **[S340]**')
         self.assertFailsWith('нумерация с пропуском')
 
     def test_duplicate_source_number(self):
-        self.edit('34_istochniki.md', '302. **[S334]**', '301. **[S333]**')
-        self.assertFailsWith('номер 301 повторяется')
+        self.edit('34_istochniki.md', '307. **[S339]**', '306. **[S338]**')
+        self.assertFailsWith('номер 306 повторяется')
 
 
 class PdfControls(unittest.TestCase):
