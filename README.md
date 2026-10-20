@@ -59,7 +59,7 @@
 - доклад (A4, цветная вёрстка): `output/Искусственный_интеллект_в_домах_соцобслуживания_доклад.pdf`
 - презентация: `presentation/презентация_ии.pptd` (редактор Kimi) и PDF в том же каталоге
 
-**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **314** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 18.10.2026](https://habr.com/ru/articles/1095852/), канал @habr_ai до ~15399; также [официальное сообщение ФАС от 16.10.2026](https://t.me/fasrussia/5041)). Презентация — **44** слайда в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 19.10.2026): **267** страниц A4.
+**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **314** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 18.10.2026](https://habr.com/ru/articles/1095852/), канал @habr_ai до ~15399; также [официальное сообщение ФАС от 16.10.2026](https://t.me/fasrussia/5041)). Презентация — **48** слайдов в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 20.10.2026): **268** страниц A4.
 
 ## Структура доклада
 
@@ -88,7 +88,7 @@ python3 scripts/build_color.py    # второй проход HTML с номер
 # затем ещё раз Chrome — как выше
 ```
 
-Нужны Python 3, **pandoc**, (для второго прохода оглавления) пакет `pypdf` и шрифты, на которые ссылается `scripts/build_color.py`: Noto Serif, Noto Serif Display (`/usr/share/fonts/truetype/noto/`) и Inter (`/usr/share/fonts/truetype/macos/`). Без них Chrome молча подставит другие шрифты, и вёрстка и число страниц поплывут: проверяйте `pdffonts` на готовом PDF. Промежуточные `_report_full.md`, `_report_color.html` и `toc_pages_color.json` пишет конвейер в `output/` **локально** и в git не входят. Для чтения без сборки берите PDF. Журнальные номера страниц в оглавлении считаются вторым проходом после PDF (`scripts/toc_pages.py` → `toc_pages_color.json`). Пока PDF не пересобрали, он может отставать от `chapters/` — это ожидаемо, см. [docs/limitations.md](docs/limitations.md).
+Нужны Python 3, **pandoc**, (для второго прохода оглавления) пакет `pypdf` и шрифты, на которые ссылается `scripts/build_color.py`: Noto Serif, Noto Serif Display (`/usr/share/fonts/truetype/noto/`) и Inter (`/usr/share/fonts/truetype/macos/`). Без них Chrome молча подставит другие шрифты, и вёрстка и число страниц поплывут: проверяйте `pdffonts` на готовом PDF. Промежуточные `_report_full.md`, `_report_color.html` и `toc_pages_color.json` пишет конвейер в `output/` **локально** и в git не входят. Для чтения без сборки берите PDF. После сборки запустите `python3 scripts/check_report.py --pdf output/Искусственный_интеллект_в_домах_соцобслуживания_доклад.pdf`: проверка сверяет сноски со списком источников, отсылки к разделам и приложениям, шрифты и текстовый слой PDF; та же проверка идёт в GitHub Actions на каждый pull request. Журнальные номера страниц в оглавлении считаются вторым проходом после PDF (`scripts/toc_pages.py` → `toc_pages_color.json`). Пока PDF не пересобрали, он может отставать от `chapters/` — это ожидаемо, см. [docs/limitations.md](docs/limitations.md).
 
 ## Лицензия
 
