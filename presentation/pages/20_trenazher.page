@@ -22,7 +22,7 @@ elements:
   - 40
   content:
     style: $h1
-    text: 'ИИ-тренажёр: сорок минут, из которых тридцать — живые'
+    text: "ИИ-тренажёр: сорок минут, тридцать из них — живые"
 - elementId: line
   elementType: shape
   bounds:
@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '29'
+    text: "32"
 - elementId: t0
   elementType: text
   bounds:
@@ -85,7 +85,7 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: 'наставник: «жительница обвиняет вас в краже очков; цель — помочь и зафиксировать, а не оправдаться»'
+    text: "наставник задаёт сценарий: «жительница обвиняет вас в краже очков; цель — помочь и зафиксировать, а не оправдаться»"
 - elementId: t1
   elementType: text
   bounds:
@@ -241,7 +241,7 @@ elements:
     lineHeight: 1.35
     color: $text
     fontFamily: Noto Sans
-    text: в личную карту обучения; повтор сценария — через месяц
+    text: "сотрудник записывает её в личную карту обучения; сценарий повторяют через месяц"
 - elementId: note
   elementType: text
   bounds:
@@ -264,4 +264,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Раздел 14 доклада
+    text: "Раздел 14.6 доклада"

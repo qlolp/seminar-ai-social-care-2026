@@ -1,0 +1,267 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: ЛЮДИ · ПНИ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: 'Когда опекун — сам интернат: пять правил согласия'
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: "39"
+- elementId: n0
+  elementType: text
+  bounds:
+  - 60
+  - 132
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: Noto Sans
+    text: '1'
+- elementId: h0
+  elementType: text
+  bounds:
+  - 98
+  - 132
+  - 760
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Согласие проходит внешнюю проверку
+- elementId: b0
+  elementType: text
+  bounds:
+  - 98
+  - 154
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: решение о датчике или камере согласуют с органом опеки или попечительским советом и фиксируют в протоколе
+- elementId: n1
+  elementType: text
+  bounds:
+  - 60
+  - 196
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: Noto Sans
+    text: '2'
+- elementId: h1
+  elementType: text
+  bounds:
+  - 98
+  - 196
+  - 760
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Мнение жителя записывают всегда
+- elementId: b1
+  elementType: text
+  bounds:
+  - 98
+  - 218
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: реакцию на устройство вносят в личное дело; явный протест — основание отказаться или пересмотреть решение
+- elementId: n2
+  elementType: text
+  bounds:
+  - 60
+  - 260
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: Noto Sans
+    text: '3'
+- elementId: h2
+  elementType: text
+  bounds:
+  - 98
+  - 260
+  - 760
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Конфиденциальное общение не записывают
+- elementId: b2
+  elementType: text
+  bounds:
+  - 98
+  - 282
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: комнату для встреч с родными, адвокатом и наблюдательной комиссией исключают из зоны камер и колонок
+- elementId: n3
+  elementType: text
+  bounds:
+  - 60
+  - 324
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: Noto Sans
+    text: '4'
+- elementId: h3
+  elementType: text
+  bounds:
+  - 98
+  - 324
+  - 760
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Запись не ограничивает права
+- elementId: b3
+  elementType: text
+  bounds:
+  - 98
+  - 346
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: ограничить переписку или посещения можно только отдельным обоснованным решением, а не по сигналу системы
+- elementId: n4
+  elementType: text
+  bounds:
+  - 60
+  - 388
+  - 30
+  - 26
+  content:
+    fontSize: 17
+    bold: true
+    color: $accent
+    fontFamily: Noto Sans
+    text: '5'
+- elementId: h4
+  elementType: text
+  bounds:
+  - 98
+  - 388
+  - 760
+  - 22
+  content:
+    fontSize: 14
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Родственники получают обычный доступ
+- elementId: b4
+  elementType: text
+  bounds:
+  - 98
+  - 410
+  - 760
+  - 38
+  content:
+    fontSize: 12.5
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: если представитель — родственник, его согласие и отзыв оформляют по разделу 18.2 без упрощений
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 456
+  - 840
+  - 40
+  content:
+    fontSize: 13
+    lineHeight: 1.4
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p>Если родственника-опекуна нет, опекуном становится интернат: он и ставит датчик, и соглашается за жителя. Закон эту коллизию не разрешил.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: Раздел 18.7 доклада; ГК РФ, 152-ФЗ, поправки к закону о психиатрической помощи (с 01.09.2024)

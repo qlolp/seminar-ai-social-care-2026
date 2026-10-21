@@ -14,7 +14,7 @@ elements:
   bounds: [60, 56, 840, 40]
   content:
     style: $h1
-    text: 'Один промпт — и часы возвращаются к жителям'
+    text: "Документы: сколько времени вернулось за квартал"
 - elementId: line
   elementType: shape
   bounds: [60, 108, 840, 1]
@@ -56,18 +56,17 @@ elements:
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: 'Замер одного учреждения за квартал: это не «экономия минут», а сводка, которая стала содержательной и сравнимой по неделям.'
-
+    text: "Замер одного дома за квартал (кейс 14) и пример сводки (раздел 9.6). В рандомизированных исследованиях выигрыш скромнее: около 10 % времени на записи."
 - elementId: src
   elementType: text
   bounds: [60, 508, 760, 24]
   content:
     style: $small
-    text: Замеры учреждения на 300 мест, разделы 9 и 12 доклада
+    text: "Кейс 14 (учреждение на 300 мест) и раздел 9.6 доклада; исследования — раздел 9.1"
 - elementId: pg
   elementType: text
   bounds: [900, 508, 40, 20]
   content:
     align: [right, top]
     style: $small
-    text: '5'
+    text: "6"

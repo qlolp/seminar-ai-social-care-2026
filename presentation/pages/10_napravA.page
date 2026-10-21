@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '17'
+    text: "18"
 - elementId: b0
   elementType: shape
   bounds:
@@ -83,7 +83,7 @@ elements:
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: Боль известна каждому (часы на однотипные документы); эффект меряется в часах; откат — один день; правовой контур — один приказ.
+    text: "Проблему знает каждый: часы уходят на однотипные документы. Эффект измеряют в часах, откат занимает один день, правовой контур — один приказ."
 - elementId: b1
   elementType: shape
   bounds:
@@ -107,7 +107,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: Эффект в первую неделю
+    text: "Эффект виден с первой недели"
 - elementId: t1
   elementType: text
   bounds:
@@ -120,7 +120,7 @@ elements:
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: 'Ответ на обращение: 40–60 минут вручную → 15–20 минут с черновиком модели и проверкой. Сводка месяца: полдня → час.'
+    text: "В кейсе 14 за квартал ответ на обращение сократился с 40–60 до 15–20 минут вместе с проверкой. Исследования дают ориентир скромнее: около 10 % времени на записи."
 - elementId: b2
   elementType: shape
   bounds:
@@ -170,7 +170,7 @@ elements:
     color: $muted
     lineHeight: 1.4
     fontFamily: Noto Sans
-    text: '<p>Начинать с видеоаналитики — значит провалиться по всем осям одновременно: дорого, сложно юридически, пугает персонал.</p>'
+    text: "<p>Если начать с видеоаналитики, проект проваливается сразу по всем осям: это дорого, юридически сложно и пугает персонал.</p>"
 - elementId: src
   elementType: text
   bounds:
@@ -180,4 +180,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Разделы 7, 9, 16 доклада
+    text: "Разделы 7.3, 9.1 и 16 доклада; кейс 14"

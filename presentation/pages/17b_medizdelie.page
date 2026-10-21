@@ -1,0 +1,235 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ В · РЕГИСТРАЦИЯ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: Когда программа становится медицинским изделием
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: "29"
+- elementId: box0
+  elementType: shape
+  bounds:
+  - 60
+  - 124
+  - 266
+  - 108
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n0
+  elementType: text
+  bounds:
+  - 74
+  - 130
+  - 240
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: 3-й класс
+- elementId: l0
+  elementType: text
+  bounds:
+  - 74
+  - 172
+  - 240
+  - 56
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: 'риска, высший: к нему относят любое медицинское ПО с ИИ'
+- elementId: box1
+  elementType: shape
+  bounds:
+  - 347
+  - 124
+  - 266
+  - 108
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n1
+  elementType: text
+  bounds:
+  - 361
+  - 130
+  - 240
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: '59'
+- elementId: l1
+  elementType: text
+  bounds:
+  - 361
+  - 172
+  - 240
+  - 56
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: отечественных медицинских изделий с ИИ зарегистрировано на август 2026 года
+- elementId: box2
+  elementType: shape
+  bounds:
+  - 634
+  - 124
+  - 266
+  - 108
+  shapeName: rect
+  fill:
+    type: solid
+    color: $soft
+- elementId: n2
+  elementType: text
+  bounds:
+  - 648
+  - 130
+  - 240
+  - 40
+  content:
+    fontSize: 30
+    bold: true
+    color: $accent
+    fontFamily: PT Serif
+    text: месяцы–годы
+- elementId: l2
+  elementType: text
+  bounds:
+  - 648
+  - 172
+  - 240
+  - 56
+  content:
+    fontSize: 12
+    lineHeight: 1.35
+    color: $text
+    fontFamily: Noto Sans
+    text: занимает регистрация в Росздравнадзоре, по словам участников рынка
+- elementId: hL
+  elementType: text
+  bounds:
+  - 60
+  - 250
+  - 400
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Признаки медицинского изделия
+- elementId: bL
+  elementType: text
+  bounds:
+  - 60
+  - 278
+  - 400
+  - 150
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: <p>Производитель предназначил программу для медицинской помощи. Она сама интерпретирует данные, и результат влияет на клинические решения.</p><p>Такое изделие можно применять только после регистрации. С мая 2026 года производители передают в систему Росздравнадзора сведения о его работе.</p>
+- elementId: hR
+  elementType: text
+  bounds:
+  - 500
+  - 250
+  - 400
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: Правило закупки
+- elementId: bR
+  elementType: text
+  bounds:
+  - 500
+  - 278
+  - 400
+  - 150
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: <p>Продавец обещает, что система «выявит ухудшение» или «оценит риск пролежня»? Попросите регистрационное удостоверение и проверьте номер в реестре до подписания договора.</p><p>Удостоверения нет — система только сообщает о событии. Значение ему придаёт врач.</p>
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 44
+  content:
+    fontSize: 13.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: Noto Sans
+    text: <p><strong>Не переносите слова из буклета в техзадание и положение:</strong> иначе учреждение само превращает незарегистрированную программу в медицинское изделие.</p>
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: 'Раздел 12.2 доклада: классификация Минздрава, данные Росздравнадзора на август 2026 года'

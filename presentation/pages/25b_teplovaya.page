@@ -309,8 +309,7 @@ elements:
     fontSize: 11.5
     color: "#4A463C"
     fontFamily: Noto Sans
-    text: 'Вендор'
-
+    text: "Поставщик"
 - elementId: note
   elementType: text
   bounds: [60, 462, 840, 40]
@@ -319,8 +318,7 @@ elements:
     lineHeight: 1.45
     color: $text
     fontFamily: Noto Sans
-    text: 'Тёмная ячейка — мера закрывает риск, средняя — снижает. ПД — персональные данные; Проклик — согласие без чтения; Вендор — зависимость от поставщика.'
-
+    text: "Тёмная ячейка — мера закрывает риск, средняя — снижает. ПД — персональные данные; Проклик — согласие без чтения; Поставщик — зависимость от одного поставщика."
 - elementId: src
   elementType: text
   bounds: [60, 508, 760, 24]
@@ -333,4 +331,4 @@ elements:
   content:
     align: [right, top]
     style: $small
-    text: '37'
+    text: "41"

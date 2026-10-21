@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '31'
+    text: "34"
 - elementId: s0
   elementType: shape
   bounds:
@@ -246,7 +246,7 @@ elements:
     lineHeight: 1.3
     color: $text
     fontFamily: Noto Sans
-    text: 'предиктивная аналитика — через годы дисциплины данных; сейчас честный ответ: «нам рано»'
+    text: "прогнозные модели потребуют лет дисциплины данных; пока честный ответ — «нам рано»"
 - elementId: note
   elementType: text
   bounds:

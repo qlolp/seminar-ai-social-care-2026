@@ -65,11 +65,11 @@ elements:
   bounds: [60, 508, 760, 24]
   content:
     style: $small
-    text: Принцип раздела 8 доклада; доли — качественная оценка
+    text: "Принцип раздела 5.3 доклада; доли — качественная оценка"
 - elementId: pg
   elementType: text
   bounds: [900, 508, 40, 20]
   content:
     align: [right, top]
     style: $small
-    text: '14'
+    text: "15"

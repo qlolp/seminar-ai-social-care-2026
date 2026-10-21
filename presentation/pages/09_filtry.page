@@ -62,7 +62,7 @@ elements:
     - right
     - top
     style: $small
-    text: '15'
+    text: '16'
 - elementId: bg0
   elementType: shape
   bounds:
@@ -86,7 +86,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: 1. Боль
+    text: 1. Острота проблемы
 - elementId: n1
   elementType: text
   bounds:
@@ -115,7 +115,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: 'Есть измеримая проблема: жалобы, минуты, случаи. Назовите число «до».'
+    text: 'Все согласны, что задача мешает работать. Назовите число «до»: жалобы, минуты, случаи.'
 - elementId: bg1
   elementType: shape
   bounds:
@@ -168,7 +168,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: 'Понятно, как узнать, что стало лучше: метрика и способ замера — до старта.'
+    text: Результат можно посчитать до внедрения и после. Метрику и способ замера записывают до старта.
 - elementId: bg2
   elementType: shape
   bounds:
@@ -221,7 +221,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: 'Провал пилота не вредит жителям и не сжигает бюджет: малый охват, короткий срок.'
+    text: 'Неудачное решение выключают без вреда для жителей и бюджета: охват малый, срок короткий.'
 - elementId: bg3
   elementType: shape
   bounds:
@@ -258,20 +258,20 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: Без биометрии, без решений о людях алгоритмом, с прозрачным контуром данных.
+    text: На старте обрабатывают минимум персональных данных, без биометрии и без решений о людях алгоритмом.
 - elementId: note
   elementType: text
   bounds:
   - 60
-  - 454
+  - 450
   - 840
-  - 34
+  - 50
   content:
     fontSize: 13.5
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: <p><strong>Прошла все четыре — в пилот (паспорт, приложение 7). Провалила хотя бы один — в реестр идей на пересмотр через квартал.</strong></p>
+    text: <p><strong>Прошла все четыре фильтра — задача идёт в пилот (паспорт, приложение 7). Не прошла хотя бы один — ждёт в реестре идей до пересмотра через квартал.</strong></p>
 - elementId: src
   elementType: text
   bounds:
@@ -281,4 +281,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Раздел 7 доклада
+    text: Раздел 7.3 доклада

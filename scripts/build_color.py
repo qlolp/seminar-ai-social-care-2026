@@ -23,6 +23,9 @@ frag = re.sub(r'^.*?<h1[^>]*>2\.', '<h1>2.', frag, count=1, flags=re.S)
 
 frag = re.sub(r'<p>\[\[INF:([a-z0-9_]+)\]\]</p>', lambda m: INF.get(m.group(1), ''), frag)
 
+# подряд идущие сноски — одним индексом через запятую, чтобы номера не склеивались
+frag = re.sub(r'(?:<sup>\d+</sup>){2,}', lambda m: '<sup>' + ', '.join(re.findall(r'\d+', m.group(0))) + '</sup>', frag)
+
 heads = re.findall(r'<h1[^>]*>(.*?)</h1>', frag, re.S)
 toc_entries = [re.sub(r'<[^>]+>', '', h).strip() for h in heads]
 
@@ -33,9 +36,9 @@ PART_RE = re.compile(r'^(Часть [IVX]+\..*|Приложения|Список
 PART_DESC = {
  'Часть I. Основания для решений': 'Исходная позиция отрасли, три класса систем, существующие практики, карта задач и рабочий словарь. Разделы 3–8.',
  'Часть II. Шесть прикладных направлений': 'Документы, правовая рамка, видеоаналитика, наблюдение за состоянием, голосовые помощники, обучение персонала и управленческая аналитика. Разделы 9–15.',
- 'Часть III. Внедрение': 'Дорожная карта на двенадцать месяцев, правовой контур, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.',
- 'Часть IV. Честные ограничения': 'Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа. Разделы 23–25.',
- 'Часть V. Учебные кейсы': 'Четырнадцать учебных кейсов с вопросами для разбора и опорным комментарием — материал семинара и внутреннего обучения.',
+ 'Часть III. Внедрение': 'Дорожная карта на двенадцать месяцев, правовые рамки, работа с жителями и персоналом, этика, безопасность данных и экономика. Разделы 16–22.',
+ 'Часть IV. Пределы применения': 'Где искусственный интеллект не нужен, типовые ошибки, запретная зона и критерии отказа. Разделы 23–25.',
+ 'Часть V. Учебные кейсы': 'Четырнадцать учебных кейсов с вопросами для разбора и комментариями к ним — материал для семинара и внутреннего обучения.',
  'Приложения': 'Семнадцать приложений: приказы, регламенты, согласия, паспорта пилота и показателя, журналы, сценарии тренажёра, шаблоны отчётов. Формы — проекты для адаптации юристом учреждения.'}
 def add_anchor(m):
     t = re.sub(r'<[^>]+>', '', m.group(1)).strip()
@@ -174,6 +177,8 @@ body {
   background: #FFFdf8;
 }
 p, li { text-align: justify; hyphens: auto; }
+/* Inter подменяет скобки и тире рядом с заглавными на контекстные глифы без Юникода — в тексте PDF они превращаются в «квадраты» */
+body, table, h1, h2, h3, h4, sup, .callout strong { font-variant-ligatures: no-contextual; font-feature-settings: "calt" 0, "case" 0; }
 p { margin: 0 0 8pt; orphans: 3; widows: 3; }
 
 .spark { width: 10pt; height: 10pt; fill: #7A2E22; }
@@ -274,7 +279,7 @@ h3 {
 table { border-collapse: collapse; width: 100%; font-family: Inter, sans-serif; font-size: 9.2pt; margin: 10pt 0; page-break-inside: auto; background: #FFFFFF; }
 tr { page-break-inside: avoid; }
 thead { display: table-header-group; }
-td, th { border: 0.6pt solid #D8D1C4; padding: 4.5pt 6pt; vertical-align: top; text-align: left; line-height: 1.35; overflow-wrap: anywhere; word-break: break-word; }
+td, th { border: 0.6pt solid #D8D1C4; padding: 4.5pt 6pt; vertical-align: top; text-align: left; line-height: 1.35; overflow-wrap: break-word; word-break: normal; hyphens: auto; }
 th { background: #F4EFE6; color: #1C1917; font-size: 8.8pt; font-weight: 600; overflow-wrap: normal; word-break: normal; }
 tr:nth-child(even) td { background: #FAF7F1; }
 
@@ -322,7 +327,7 @@ hr { border: none; border-top: 0.6pt solid #D8D1C4; margin: 12pt 0; }
 }
 .toc table { font-size: 10pt; background: none; font-family: Inter, sans-serif; }
 .toc td { border: none; border-bottom: 0.5pt dotted #C9C1B4; padding: 3.2pt 4pt; text-align: left !important; }
-.toc td a { display: inline; text-align: left; }
+.toc td a { display: inline; text-align: left; overflow-wrap: normal; word-break: normal; hyphens: manual; }
 .toc-p { width: 36pt; text-align: right; color: #7A2E22; font-weight: 600; }
 .toc-part td { background: #F4EFE6; font-weight: 700; color: #1C1917; padding-top: 7pt; }
 

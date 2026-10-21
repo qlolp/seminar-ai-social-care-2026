@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '13'
+    text: "14"
 - elementId: box0
   elementType: shape
   bounds:
@@ -263,7 +263,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: <p><strong>Система:</strong> смотрит, слушает, считает, черновит, напоминает. Не устаёт, не отвлекается.</p>
+    text: "<p><strong>Система</strong> смотрит, слушает, считает, готовит черновики и напоминает. Она не устаёт и не отвлекается.</p>"
 - elementId: l2
   elementType: text
   bounds:
@@ -276,7 +276,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: <p><strong>Человек:</strong> проверяет, решает, отвечает перед жителем, семьёй и законом.</p>
+    text: "<p><strong>Человек</strong> проверяет, решает и отвечает перед жителем, семьёй и законом.</p>"
 - elementId: div
   elementType: shape
   bounds:
@@ -300,7 +300,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: '<p>Это не только этика: ст. 16 закона о персональных данных запрещает решения о человеке на основе <strong>исключительно</strong> автоматизированной обработки. Проверка вендора проста: попросите показать, где в схеме человек — и успевает ли он проверить.</p>'
+    text: "<p>Это не только этика: ст. 16 закона о персональных данных запрещает решения о человеке на основе <strong>исключительно</strong> автоматизированной обработки. Проверить поставщика просто: попросите показать, где в схеме человек и успевает ли он проверить сигнал.</p>"
 - elementId: src
   elementType: text
   bounds:
@@ -310,4 +310,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Разделы 5 и 10 доклада; ст. 16 Федерального закона № 152-ФЗ
+    text: "Разделы 5.3 и 10 доклада; ст. 16 Федерального закона № 152-ФЗ"

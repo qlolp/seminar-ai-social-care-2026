@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '11'
+    text: "12"
 - elementId: h0
   elementType: text
   bounds:
@@ -146,7 +146,7 @@ elements:
     lineHeight: 1.4
     color: $muted
     fontFamily: Noto Sans
-    text: 'Слабое место: мусор на входе — мусор на выходе. Нам рано: данных за годы нет.'
+    text: "Слабое место: плохие данные дают плохой прогноз. Нам рано: данных за годы нет."
 - elementId: h2
   elementType: text
   bounds:
@@ -183,7 +183,7 @@ elements:
     lineHeight: 1.5
     color: $text
     fontFamily: Noto Sans
-    text: 'Пишут и говорят: черновики, сводки, тренажёры диалогов. Экономят часы в первую же неделю.'
+    text: "Пишут и говорят: черновики, сводки, тренажёры диалогов. Время на записи сокращают умеренно — по исследованиям, примерно на 10 %."
 - elementId: u2
   elementType: text
   bounds:
@@ -196,7 +196,7 @@ elements:
     lineHeight: 1.4
     color: $muted
     fontFamily: Noto Sans
-    text: 'Слабое место: уверенно сочиняют факты. Проверка человеком — навсегда.'
+    text: "Слабое место: уверенно сочиняют и под нажимом отказываются от верного ответа. Человек проверяет всегда."
 - elementId: bottom
   elementType: text
   bounds:
@@ -219,4 +219,4 @@ elements:
   - 24
   content:
     style: $small
-    text: Раздел 5 доклада
+    text: "Разделы 5.2–5.4 доклада; оценка экономии времени — раздел 9.1"

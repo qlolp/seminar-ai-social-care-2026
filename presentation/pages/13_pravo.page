@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '20'
+    text: "21"
 - elementId: n0
   elementType: text
   bounds:
@@ -86,7 +86,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: 'базовый закон: основания обработки, цели, сроки хранения'
+    text: "Базовый закон задаёт основания обработки, цели и сроки хранения."
 - elementId: n1
   elementType: text
   bounds:
@@ -126,7 +126,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: здоровье — усиленный режим; лица — путь, который мы не выбираем
+    text: "Данные о здоровье требуют усиленного режима. Распознавание лиц мы не выбираем."
 - elementId: n2
   elementType: text
   bounds:
@@ -166,7 +166,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: запрет решений о человеке исключительно алгоритмом
+    text: "Закон запрещает решения о человеке исключительно алгоритмом."
 - elementId: n3
   elementType: text
   bounds:
@@ -206,7 +206,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: стратегия ИИ до 2030 — рамка ожиданий учредителей
+    text: "Стратегия ИИ до 2030 года задаёт ожидания учредителей."
 - elementId: n4
   elementType: text
   bounds:
@@ -246,7 +246,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: приказы и положения, превращающие закон в процедуры
+    text: "Приказы и положения превращают закон в процедуры."
 - elementId: n5
   elementType: text
   bounds:
@@ -273,7 +273,7 @@ elements:
     color: $primary
     lineHeight: 1.2
     fontFamily: Noto Sans
-    text: Договор с вендором
+    text: "Договор с поставщиком"
 - elementId: b5
   elementType: text
   bounds:
@@ -286,7 +286,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: семь неснимаемых пунктов — иначе не защищает ничто
+    text: "Семь пунктов договора нельзя вычеркнуть, иначе он ничего не защищает."
 - elementId: note
   elementType: text
   bounds:

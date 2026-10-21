@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '40'
+    text: "44"
 - elementId: n0
   elementType: text
   bounds:
@@ -241,7 +241,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: '<p><strong>Список короткий специально.</strong> Запретную зону нельзя помнить целиком — она не работает. Рана и диета — решает человек.</p>'
+    text: "<p><strong>Список намеренно короткий:</strong> запретная зона, которую нельзя запомнить целиком, не работает.</p>"
 - elementId: src
   elementType: text
   bounds:

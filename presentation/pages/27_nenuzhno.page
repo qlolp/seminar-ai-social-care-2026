@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '39'
+    text: "43"
 - elementId: h0
   elementType: text
   bounds:
@@ -73,7 +73,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: Не назвали измеримую боль и число «до» — проекта нет, есть покупка.
+    text: "Не назвали измеримую проблему и число «до» — значит, проекта нет, есть только покупка."
 - elementId: ln0
   elementType: shape
   bounds:
@@ -187,7 +187,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: Предиктивные модели без лет качественных записей — кровать в доме без фундамента.
+    text: "Предиктивная модель без многолетних качественных записей похожа на дом без фундамента."
 - elementId: ln3
   elementType: shape
   bounds:

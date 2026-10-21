@@ -14,3 +14,4 @@ Thumbs.db
 # Локальные промежуточные сборки (не коммитить; читателям — PDF)
 output/_report_*
 output/toc_pages_*.json
+presentation/_export.html

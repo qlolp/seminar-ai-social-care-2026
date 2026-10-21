@@ -64,11 +64,11 @@ elements:
   bounds: [60, 508, 760, 24]
   content:
     style: $small
-    text: Шкала 0–4 по ступеням раздела 13 доклада
+    text: "Шкала 0–4 по ступеням раздела 15.3 доклада"
 - elementId: pg
   elementType: text
   bounds: [900, 508, 40, 20]
   content:
     align: [right, top]
     style: $small
-    text: '32'
+    text: "35"

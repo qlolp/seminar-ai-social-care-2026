@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '41'
+    text: "45"
 - elementId: h0
   elementType: text
   bounds:
@@ -157,7 +157,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: настройка, интеграция, обучение — у вендора и своё
+    text: "настройка, стыковка с журналами, обучение — у подрядчика и своё"
 - elementId: h3
   elementType: text
   bounds:
@@ -268,7 +268,7 @@ elements:
     lineHeight: 1.4
     color: $text
     fontFamily: Noto Sans
-    text: 'выгрузка данных, демонтаж: строка, которую считают последней, кусается первой'
+    text: "выгрузка данных, демонтаж; эту строку считают последней, а неожиданные расходы она приносит первой"
 - elementId: note
   elementType: text
   bounds:

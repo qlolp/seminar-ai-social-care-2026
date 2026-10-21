@@ -140,7 +140,7 @@ elements:
     bold: true
     color: $primary
     fontFamily: Noto Sans
-    text: Выберите одну измеримую боль и замерьте её
+    text: "Выберите одну измеримую проблему и замерьте её"
 - elementId: b2
   elementType: text
   bounds:
@@ -239,4 +239,4 @@ elements:
     - right
     - top
     style: $small
-    text: '44'
+    text: "48"

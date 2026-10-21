@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '10'
+    text: "11"
 - elementId: h0
   elementType: text
   bounds:
@@ -96,7 +96,7 @@ elements:
     lineHeight: 1.35
     color: $muted
     fontFamily: Noto Sans
-    text: Карта та же. Замер, потом закрепление.
+    text: "Карта та же: сначала замер, потом закрепление."
 - elementId: h1
   elementType: text
   bounds:
@@ -146,7 +146,7 @@ elements:
     lineHeight: 1.35
     color: $muted
     fontFamily: Noto Sans
-    text: Письмо семье — из проверенных полей.
+    text: "Письмо семье собирают из проверенных полей."
 - elementId: h2
   elementType: text
   bounds:

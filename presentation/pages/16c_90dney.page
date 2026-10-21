@@ -1,0 +1,156 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 60
+  - 34
+  - 700
+  - 16
+  content:
+    style: $kicker
+    text: НАПРАВЛЕНИЕ Б · СКОЛЬКО ЖДАТЬ
+- elementId: title
+  elementType: text
+  bounds:
+  - 60
+  - 56
+  - 840
+  - 40
+  content:
+    style: $h1
+    text: За 90 дней снижение падений не доказать
+- elementId: line
+  elementType: shape
+  bounds:
+  - 60
+  - 108
+  - 840
+  - 1
+  shapeName: rect
+  fill:
+    type: solid
+    color: $line
+- elementId: pg
+  elementType: text
+  bounds:
+  - 900
+  - 508
+  - 40
+  - 20
+  content:
+    align:
+    - right
+    - top
+    style: $small
+    text: "27"
+- elementId: tbl
+  elementType: table
+  bounds:
+  - 60
+  - 126
+  - 400
+  - 150
+  columnWidths:
+  - 0.5
+  - 0.5
+  rowHeights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  style:
+    cellStyle:
+      fontSize: 12.5
+      lineHeight: 1.3
+      align:
+      - left
+      - middle
+      border:
+      - null
+      - null
+      - style: solid
+        width: 1
+        color: $line
+      - null
+    firstRowStyle:
+      bold: true
+      color: '#FFFFFF'
+      fontSize: 12.5
+      fill:
+        type: solid
+        color: $primary
+  rows:
+  - - text: Снижение частоты
+    - text: Падений в каждом периоде
+  - - text: на 20 %
+    - text: ≈ 350
+  - - text: на 30 %
+    - text: ≈ 150
+  - - text: вдвое
+    - text: ≈ 45
+- elementId: bL
+  elementType: text
+  bounds:
+  - 60
+  - 290
+  - 400
+  - 140
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: <p>Дом на 300 мест фиксирует около 450 падений в год. Скромный эффект в 20 % он подтвердит за девять месяцев на каждый период, эффект вдвое — за пять недель.</p><p>Отделению на 60 мест нужно в пять раз больше времени.</p>
+- elementId: hR
+  elementType: text
+  bounds:
+  - 500
+  - 126
+  - 400
+  - 22
+  content:
+    fontSize: 15
+    bold: true
+    color: $primary
+    fontFamily: Noto Sans
+    text: 'Карта серий: четыре правила'
+- elementId: bR
+  elementType: text
+  bounds:
+  - 500
+  - 156
+  - 400
+  - 270
+  content:
+    fontSize: 13
+    lineHeight: 1.45
+    color: $text
+    fontFamily: Noto Sans
+    text: "<p>Неделя за неделей ставят точку и проводят линию медианы. Когда точек больше десяти, сдвиг отличают от шума так:</p><p><strong>Сдвиг</strong> — шесть и более точек подряд по одну сторону медианы.</p><p><strong>Тренд</strong> — пять и более точек подряд растут или падают.</p><p><strong>Число серий</strong> — слишком мало или слишком много.</p><p><strong>Астрономическая точка</strong> явно выпадает из ряда.</p>"
+- elementId: note
+  elementType: text
+  bounds:
+  - 60
+  - 446
+  - 840
+  - 44
+  content:
+    fontSize: 13.5
+    lineHeight: 1.4
+    color: $text
+    fontFamily: Noto Sans
+    text: '<p>Частоту падений в пилоте записывают, но решают по показателям процесса: время до прихода сотрудника, доля ложных тревог. Рост зарегистрированных падений в первые недели ожидаем.</p>'
+- elementId: src
+  elementType: text
+  bounds:
+  - 60
+  - 505
+  - 760
+  - 24
+  content:
+    style: $small
+    text: 'Раздел 15.7 доклада: расчёт по Пуассону (5 %, мощность 80 %) при 1,5 падения на койку в год; правила Перлы, Провоста и Мюррея'

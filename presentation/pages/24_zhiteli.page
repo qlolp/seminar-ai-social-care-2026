@@ -46,7 +46,7 @@ elements:
     - right
     - top
     style: $small
-    text: '35'
+    text: '38'
 - elementId: b0
   elementType: shape
   bounds:
@@ -162,9 +162,9 @@ elements:
   elementType: text
   bounds:
   - 60
-  - 458
+  - 456
   - 840
-  - 30
+  - 42
   content:
     fontSize: 13
     lineHeight: 1.4
