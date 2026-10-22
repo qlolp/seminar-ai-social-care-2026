@@ -59,7 +59,7 @@
 - доклад (A4, цветная вёрстка): `output/Искусственный_интеллект_в_домах_соцобслуживания_доклад.pdf`
 - презентация: `presentation/презентация_ии.pptd` (редактор Kimi) и PDF в том же каталоге
 
-**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **236** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 21.10.2026](https://habr.com/ru/articles/1096934/); также [сообщение Правительства от 02.03.2026](https://government.ru/news/57978/) и [заявление DOI Мальты PR261756 от 20.10.2026](https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/10/20/PR261756en.aspx)). Презентация — **41** слайд в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 21.10.2026): **266** страниц A4.
+**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **240** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 21.10.2026](https://habr.com/ru/articles/1097430/); также [беседа ТАСС от 13.10.2026](https://tass.ru/obschestvo/28207579/) и [сообщение Duke University School of Medicine от 12.10.2026](https://medschool.duke.edu/news/duke-launches-national-hub-advance-trustworthy-ai-aging-and-dementia-care-0)). Презентация — **41** слайд в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 22.10.2026): **276** страниц A4.
 
 ## Структура доклада
 
