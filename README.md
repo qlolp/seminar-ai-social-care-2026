@@ -59,7 +59,7 @@
 - доклад (A4, цветная вёрстка): `output/Искусственный_интеллект_в_домах_соцобслуживания_доклад.pdf`
 - презентация: `presentation/презентация_ии.pptd` (редактор Kimi) и PDF в том же каталоге
 
-**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **240** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 21.10.2026](https://habr.com/ru/articles/1097430/); также [беседа ТАСС от 13.10.2026](https://tass.ru/obschestvo/28207579/) и [сообщение Duke University School of Medicine от 12.10.2026](https://medschool.duke.edu/news/duke-launches-national-hub-advance-trustworthy-ai-aging-and-dementia-care-0)). Презентация — **41** слайд в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 22.10.2026): **276** страниц A4.
+**Объём (проверено по файлам).** 14 учебных кейсов, 17 приложений, 12 инфографических листов, **245** пунктов списка источников (`chapters/34_istochniki.md`; last seen [Habr, 23.10.2026](https://habr.com/ru/articles/1098152/), канал [@habr_ai, сообщение 15587](https://t.me/habr_ai/15587); также [обзор Frontiers in Public Health от 19.10.2026](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1974526/full) и [итоговый доклад Мадридской конференции ОЭСР, AI Papers No. 66](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/10/proceeding-report-from-madrid-conference-on-the-responsible-scale-of-ai-in-healthcare_cd7819f4/cf9439c3-en.pdf)). Презентация — **41** слайд в `presentation/pages/`. Журнальный PDF после пересборки из текущих глав (Chrome, 23.10.2026): **281** страниц A4.
 
 ## Структура доклада
 
