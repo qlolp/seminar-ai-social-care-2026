@@ -93,6 +93,16 @@
 59. **[S091]** Abadir M., Dineen W., Myers D., Yu S., Phan P. «Navigating the future of artificial intelligence technologies for improving the care of older adults» — Innovation in Aging, 2025;9(Suppl 1):S24–S32. URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12742854/ — doi:10.1093/geroni/igaf092. Рамка 4Ms (What Matters, Medication, Mentation, Mobility): голосовые помощники, музыка, когнитивная поддержка; достоинство и человеческий уход — условие, а не опция.
 60. **[S092]** PointClickCare. «PointClickCare Launches Advisor Suite, Expanding AI-Native Workflow Automation Solutions for Skilled Nursing» — пресс-релиз, 02.06.2026. URL: https://pointclickcare.com/press-releases/pointclickcare-launches-advisor-suite-expanding-ai-native-workflow-automation-solutions-for-skilled-nursing/ — отраслевой пресс, не рецензия. Берём идею Chart Advisor (дыры в документации и ситуации высокого риска — человеку на разбор). Направления, счета и американская оценка MDS/PDPM для российских домов не рекомендуются.
 
+### Дополнительные первоисточники к разделу 13.8: книга жизни и помощь в написании мемуаров
+
+<a id="source-meng-2026-memoir"></a>
+
+**Meng Y., Que Y., Yan Z., Liu B., Wang Z., Yang M., Lu H.** [Personalized Intelligent Chatbot Based on AI-Generated Content Assists Memoir Writing for Older Adults With Cognitive Impairment: Mixed Methods Study](https://humanfactors.jmir.org/2026/1/e83428). JMIR Human Factors, 25.08.2026; 13:e83428. DOI: 10.2196/83428. Опубликованная рецензируемая версия; односеансовое нерандомизированное сравнение с активным контролем. Не свидетельствует о долгосрочном или клиническом эффекте.
+
+<a id="source-yang-2026-storybook"></a>
+
+**Yang M., Cho E., Lee K.H., Kang B., Park C.G., Song J.-A.** [Effects and feasibility of life storybook-based group reminiscence therapy for older adults with mild cognitive impairment: A cluster randomized controlled trial](https://www.sciencedirect.com/science/article/pii/S0197457226006403). Geriatric Nursing, онлайн 05.11.2026; 74(Pt B):104435. DOI: 10.1016/j.gerinurse.2026.104435. [Аннотация авторов в PubMed](https://pubmed.ncbi.nlm.nih.gov/42987468/); регистрация KCT0009569. Сравниваются групповые занятия и самостоятельная работа, а не варианты с генеративным ИИ и без него.
+
 ## Дополнение сентября 2026: питание и усиление Ж–Л
 
 Рецензируемые источники по операционной кухне, моделям недоедания (больница — не дом ухода), текстуре при нарушении глотания и уточнению кандидатов Ж–Л. Aging Medicine 2026 по лекарственному сопровождению уже есть как пункт 55 / [S087] — не дублируем, перекрёстно цитируем. Проверены 05.09.2026.
