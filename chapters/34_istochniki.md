@@ -81,6 +81,10 @@
 52. **[S084]** medRxiv / fall documentation with obfuscated CV (AUGi) — https://doi.org/10.1101/2025.10.10.25337770 — детекция падений с силуэтом/пикселизацией; сырое видео не хранится (по описанию производителя).
 53. **[S085]** Обсуждения практикующих медсестёр и семей на Reddit (r/nursing, r/eldercare, r/AssistedLiving, 2019–2026) о камерах, telesitter, кроватных датчиках и роботах в уходе — см. подборку тезисов в главах; не рецензируемый источник, а живой язык практики. Примеры тредов: https://www.reddit.com/r/nursing/comments/1vxbhmm/ ; https://www.reddit.com/r/AssistedLiving/comments/1m4ydbk/ ; https://www.reddit.com/r/nursing/comments/1ujj7fq/ ; https://www.reddit.com/r/eldercare/comments/1lwrieg/
 
+<span id="s-han-hatano-bpsd-2026"></span>
+
+**Han H., Hatano M. (2026).** Intelligent monitoring of human behaviour in dementia care: a non-contact multimodal AIoT approach in real-world elderly support. *Scientific Reports*, 16, 40157. Опубликовано 26 ноября. [Текст статьи](https://www.nature.com/articles/s41598-026-59657-7.pdf), DOI: 10.1038/s41598-026-59657-7. Таблица 5 и обсуждение: проверка прогнозов на внутренних разбиениях, не оценка улучшения ухода. См. § 23.4.
+
 ## Дополнение сентября 2026: пробелы применений для домов социального обслуживания
 
 Пять направлений, которых нет в карте А–Е, но которые встречаются в открытых источниках по домам ухода и смежным стационарам. Не шестая строка «американские счета и направления». Проверены 05.09.2026. Пункты 58 и 60 — язык практики и пресс вендора, не рецензируемые обзоры.
